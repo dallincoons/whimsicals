@@ -1,0 +1,375 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'c:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'babelify' ]
+2 info using npm@2.15.1
+3 info using node@v4.4.4
+4 verbose install initial load of c:\users\admin\projects\whimsical\package.json
+5 verbose installManyTop reading scoped package data from c:\users\admin\projects\whimsical\node_modules\babel-core\package.json
+6 verbose installManyTop reading scoped package data from c:\users\admin\projects\whimsical\node_modules\babel-plugin-transform-runtime\package.json
+7 verbose installManyTop reading scoped package data from c:\users\admin\projects\whimsical\node_modules\babel-preset-es2015\package.json
+8 verbose installManyTop reading scoped package data from c:\users\admin\projects\whimsical\node_modules\babel-preset-react\package.json
+9 verbose installManyTop reading scoped package data from c:\users\admin\projects\whimsical\node_modules\babel-runtime\package.json
+10 verbose installManyTop reading scoped package data from c:\users\admin\projects\whimsical\node_modules\babelify\package.json
+11 verbose installManyTop reading scoped package data from c:\users\admin\projects\whimsical\node_modules\bootstrap-sass\package.json
+12 verbose installManyTop reading scoped package data from c:\users\admin\projects\whimsical\node_modules\browserify\package.json
+13 verbose installManyTop reading scoped package data from c:\users\admin\projects\whimsical\node_modules\gulp\package.json
+14 verbose installManyTop reading scoped package data from c:\users\admin\projects\whimsical\node_modules\gulp-babel\package.json
+15 verbose installManyTop reading scoped package data from c:\users\admin\projects\whimsical\node_modules\gutil\package.json
+16 verbose installManyTop reading scoped package data from c:\users\admin\projects\whimsical\node_modules\laravel-elixir\package.json
+17 verbose installManyTop reading scoped package data from c:\users\admin\projects\whimsical\node_modules\laravel-elixir-browserify\package.json
+18 verbose installManyTop reading scoped package data from c:\users\admin\projects\whimsical\node_modules\laravel-elixir-vueify\package.json
+19 verbose installManyTop reading scoped package data from c:\users\admin\projects\whimsical\node_modules\lodash.assign\package.json
+20 verbose installManyTop reading scoped package data from c:\users\admin\projects\whimsical\node_modules\node-notifier\package.json
+21 verbose installManyTop reading scoped package data from c:\users\admin\projects\whimsical\node_modules\vinyl-buffer\package.json
+22 verbose installManyTop reading scoped package data from c:\users\admin\projects\whimsical\node_modules\vinyl-source-stream\package.json
+23 verbose installManyTop reading scoped package data from c:\users\admin\projects\whimsical\node_modules\vue\package.json
+24 verbose installManyTop reading scoped package data from c:\users\admin\projects\whimsical\node_modules\vue-hot-reload-api\package.json
+25 verbose installManyTop reading scoped package data from c:\users\admin\projects\whimsical\node_modules\vue-resource\package.json
+26 verbose installManyTop reading scoped package data from c:\users\admin\projects\whimsical\node_modules\vueify\package.json
+27 verbose installManyTop reading scoped package data from c:\users\admin\projects\whimsical\node_modules\vueify-insert-css\package.json
+28 verbose installManyTop reading scoped package data from c:\users\admin\projects\whimsical\node_modules\watchify\package.json
+29 verbose installManyTop reading scoped package data from c:\users\admin\projects\whimsical\node_modules\webpack-stream\package.json
+30 info package.json gutil@1.6.4 No repository field.
+31 info package.json gutil@1.6.4 No license field.
+32 verbose readDependencies loading dependencies from c:\users\admin\projects\whimsical\package.json
+33 verbose install babelify is installed as 7.3.0
+34 silly cache add args [ 'babelify', null ]
+35 verbose cache add spec babelify
+36 silly cache add parsed spec Result {
+36 silly cache add   raw: 'babelify',
+36 silly cache add   scope: null,
+36 silly cache add   name: 'babelify',
+36 silly cache add   rawSpec: '',
+36 silly cache add   spec: 'latest',
+36 silly cache add   type: 'tag' }
+37 silly addNamed babelify@latest
+38 verbose addNamed "latest" is being treated as a dist-tag for babelify
+39 info addNameTag [ 'babelify', 'latest' ]
+40 silly mapToRegistry name babelify
+41 silly mapToRegistry using default registry
+42 silly mapToRegistry registry https://registry.npmjs.org/
+43 silly mapToRegistry data Result {
+43 silly mapToRegistry   raw: 'babelify',
+43 silly mapToRegistry   scope: null,
+43 silly mapToRegistry   name: 'babelify',
+43 silly mapToRegistry   rawSpec: '',
+43 silly mapToRegistry   spec: 'latest',
+43 silly mapToRegistry   type: 'tag' }
+44 silly mapToRegistry uri https://registry.npmjs.org/babelify
+45 verbose addNameTag registry:https://registry.npmjs.org/babelify not in flight; fetching
+46 verbose request uri https://registry.npmjs.org/babelify
+47 verbose request no auth needed
+48 info attempt registry request try #1 at 7:59:37 AM
+49 verbose request id 9c2da35004bc3646
+50 verbose etag "6D9KLNOUOPMEZ5USHT75PN42E"
+51 http request GET https://registry.npmjs.org/babelify
+52 http 304 https://registry.npmjs.org/babelify
+53 verbose headers { date: 'Wed, 11 May 2016 14:59:40 GMT',
+53 verbose headers   via: '1.1 varnish',
+53 verbose headers   'cache-control': 'max-age=300',
+53 verbose headers   etag: '"6D9KLNOUOPMEZ5USHT75PN42E"',
+53 verbose headers   age: '153',
+53 verbose headers   connection: 'keep-alive',
+53 verbose headers   'x-served-by': 'cache-sjc3135-SJC',
+53 verbose headers   'x-cache': 'HIT',
+53 verbose headers   'x-cache-hits': '1',
+53 verbose headers   'x-timer': 'S1462978780.945244,VS0,VE0',
+53 verbose headers   vary: 'Accept-Encoding' }
+54 silly get cb [ 304,
+54 silly get   { date: 'Wed, 11 May 2016 14:59:40 GMT',
+54 silly get     via: '1.1 varnish',
+54 silly get     'cache-control': 'max-age=300',
+54 silly get     etag: '"6D9KLNOUOPMEZ5USHT75PN42E"',
+54 silly get     age: '153',
+54 silly get     connection: 'keep-alive',
+54 silly get     'x-served-by': 'cache-sjc3135-SJC',
+54 silly get     'x-cache': 'HIT',
+54 silly get     'x-cache-hits': '1',
+54 silly get     'x-timer': 'S1462978780.945244,VS0,VE0',
+54 silly get     vary: 'Accept-Encoding' } ]
+55 verbose etag https://registry.npmjs.org/babelify from cache
+56 verbose get saving babelify to C:\Users\Admin\AppData\Roaming\npm-cache\registry.npmjs.org\babelify\.cache.json
+57 verbose correctMkdir C:\Users\Admin\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+58 silly addNameTag next cb for babelify with tag latest
+59 silly addNamed babelify@7.3.0
+60 verbose addNamed "7.3.0" is a plain semver version for babelify
+61 silly cache afterAdd babelify@7.3.0
+62 verbose afterAdd C:\Users\Admin\AppData\Roaming\npm-cache\babelify\7.3.0\package\package.json not in flight; writing
+63 verbose correctMkdir C:\Users\Admin\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+64 verbose afterAdd C:\Users\Admin\AppData\Roaming\npm-cache\babelify\7.3.0\package\package.json written
+65 silly install resolved [ { name: 'babelify',
+65 silly install resolved     description: 'Babel browserify transform',
+65 silly install resolved     version: '7.3.0',
+65 silly install resolved     author: { name: 'Sebastian McKenzie', email: 'sebmck@gmail.com' },
+65 silly install resolved     license: 'MIT',
+65 silly install resolved     homepage: 'https://github.com/babel/babelify',
+65 silly install resolved     repository:
+65 silly install resolved      { type: 'git',
+65 silly install resolved        url: 'git+https://github.com/babel/babelify.git' },
+65 silly install resolved     bugs: { url: 'https://github.com/babel/babelify/issues' },
+65 silly install resolved     dependencies: { 'babel-core': '^6.0.14', 'object-assign': '^4.0.0' },
+65 silly install resolved     devDependencies:
+65 silly install resolved      { 'babel-plugin-transform-es3-property-literals': '^6.0.14',
+65 silly install resolved        'babel-plugin-transform-node-env-inline': '^6.0.14',
+65 silly install resolved        'babel-plugin-transform-react-display-name': '^6.0.14',
+65 silly install resolved        'babel-plugin-undeclared-variables-check': '^6.0.14',
+65 silly install resolved        'babel-preset-es2015': '^6.0.14',
+65 silly install resolved        'babel-preset-react': '^6.0.14',
+65 silly install resolved        browserify: '^13.0.0',
+65 silly install resolved        'convert-source-map': '^1.1.0',
+65 silly install resolved        'lodash.zipobject': '^4.1.3',
+65 silly install resolved        'path-is-absolute': '^1.0.0',
+65 silly install resolved        tap: '^5.7.1' },
+65 silly install resolved     scripts: { test: 'tap test/*.js' },
+65 silly install resolved     gitHead: '27282793d1a4819e7e44a33540a84792f1f79dd9',
+65 silly install resolved     _id: 'babelify@7.3.0',
+65 silly install resolved     _shasum: 'aa56aede7067fd7bd549666ee16dc285087e88e5',
+65 silly install resolved     _from: 'babelify@latest',
+65 silly install resolved     _npmVersion: '3.8.6',
+65 silly install resolved     _nodeVersion: '5.11.0',
+65 silly install resolved     _npmUser: { name: 'zertosh', email: 'zertosh@gmail.com' },
+65 silly install resolved     dist:
+65 silly install resolved      { shasum: 'aa56aede7067fd7bd549666ee16dc285087e88e5',
+65 silly install resolved        tarball: 'https://registry.npmjs.org/babelify/-/babelify-7.3.0.tgz' },
+65 silly install resolved     maintainers: [ [Object], [Object] ],
+65 silly install resolved     _npmOperationalInternal:
+65 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
+65 silly install resolved        tmp: 'tmp/babelify-7.3.0.tgz_1461659111735_0.7071558302268386' },
+65 silly install resolved     directories: {},
+65 silly install resolved     _resolved: 'https://registry.npmjs.org/babelify/-/babelify-7.3.0.tgz',
+65 silly install resolved     readme: 'ERROR: No README data found!' } ]
+66 info install babelify@7.3.0 into c:\users\admin\projects\whimsical
+67 info installOne babelify@7.3.0
+68 verbose installOne of babelify to c:\users\admin\projects\whimsical not in flight; installing
+69 verbose correctMkdir C:\Users\Admin\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+70 verbose lock using C:\Users\Admin\AppData\Roaming\npm-cache\_locks\babelify-9e4f20b3a04bef62.lock for c:\users\admin\projects\whimsical\node_modules\babelify
+71 silly install write writing babelify 7.3.0 to c:\users\admin\projects\whimsical\node_modules\babelify
+72 verbose unbuild node_modules\babelify
+73 info preuninstall babelify@7.3.0
+74 info uninstall babelify@7.3.0
+75 verbose unbuild rmStuff babelify@7.3.0 from c:\users\admin\projects\whimsical\node_modules
+76 info postuninstall babelify@7.3.0
+77 silly gentlyRm c:\users\admin\projects\whimsical\node_modules\babelify is being purged from base c:\users\admin\projects\whimsical
+78 verbose gentlyRm don't care about contents; nuking c:\users\admin\projects\whimsical\node_modules\babelify
+79 silly vacuum-fs purging c:\users\admin\projects\whimsical\node_modules\babelify
+80 silly vacuum-fs quitting because other entries in c:\users\admin\projects\whimsical\node_modules
+81 verbose tar unpack C:\Users\Admin\AppData\Roaming\npm-cache\babelify\7.3.0\package.tgz
+82 verbose tar unpacking to c:\users\admin\projects\whimsical\node_modules\babelify
+83 silly gentlyRm c:\users\admin\projects\whimsical\node_modules\babelify is being purged
+84 verbose gentlyRm don't care about contents; nuking c:\users\admin\projects\whimsical\node_modules\babelify
+85 silly gunzTarPerm modes [ '777', '666' ]
+86 silly gunzTarPerm extractEntry package.json
+87 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+88 silly gunzTarPerm extractEntry .npmignore
+89 silly gunzTarPerm modified mode [ '.npmignore', 384, 438 ]
+90 silly gunzTarPerm extractEntry README.md
+91 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+92 silly gunzTarPerm extractEntry LICENSE
+93 silly gunzTarPerm modified mode [ 'LICENSE', 384, 438 ]
+94 silly gunzTarPerm extractEntry index.js
+95 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+96 verbose write writing to c:\users\admin\projects\whimsical\node_modules\babelify\package.json
+97 info preinstall babelify@7.3.0
+98 verbose readDependencies loading dependencies from c:\users\admin\projects\whimsical\node_modules\babelify\package.json
+99 silly prepareForInstallMany adding object-assign@^4.0.0 from babelify dependencies
+100 verbose readDependencies loading dependencies from c:\users\admin\projects\whimsical\node_modules\babelify\package.json
+101 silly cache add args [ 'object-assign@^4.0.0', null ]
+102 verbose cache add spec object-assign@^4.0.0
+103 silly cache add parsed spec Result {
+103 silly cache add   raw: 'object-assign@^4.0.0',
+103 silly cache add   scope: null,
+103 silly cache add   name: 'object-assign',
+103 silly cache add   rawSpec: '^4.0.0',
+103 silly cache add   spec: '>=4.0.0 <5.0.0',
+103 silly cache add   type: 'range' }
+104 silly addNamed object-assign@>=4.0.0 <5.0.0
+105 verbose addNamed ">=4.0.0 <5.0.0" is a valid semver range for object-assign
+106 silly addNameRange { name: 'object-assign',
+106 silly addNameRange   range: '>=4.0.0 <5.0.0',
+106 silly addNameRange   hasData: false }
+107 silly mapToRegistry name object-assign
+108 silly mapToRegistry using default registry
+109 silly mapToRegistry registry https://registry.npmjs.org/
+110 silly mapToRegistry data Result {
+110 silly mapToRegistry   raw: 'object-assign',
+110 silly mapToRegistry   scope: null,
+110 silly mapToRegistry   name: 'object-assign',
+110 silly mapToRegistry   rawSpec: '',
+110 silly mapToRegistry   spec: 'latest',
+110 silly mapToRegistry   type: 'tag' }
+111 silly mapToRegistry uri https://registry.npmjs.org/object-assign
+112 verbose addNameRange registry:https://registry.npmjs.org/object-assign not in flight; fetching
+113 verbose request uri https://registry.npmjs.org/object-assign
+114 verbose request no auth needed
+115 info attempt registry request try #1 at 7:59:37 AM
+116 verbose etag "306VXDXQ7C0F3IQRIK18GIP6D"
+117 http request GET https://registry.npmjs.org/object-assign
+118 http 304 https://registry.npmjs.org/object-assign
+119 verbose headers { date: 'Wed, 11 May 2016 14:59:41 GMT',
+119 verbose headers   via: '1.1 varnish',
+119 verbose headers   'cache-control': 'max-age=300',
+119 verbose headers   etag: '"306VXDXQ7C0F3IQRIK18GIP6D"',
+119 verbose headers   age: '200',
+119 verbose headers   connection: 'keep-alive',
+119 verbose headers   'x-served-by': 'cache-sjc3135-SJC',
+119 verbose headers   'x-cache': 'HIT',
+119 verbose headers   'x-cache-hits': '15',
+119 verbose headers   'x-timer': 'S1462978781.142350,VS0,VE0',
+119 verbose headers   vary: 'Accept-Encoding' }
+120 silly get cb [ 304,
+120 silly get   { date: 'Wed, 11 May 2016 14:59:41 GMT',
+120 silly get     via: '1.1 varnish',
+120 silly get     'cache-control': 'max-age=300',
+120 silly get     etag: '"306VXDXQ7C0F3IQRIK18GIP6D"',
+120 silly get     age: '200',
+120 silly get     connection: 'keep-alive',
+120 silly get     'x-served-by': 'cache-sjc3135-SJC',
+120 silly get     'x-cache': 'HIT',
+120 silly get     'x-cache-hits': '15',
+120 silly get     'x-timer': 'S1462978781.142350,VS0,VE0',
+120 silly get     vary: 'Accept-Encoding' } ]
+121 verbose etag https://registry.npmjs.org/object-assign from cache
+122 verbose get saving object-assign to C:\Users\Admin\AppData\Roaming\npm-cache\registry.npmjs.org\object-assign\.cache.json
+123 verbose correctMkdir C:\Users\Admin\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+124 silly addNameRange number 2 { name: 'object-assign', range: '>=4.0.0 <5.0.0', hasData: true }
+125 silly addNameRange versions [ 'object-assign',
+125 silly addNameRange   [ '0.1.0',
+125 silly addNameRange     '0.1.1',
+125 silly addNameRange     '0.1.2',
+125 silly addNameRange     '0.2.0',
+125 silly addNameRange     '0.2.1',
+125 silly addNameRange     '0.2.2',
+125 silly addNameRange     '0.3.0',
+125 silly addNameRange     '0.3.1',
+125 silly addNameRange     '0.4.0',
+125 silly addNameRange     '1.0.0',
+125 silly addNameRange     '2.0.0',
+125 silly addNameRange     '3.0.0',
+125 silly addNameRange     '2.1.1',
+125 silly addNameRange     '4.0.0',
+125 silly addNameRange     '4.0.1',
+125 silly addNameRange     '4.1.0' ] ]
+126 silly addNamed object-assign@4.1.0
+127 verbose addNamed "4.1.0" is a plain semver version for object-assign
+128 silly cache afterAdd object-assign@4.1.0
+129 verbose afterAdd C:\Users\Admin\AppData\Roaming\npm-cache\object-assign\4.1.0\package\package.json not in flight; writing
+130 verbose correctMkdir C:\Users\Admin\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+131 verbose afterAdd C:\Users\Admin\AppData\Roaming\npm-cache\object-assign\4.1.0\package\package.json written
+132 silly install resolved [ { name: 'object-assign',
+132 silly install resolved     version: '4.1.0',
+132 silly install resolved     description: 'ES2015 Object.assign() ponyfill',
+132 silly install resolved     license: 'MIT',
+132 silly install resolved     repository:
+132 silly install resolved      { type: 'git',
+132 silly install resolved        url: 'git+https://github.com/sindresorhus/object-assign.git' },
+132 silly install resolved     author:
+132 silly install resolved      { name: 'Sindre Sorhus',
+132 silly install resolved        email: 'sindresorhus@gmail.com',
+132 silly install resolved        url: 'sindresorhus.com' },
+132 silly install resolved     engines: { node: '>=0.10.0' },
+132 silly install resolved     scripts: { test: 'xo && mocha', bench: 'matcha bench.js' },
+132 silly install resolved     files: [ 'index.js' ],
+132 silly install resolved     keywords:
+132 silly install resolved      [ 'object',
+132 silly install resolved        'assign',
+132 silly install resolved        'extend',
+132 silly install resolved        'properties',
+132 silly install resolved        'es2015',
+132 silly install resolved        'ecmascript',
+132 silly install resolved        'harmony',
+132 silly install resolved        'ponyfill',
+132 silly install resolved        'prollyfill',
+132 silly install resolved        'polyfill',
+132 silly install resolved        'shim',
+132 silly install resolved        'browser' ],
+132 silly install resolved     devDependencies: { lodash: '^4.8.2', matcha: '^0.7.0', mocha: '*', xo: '*' },
+132 silly install resolved     gitHead: '72fe21c86911758f3342fdf41c2a57860d5829bc',
+132 silly install resolved     bugs: { url: 'https://github.com/sindresorhus/object-assign/issues' },
+132 silly install resolved     homepage: 'https://github.com/sindresorhus/object-assign#readme',
+132 silly install resolved     _id: 'object-assign@4.1.0',
+132 silly install resolved     _shasum: '7a3b3d0e98063d43f4c03f2e8ae6cd51a86883a0',
+132 silly install resolved     _from: 'object-assign@>=4.0.0 <5.0.0',
+132 silly install resolved     _npmVersion: '2.14.19',
+132 silly install resolved     _nodeVersion: '4.1.0',
+132 silly install resolved     _npmUser: { name: 'spicyj', email: 'ben@benalpert.com' },
+132 silly install resolved     maintainers: [ [Object], [Object] ],
+132 silly install resolved     dist:
+132 silly install resolved      { shasum: '7a3b3d0e98063d43f4c03f2e8ae6cd51a86883a0',
+132 silly install resolved        tarball: 'https://registry.npmjs.org/object-assign/-/object-assign-4.1.0.tgz' },
+132 silly install resolved     _npmOperationalInternal:
+132 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
+132 silly install resolved        tmp: 'tmp/object-assign-4.1.0.tgz_1462212593641_0.3332549517508596' },
+132 silly install resolved     directories: {},
+132 silly install resolved     _resolved: 'https://registry.npmjs.org/object-assign/-/object-assign-4.1.0.tgz',
+132 silly install resolved     readme: 'ERROR: No README data found!' } ]
+133 info install object-assign@4.1.0 into c:\users\admin\projects\whimsical\node_modules\babelify
+134 info installOne object-assign@4.1.0
+135 verbose installOne of object-assign to c:\users\admin\projects\whimsical\node_modules\babelify not in flight; installing
+136 verbose correctMkdir C:\Users\Admin\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+137 verbose lock using C:\Users\Admin\AppData\Roaming\npm-cache\_locks\object-assign-c2fb3b7c10e62a5b.lock for c:\users\admin\projects\whimsical\node_modules\babelify\node_modules\object-assign
+138 silly install write writing object-assign 4.1.0 to c:\users\admin\projects\whimsical\node_modules\babelify\node_modules\object-assign
+139 verbose unbuild node_modules\babelify\node_modules\object-assign
+140 silly gentlyRm c:\users\admin\projects\whimsical\node_modules\babelify\node_modules\object-assign is being purged from base c:\users\admin\projects\whimsical
+141 verbose gentlyRm don't care about contents; nuking c:\users\admin\projects\whimsical\node_modules\babelify\node_modules\object-assign
+142 verbose tar unpack C:\Users\Admin\AppData\Roaming\npm-cache\object-assign\4.1.0\package.tgz
+143 verbose tar unpacking to c:\users\admin\projects\whimsical\node_modules\babelify\node_modules\object-assign
+144 silly gentlyRm c:\users\admin\projects\whimsical\node_modules\babelify\node_modules\object-assign is being purged
+145 verbose gentlyRm don't care about contents; nuking c:\users\admin\projects\whimsical\node_modules\babelify\node_modules\object-assign
+146 silly gunzTarPerm modes [ '777', '666' ]
+147 silly gunzTarPerm extractEntry package.json
+148 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+149 silly gunzTarPerm extractEntry index.js
+150 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+151 silly gunzTarPerm extractEntry license
+152 silly gunzTarPerm modified mode [ 'license', 420, 438 ]
+153 silly gunzTarPerm extractEntry readme.md
+154 silly gunzTarPerm modified mode [ 'readme.md', 420, 438 ]
+155 verbose write writing to c:\users\admin\projects\whimsical\node_modules\babelify\node_modules\object-assign\package.json
+156 info preinstall object-assign@4.1.0
+157 verbose readDependencies loading dependencies from c:\users\admin\projects\whimsical\node_modules\babelify\node_modules\object-assign\package.json
+158 verbose readDependencies loading dependencies from c:\users\admin\projects\whimsical\node_modules\babelify\node_modules\object-assign\package.json
+159 silly install resolved []
+160 verbose about to build c:\users\admin\projects\whimsical\node_modules\babelify\node_modules\object-assign
+161 info build c:\users\admin\projects\whimsical\node_modules\babelify\node_modules\object-assign
+162 info linkStuff object-assign@4.1.0
+163 silly linkStuff object-assign@4.1.0 has c:\users\admin\projects\whimsical\node_modules\babelify\node_modules as its parent node_modules
+164 verbose linkBins object-assign@4.1.0
+165 verbose linkMans object-assign@4.1.0
+166 verbose rebuildBundles object-assign@4.1.0
+167 info install object-assign@4.1.0
+168 info postinstall object-assign@4.1.0
+169 verbose unlock done using C:\Users\Admin\AppData\Roaming\npm-cache\_locks\object-assign-c2fb3b7c10e62a5b.lock for c:\users\admin\projects\whimsical\node_modules\babelify\node_modules\object-assign
+170 verbose about to build c:\users\admin\projects\whimsical\node_modules\babelify
+171 info build c:\users\admin\projects\whimsical\node_modules\babelify
+172 info linkStuff babelify@7.3.0
+173 silly linkStuff babelify@7.3.0 has c:\users\admin\projects\whimsical\node_modules as its parent node_modules
+174 verbose linkBins babelify@7.3.0
+175 verbose linkMans babelify@7.3.0
+176 verbose rebuildBundles babelify@7.3.0
+177 verbose rebuildBundles [ 'object-assign' ]
+178 info install babelify@7.3.0
+179 info postinstall babelify@7.3.0
+180 verbose unlock done using C:\Users\Admin\AppData\Roaming\npm-cache\_locks\babelify-9e4f20b3a04bef62.lock for c:\users\admin\projects\whimsical\node_modules\babelify
+181 verbose validateInstall loading c:\users\admin\projects\whimsical\package.json for validation
+182 verbose stack Error: The package babel-runtime@5.8.38 does not satisfy its siblings' peerDependencies requirements!
+182 verbose stack     at c:\Program Files\nodejs\node_modules\npm\lib\install.js:125:32
+182 verbose stack     at c:\Program Files\nodejs\node_modules\npm\lib\install.js:268:7
+182 verbose stack     at c:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:142:5
+182 verbose stack     at c:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:263:14
+182 verbose stack     at cb (c:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
+182 verbose stack     at c:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:263:14
+182 verbose stack     at cb (c:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
+182 verbose stack     at c:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:263:14
+182 verbose stack     at cb (c:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
+182 verbose stack     at c:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:263:14
+183 verbose cwd c:\users\admin\projects\whimsical
+184 error Windows_NT 6.3.9600
+185 error argv "c:\\Program Files\\nodejs\\node.exe" "c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "babelify"
+186 error node v4.4.4
+187 error npm  v2.15.1
+188 error code EPEERINVALID
+189 error peerinvalid The package babel-runtime@5.8.38 does not satisfy its siblings' peerDependencies requirements!
+189 error peerinvalid Peer vueify@8.4.1 wants babel-runtime@^6.0.0
+190 verbose exit [ 1, true ]

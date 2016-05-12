@@ -1,0 +1,419 @@
+/*Global Styles*/
+
+h1, h2, h3, h4, h5, h6, p, a, li, div, span {
+    font-family: 'Raleway', sans-serif;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 75px;
+}
+
+.whimsical_wrapper {
+    margin-bottom: 120px;
+}
+
+
+
+/*Navigation Styles*/
+
+.whim_nav{
+    background-color: #FFFFFF;
+    border-bottom: #204222 solid 5px;
+}
+
+.whim_nav img {
+    width: 12%;
+    height: auto;
+    margin: 0;
+    display: inline;
+}
+
+.navbar ul {
+    margin-top: 25px;
+    font-size: 1.2em;
+    margin-bottom: 0;
+
+}
+
+.navbar-default .navbar-nav>li>a{
+    color: #B26885;
+}
+
+
+/*.navbar-brand {*/
+    /*margin-top: 20px;*/
+    /*margin-bottom: -16px;*/
+/*}*/
+
+.navbar-brand .whim_brand{
+    font-family: 'Sacramento', cursive;
+    font-size: 3em;
+    color: #B26885;
+}
+
+.navbar-brand span{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
+}
+
+.nav .active {
+    font-weight: bold;
+}
+
+/*Products Page*/
+
+.whim_products h1 {
+    text-align: center;
+    color: #B26885;
+}
+
+.products_grid div {
+    text-align: center;
+
+}
+
+.whim_products .products_grid {
+    background: rgba(23,13,17,.1) ;
+}
+
+.thumbnail {
+    margin-top: 20px;
+}
+
+.whim_products .caption {
+    background: #f8f8f8;
+}
+
+.caption a {
+    color: #633044;
+}
+
+.thumbnail:hover {
+    cursor: pointer;
+}
+
+.pagination li a{
+    color: #B26885;
+}
+
+.pagination_wrapper {
+    margin: 0, auto;
+}
+
+/*Product Pages*/
+
+.whim_product h1 {
+    /*text-align: center;*/
+    color: #B26885;
+}
+
+.whim_product .dropdown-toggle {
+    background-color: #8F707C;
+}
+
+.whim_product h4 {
+    font-weight: bold;
+}
+
+.whim_product .whim_submit {
+    background-color: #B26885;
+    color: #FFFFFF;
+}
+
+.pro_img {
+    margin-top: 20px;
+}
+
+#main_photo {
+    max-width: 100%;
+    height: auto;
+}
+
+ .thumbnail_img {
+    width: 100%;
+    height: auto;
+    margin: 10px;
+}
+
+/*About and Contact*/
+
+.about h2, .contact h2 {
+    color: #B26885;
+}
+
+.about h3 {
+    font-family: 'Sacramento', cursive;
+}
+
+.contact button {
+    background-color: #B26885;
+    color: #FFFFFF;
+}
+
+
+.contact {
+    background-color: rgba(104,178,109,.5);
+    border-radius: 10px;
+    margin: 20px 0;
+    padding-bottom: 20px;
+}
+
+
+
+/*Cart*/
+
+.cart_wrapper {
+    margin-bottom: 150px;
+}
+
+.cart_wrapper h1 {
+    text-align: center;
+}
+
+.cart_wrapper h4 {
+    color: #B26885;
+}
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 15px;
+    background-color: rgba(178,104,133,.5);
+}
+
+.cart_wrapper .row {
+    max-width: 100%;
+}
+
+.cart_wrapper .panel-heading .active{
+    background-color: rgba(178,104,133,.5);
+}
+
+
+
+.cart_pro_img, .cart_pro_info, .cart_q, .cart_pro_price {
+    display: inline-table;
+}
+
+
+
+.cart_pro_img img {
+    width: 90%;
+    height: auto;
+    border: #f8f8f8 solid 3px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    margin: 10px 10px;
+}
+
+
+.cart_pro_info {
+    margin-right: 10%;
+}
+
+.cart_pro_info h3 {
+    margin-top: 15px;
+}
+
+
+.cart_q .form-control {
+    width: 55px;
+
+}
+
+.cart_q .del_up {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.cart_q {
+    margin-right: 10%;
+}
+
+.line_divide {
+    height: 2px;
+    background-color: rgba(178,104,133,.4);
+    width: 100%;
+}
+
+.cont_ship {
+    margin: 0 10px 10px 0;
+}
+
+.cont_ship .btn {
+    background-color: #B26885;
+    color: #f8f8f8;
+    font-size: 1.2em;
+}
+
+.cont_ship .btn:hover {
+    background-color: #D17A9C ;
+}
+
+.cont_ship .modal-content h4 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.cont_ship .modal-content p {
+    font-weight: bold;
+}
+
+.ship_pro {
+    /*background-color: rgba(178,177,176,.4);*/
+}
+
+.ship_pro h4 {
+    text-align: center;
+}
+
+.total {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.ship_pay h5 {
+    margin-bottom: 10%;
+}
+
+
+
+/*Add Product*/
+
+/* layout.css Style */
+.upload-drop-zone {
+    height: 200px;
+    border-width: 2px;
+    margin-bottom: 20px;
+}
+
+/* skin.css Style*/
+.upload-drop-zone {
+    color: #ccc;
+    border-style: dashed;
+    border-color: #ccc;
+    line-height: 200px;
+    text-align: center
+}
+.upload-drop-zone.drop {
+    color: #222;
+    border-color: #222;
+}
+
+.add_pro h1 {
+    text-align: center;
+    color: #B26885;
+}
+
+.add_pro .thumbnail_img {
+    display: inline-block;
+    width: 20%;
+    border: #f8f8f8 solid 2px;
+}
+
+.add_pro .pro_sub {
+    background-color: #B26885;
+    color: #f8f8f8;
+    font-size: 1.2em;
+}
+
+/*Footer*/
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 75px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+footer h4 {
+    font-family: 'Sacramento', cursive;
+    font-size: 2em;
+    color: #B26885;
+    display: inline;
+
+    }
+
+footer .row {
+padding: 10px 10px 0 10px;
+}
+
+/*Error*/
+
+.error_page img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+.error_page a {
+    color: #B26885;
+}
+
+.error_page h1 {
+    margin-top: 10%;
+}
+
+
+/*Media Queries*/
+
+@media (max-width: 783px) {
+    .navbar-brand {
+        height: 80px;
+    }
+
+    .navbar-brand .whim_brand {
+        font-size: 1.5em;
+    }
+
+    .navbar-brand span {
+        font-size: 1em;
+    }
+
+    .error_img{
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 777px) {
+    .whim_product {
+        margin-bottom: 200px;
+    }
+
+    footer {
+        height: 150px;
+    }
+}
+
+
+
+@media (max-width: 500px) {
+    .whim_nav img {
+        display: none;
+    }
+
+    .navbar-brand {
+        margin-top: 10px;
+    }
+
+    .navbar-brand .whim_brand {
+        font-size: 2em;
+    }
+
+    .navbar-brand span {
+        font-size: 1.5em;
+    }
+}

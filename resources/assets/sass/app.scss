@@ -1,0 +1,9 @@
+// @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+@mixin btn{
+ background-color: mistyrose;
+}
+.confirm_btn{
+  @include btn;
+  color: tomato;
+}
