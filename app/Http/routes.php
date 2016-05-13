@@ -19,6 +19,12 @@ Route::group(['middleware' => ['web']], function(){
     Route::get('/', 'ProductsController@home');
     Route::get('product/{product}', 'ProductsController@show');
 
+    Route::get('events', function(){
+
+        return view('events');
+
+    });
+
 
     Route::get('contact', function(){
 
@@ -29,6 +35,7 @@ Route::group(['middleware' => ['web']], function(){
     Route::get('cart', 'CartController@showCart');
     Route::post('/cart/add', 'CartController@add');
     Route::post('/cart/remove', 'CartController@remove');
+    Route::post('/cart/update', 'CartController@update');
 
     Route::auth();
 

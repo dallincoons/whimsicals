@@ -223,6 +223,10 @@ body {
     margin-top: 15px;
 }
 
+.cart_pro_info p {
+    width: 20%;
+}
+
 
 .cart_q .form-control {
     width: 55px;
@@ -324,6 +328,68 @@ body {
     color: #f8f8f8;
     font-size: 1.2em;
 }
+
+
+/*Events*/
+
+.events_wrapper {
+    /*background: rgba(0,0,0,0.2);*/
+
+
+    background: #ee9ca7; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #B26885 , #ffdde1); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #B26885 , #ffdde1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.events_wrapper h2 {
+    color: #f8f8f8;
+    padding: 10px;
+    text-align: center;
+}
+
+.events_wrapper span {
+    font-family: Sacramento, cursive;
+    display: block;
+}
+
+.event_container {
+    background: #f8f8f8;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.event_date {
+    width: 100px;
+    height: 100px;
+    background: #B26885;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+    -webkit-box-shadow: 0px 9px 25px -4px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 9px 25px -4px rgba(0,0,0,0.5);
+    box-shadow: 0px 9px 25px -4px rgba(0,0,0,0.5);
+    border-radius: 4px;
+}
+
+.event_date h3 {
+    margin: 0;
+    color: whitesmoke;
+}
+
+.event_description p {
+    margin: 10px 20px;
+}
+
+
 
 /*Footer*/
 

@@ -12,8 +12,9 @@ class CartController extends Controller
     public function showCart()
     {
         $cartItems = Cart::content();
+        $total     = Cart::total();
 
-        return view('cart', compact('cartItems'));
+        return view('cart', compact('cartItems', 'total', 'taxes'));
 
     }
 
@@ -26,7 +27,7 @@ class CartController extends Controller
 
         $totalprice = $this->getPrice($product, $quantity);
 
-        Cart::add($product_id, 'name', $quantity, $totalprice);
+        Cart::add($product_id, $product->title, $quantity, $totalprice, ['description' => $product->description]);
 
     }
 
@@ -36,19 +37,16 @@ class CartController extends Controller
 
         Cart::remove($itemId);
 
-        $cartItems = Cart::content();
-
-        return view('cart', compact('cartItems'));
     }
 
-//    public function remove($itemId)
-//    {
-//        Cart::remove($itemId);
-//
-//        $cartItems = Cart::content();
-//
-//        return view('cart', compact('cartItems'));
-//    }
+    public function update(Request $request)
+    {
+
+        $rowid    = $request['rowid'];
+        $quantity = $request['quantity'];
+
+        Cart::update($rowid, $quantity);
+    }
 
     private function getPrice($product, $quantity)
     {

@@ -20,92 +20,30 @@
                 <div id="collapseOne" class="panel-collapse collapse in cart_detail" role="tabpanel" aria-labelledby="headingOne">
                     <div class="container">
 
-                        @foreach($cartItems as $cartItem)
-
-                        <div class="row">
+                        <div class="row" v-for="cartItem in cartItems">
                             <div class="cart_pro_img">
                                 <img src="/img/whim_roses_1.png">
                             </div>
 
                             <div class="cart_pro_info">
-                                <h4>{{$cartItem->name}}</h4>
-                                <p>A little about the product</p>
+                                <h4>@{{cartItem.name}}</h4>
+                                {{--<p>@{{cartItem.options.description}}</p>--}}
                             </div>
 
                             <div class="cart_q">
                                 <div class="input-group">
                                     <span class="input-group-addon" id="basic-addon1">Quantity</span>
-                                    <input type="text" class="form-control" placeholder="{{$cartItem->qty}}" aria-describedby="basic-addon1">
+                                    <input type="text" class="form-control" v-model="quantity[cartItem.rowid]" aria-describedby="basic-addon1" value="@{{cartItem.qty}}">
                                 </div>
+
                                 <div class="del_up">
-                                    <a>Update</a> | <a @click="deleteItem('{{$cartItem->rowid}}')">Delete</a>
-                                    {{--<a>Update</a> | <a href="/cart/remove/{{$cartItem->rowid}}">Delete</a>--}}
+                                    <a @click="updateItem(cartItem.rowid, quantity[cartItem.rowid])">Update</a> | <a @click="deleteItem(cartItem.rowid)">Delete</a>
                                 </div>
 
                             </div>
 
                             <div class="cart_pro_price">
-                                <h3>{{$cartItem->price}}</h3>
-                            </div>
-
-                            <div class="line_divide"></div>
-
-                        </div>
-
-                        @endforeach
-
-                        <div class="row">
-                            <div class="cart_pro_img">
-                                <img src="/img/whim_roses_1.png">
-                            </div>
-
-                            <div class="cart_pro_info">
-                                <h4>Product Title</h4>
-                                <p>A little about the product</p>
-                            </div>
-
-                            <div class="cart_q">
-                                <div class="input-group">
-                                    <span class="input-group-addon" id="basic-addon1">Quantity</span>
-                                    <input type="text" class="form-control" placeholder="1" aria-describedby="basic-addon1">
-                                </div>
-                                <div class="del_up">
-                                    <a>Update</a> | <a>Delete</a>
-                                </div>
-
-                            </div>
-
-                            <div class="cart_pro_price">
-                                <h3>$30.00</h3>
-                            </div>
-
-                            <div class="line_divide"></div>
-
-                        </div>
-
-                        <div class="row">
-                            <div class="cart_pro_img">
-                                <img src="/img/whim_roses_1.png">
-                            </div>
-
-                            <div class="cart_pro_info">
-                                <h4>Product Title</h4>
-                                <p>A little about the product</p>
-                            </div>
-
-                            <div class="cart_q">
-                                <div class="input-group">
-                                    <span class="input-group-addon" id="basic-addon1">Quantity</span>
-                                    <input type="text" class="form-control" placeholder="1" aria-describedby="basic-addon1">
-                                </div>
-                                <div class="del_up">
-                                    <a>Update</a> | <a>Delete</a>
-                                </div>
-
-                            </div>
-
-                            <div class="cart_pro_price">
-                                <h3>$30.00</h3>
+                                <h3>@{{cartItem.price * cartItem.qty}}</h3>
                             </div>
 
                             <div class="line_divide"></div>
@@ -113,9 +51,9 @@
                         </div>
 
                         <div class="row col-sm-offset-7">
-                            <h3>Product Total: $60.00</h3>
-                            <h4>Taxes: $5.75</h4>
-                            <h3><b>Subtotal: $65.75</b></h3>
+                            {{--<h3>Product Total: {{$total}}</h3>--}}
+                            {{--<h4>Taxes: $5.75</h4>--}}
+                            <h3><b>Subtotal: @{{total | currency}}</b></h3>
                         </div>
 
                         <div class="row">
@@ -143,27 +81,27 @@
                                 <form>
                                     <fieldset class="form-group">
                                         <label for="ship_name">First & Last Name</label>
-                                        <input type="text" class="form-control" id="ship_name" placeholder="Name">
+                                        <input type="text" class="form-control" id="ship_name" placeholder="Name" v-model="ship_name">
                                     </fieldset>
                                     <fieldset class="form-group">
                                         <label for="ship_add1">Address Line 1</label>
-                                        <input type="text" class="form-control" id="ship_add1" placeholder="Address 1">
+                                        <input type="text" class="form-control" id="ship_add1" placeholder="Address 1" v-model="address1">
                                     </fieldset>
                                     <fieldset class="form-group">
                                         <label for="ship_add2">Address Line 2 (optional)</label>
-                                        <input type="text" class="form-control" id="ship_add2" placeholder="Address 2">
+                                        <input type="text" class="form-control" id="ship_add2" placeholder="Address 2" v-model="address2">
                                     </fieldset>
                                     <fieldset class="form-group">
                                         <label for="ship_city">City</label>
-                                        <input type="text" class="form-control" id="ship_city" placeholder="City">
+                                        <input type="text" class="form-control" id="ship_city" placeholder="City" v-model="city">
                                     </fieldset>
                                     <fieldset class="form-group">
                                         <label for="ship_state">State</label>
-                                        <input type="text" class="form-control" id="ship_state" placeholder="State">
+                                        <input type="text" class="form-control" id="ship_state" placeholder="State" v-model="state">
                                     </fieldset>
                                     <fieldset class="form-group">
                                         <label for="ship_zip">Zip Code</label>
-                                        <input type="number" class="form-control" id="ship_zip" placeholder="Zip">
+                                        <input type="number" class="form-control" id="ship_zip" placeholder="Zip" v-model="zip">
                                     </fieldset>
                                 </form>
                             </div>
@@ -172,17 +110,17 @@
                                 <small>Use plugin that calculates based on location?</small>
                                 <div class="c-inputs-stacked">
                                     <label class="c-input c-radio">
-                                        <input id="shipping_exp" name="radio-stacked" type="radio">
+                                        <input id="shipping_exp" name="radio-stacked" type="radio" v-model="shipping">
                                         <span class="c-indicator"></span>
                                         Express Shipping: $20.00 (arrives in 1-2 days)
                                     </label>
                                     <label class="c-input c-radio">
-                                        <input id="shipping_stan" name="radio-stacked" type="radio">
+                                        <input id="shipping_stan" name="radio-stacked" type="radio" v-model="shipping">
                                         <span class="c-indicator"></span>
                                         Business Shipping: $7.00 (arrives in 3-5 days)
                                     </label>
                                     <label class="c-input c-radio">
-                                        <input id="shipping_slow" name="radio-stacked" type="radio">
+                                        <input id="shipping_slow" name="radio-stacked" type="radio" v-model="shipping">
                                         <span class="c-indicator"></span>
                                         Standard Shipping: $5.00 (arrives in 7-10 days)
                                     </label>
@@ -380,6 +318,6 @@
 
 </script>
 
-<cart></cart>
+<cart cart-items="{{ json_encode($cartItems)}}" total="{{$total}}"></cart>
 
 @stop

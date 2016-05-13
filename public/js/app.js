@@ -11863,6 +11863,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var Vue = require('vue');
 
+Vue.filter('subtotal', function (list) {
+
+	console.log(list);
+});
+
 new Vue({
 
 	el: '#app',
@@ -11894,18 +11899,40 @@ exports.default = {
 
     template: '#cartView',
 
+    props: ['cart-items', 'total'],
+
+    created: function created() {
+
+        this.cartItems = JSON.parse(this.cartItems);
+
+        console.log(this.total);
+    },
+
+
     methods: {
 
         deleteItem: function deleteItem(itemId) {
 
-            alert(itemId);
+            var self = this;
 
             Vue.http.post('/cart/remove', { itemId: itemId }).then(function (data) {
+
+                self.total = data.total;
+
+                location.reload();
+            });
+        },
+        updateItem: function updateItem(rowid, quantity) {
+
+            var self = this;
+
+            Vue.http.post('/cart/update', { rowid: rowid, quantity: quantity }).then(function (data) {
+
+                self.total = data.total;
 
                 location.reload();
             });
         }
-
     }
 };
 if (module.exports.__esModule) module.exports = module.exports.default

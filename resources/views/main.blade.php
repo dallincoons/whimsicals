@@ -43,7 +43,7 @@
             <div class="collapse navbar-collapse" id="whimNav">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="/" class="active">Home</a></li>
-                    <li><a href="/">All Products</a></li>
+                    <li><a href="/events">Events</a></li>
                     <li><a href="/contact">Contact</a></li>
                     <li><a href="/contact">About</a></li>
                     <li><a href="/cart"><i class="fa  fa-shopping-cart "></i> My Cart</a></li>

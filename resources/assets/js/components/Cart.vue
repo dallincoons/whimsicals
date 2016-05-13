@@ -12,20 +12,42 @@
 
         template : '#cartView',
 
+        props : ['cart-items', 'total'],
+
+        created(){
+
+            this.cartItems = JSON.parse(this.cartItems)
+
+        },
+
         methods : {
 
             deleteItem : function(itemId){
 
-                alert(itemId);
+                var self = this;
 
                 Vue.http.post('/cart/remove', {itemId : itemId}).then(function (data) {
+
+                    self.total = data.total;
+
+                    location.reload();
+
+                });
+
+            },
+            updateItem : function(rowid, quantity){
+
+                var self = this;
+
+                Vue.http.post('/cart/update', {rowid : rowid, quantity : quantity}).then(function(data){
+
+                    self.total = data.total;
 
                     location.reload();
 
                 });
 
             }
-
         }
     }
 </script>
