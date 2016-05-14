@@ -23,18 +23,20 @@
             <img src="/img/whim_roses_1.png" class="thumbnail_img">
         </div>
         <div class="col-sm-4 col-sm-offset-1">
-            <form>
+
+            <form method="POST" action="/product/add" enctype="multipart/form-data">
+
                 <fieldset class="form-group">
                     <label for="Title">Title</label>
-                    <input type="text" class="form-control" id="Title" placeholder="Adorable Apron">
+                    <input type="text" class="form-control" id="Title" name="title" placeholder="Adorable Apron">
                 </fieldset>
                 <fieldset class="form-group">
                     <label for="Price">Price</label>
-                    <input type="number" class="form-control" id="Price" placeholder="$0.00">
+                    <input type="number" class="form-control" id="Price" placeholder="$0.00" name="price">
                 </fieldset>
                 <fieldset class="form-group">
                     <label for="quantity">Quantity</label>
-                    <select class="form-control" id="quantity">
+                    <select class="form-control" id="quantity" name="quantity">
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
@@ -44,10 +46,24 @@
                 </fieldset>
                 <fieldset class="form-group">
                     <label for="description">Description</label>
-                    <textarea class="form-control" id="description" rows="3"></textarea>
+                    <textarea class="form-control" id="description" rows="3" name="description"></textarea>
                 </fieldset>
                 <button type="submit" class="btn btn-default pro_sub">Add Product</button>
+
+                {{ csrf_field() }}
+
             </form>
+
+            @if(count($errors) > 0)
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error  }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
+
         </div>
     </div>
 

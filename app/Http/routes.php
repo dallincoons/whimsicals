@@ -13,9 +13,10 @@
 
 Route::group(['middleware' => ['web']], function(){
 
-    Route::get('product/add', 'AddProductController@show');
-    Route::post('product', 'ProductsController@add');
+    Route::resource('product/add', 'AddProductController');
 
+
+    Route::post('product', 'ProductsController@add');
     Route::get('/', 'ProductsController@home');
     Route::get('product/{product}', 'ProductsController@show');
 
@@ -32,6 +33,9 @@ Route::group(['middleware' => ['web']], function(){
 
     });
 
+    /**
+     * turn into a resource
+     */
     Route::get('cart', 'CartController@showCart');
     Route::post('/cart/add', 'CartController@add');
     Route::post('/cart/remove', 'CartController@remove');

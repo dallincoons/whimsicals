@@ -6,7 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Image extends Model
 {
-    protected $fillable = ['mainphoto'];
 
     public function product()
     {

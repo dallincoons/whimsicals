@@ -148,7 +148,7 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         'Gloudemans\Shoppingcart\ShoppingcartServiceProvider',
-        Intervention\Image\Facades\Image::class,
+//        Intervention\Image\Facades\Image::class,
 
 
         /*
@@ -206,7 +206,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Stripe' => Cartalyst\Stripe\Laravel\Facades\Stripe::class,
         'Cart' => 'Gloudemans\Shoppingcart\Facades\Cart',
-        'Image' => Intervention\Image\Facades\Image::class
+//        'Image' => Intervention\Image\Facades\Image::class
 
     ],
 
