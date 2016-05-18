@@ -6,7 +6,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-4 col-sm-offset-4">
-                    <h1>Products</h1>
+                    <h1>Our Work</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1">
+                    <h3>We love making beautiful things. Each piece is carefully planned and handcrafted.
+                        Visit us at our next <a href="/events">event</a> to see all of the unique options we have, or <a href="/contact">contact us</a> for a custom quote.</h3>
                 </div>
             </div>
 
@@ -28,7 +35,6 @@
                             </a>
                             <div class="caption">
                                 <a href="/product/{{$product->id}}"><h3>{{ $product->title }}</h3></a>
-                                <a><h5>{{ $product->price }}</h5></a>
                             </div>
                         </div>
 
@@ -38,27 +44,29 @@
 
             </div>
 
-            <div class="pagination_wrapper text-center">
-                <nav>
-                    <ul class="pagination">
-                        <li>
-                            <a href="#" aria-label="Previous">
-                                <span aria-hidden="true">&laquo;</span>
-                            </a>
-                        </li>
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li>
-                            <a href="#" aria-label="Next">
-                                <span aria-hidden="true">&raquo;</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+            {{--Add Pagination if needed--}}
+
+            {{--<div class="pagination_wrapper text-center">--}}
+                {{--<nav>--}}
+                    {{--<ul class="pagination">--}}
+                        {{--<li>--}}
+                            {{--<a href="#" aria-label="Previous">--}}
+                                {{--<span aria-hidden="true">&laquo;</span>--}}
+                            {{--</a>--}}
+                        {{--</li>--}}
+                        {{--<li><a href="#">1</a></li>--}}
+                        {{--<li><a href="#">2</a></li>--}}
+                        {{--<li><a href="#">3</a></li>--}}
+                        {{--<li><a href="#">4</a></li>--}}
+                        {{--<li><a href="#">5</a></li>--}}
+                        {{--<li>--}}
+                            {{--<a href="#" aria-label="Next">--}}
+                                {{--<span aria-hidden="true">&raquo;</span>--}}
+                            {{--</a>--}}
+                        {{--</li>--}}
+                    {{--</ul>--}}
+                {{--</nav>--}}
+            {{--</div>--}}
 
         </div>
     </div>

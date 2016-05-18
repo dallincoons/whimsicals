@@ -30,4 +30,15 @@ class AddProductController extends Controller
         return redirect('/');
     }
 
+    public function addImage(Request $request)
+    {
+        $file = $request->file('file');
+
+        $name = time() . $file->getClientOriginalName();
+
+        $file->move('products/images', $name);
+
+        return 'Done';
+    }
+
 }

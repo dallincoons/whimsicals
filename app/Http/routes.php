@@ -13,18 +13,17 @@
 
 Route::group(['middleware' => ['web']], function(){
 
-    Route::resource('product/add', 'AddProductController');
+    Route::get('/', function(){
+        return view('home');
+    });
 
+    Route::resource('product/add', 'AddProductController');
+    Route::resource('events', 'EventsController');
+
+    Route::post('product/image', 'AddProductController@addImage');
 
     Route::post('product', 'ProductsController@add');
-    Route::get('/', 'ProductsController@home');
     Route::get('product/{product}', 'ProductsController@show');
-
-    Route::get('events', function(){
-
-        return view('events');
-
-    });
 
 
     Route::get('contact', function(){

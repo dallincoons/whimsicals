@@ -72,6 +72,15 @@ body {
     color: #B26885;
 }
 
+.whim_products h3 {
+    text-align: center;
+}
+
+.whim_products h3 a {
+    color: #B26885;
+    font-weight: bold;
+}
+
 .products_grid div {
     text-align: center;
 
@@ -112,13 +121,16 @@ body {
     color: #B26885;
 }
 
+
+.whim_product p a {
+    color: #B26885;
+    font-weight: bold;
+}
+
 .whim_product .dropdown-toggle {
     background-color: #8F707C;
 }
 
-.whim_product h4 {
-    font-weight: bold;
-}
 
 .whim_product .whim_submit {
     background-color: #B26885;

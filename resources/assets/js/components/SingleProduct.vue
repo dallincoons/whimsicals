@@ -16,7 +16,8 @@
 
             return {
                 id       : '',
-                quantity : 0
+                quantity : 0,
+                products : []
             }
         },
 
@@ -38,6 +39,27 @@
 
             }
 
+        },
+
+        ready(){
+
+            var self = this;
+
+            var shopClient = ShopifyBuy.buildClient({
+                apiKey: 'f0bd6bfdeb865f6b4e81eba5e6bdb361',
+                myShopifyDomain: 'dallincoons',
+                appId: '6'
+            });
+
+            shopClient.fetchQueryProducts({collection_id: 234516614})
+                    .then(function (product) {
+                        console.log(product[0].attrs);
+                        console.log(product[0].options);
+                        console.log(product[0].selectedVariant);
+
+                        self.$set('products', product);
+
+                    });
         }
     }
 

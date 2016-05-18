@@ -11904,8 +11904,6 @@ exports.default = {
     created: function created() {
 
         this.cartItems = JSON.parse(this.cartItems);
-
-        console.log(this.total);
     },
 
 
@@ -11940,7 +11938,7 @@ if (module.hot) {(function () {  module.hot.accept()
   var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), true)
   if (!hotAPI.compatible) return
-  var id = "c:\\users\\admin\\projects\\whimsical\\resources\\assets\\js\\components\\Cart.vue"
+  var id = "c:\\Users\\Admin\\Projects\\Whimsical\\resources\\assets\\js\\components\\Cart.vue"
   if (!module.hot.data) {
     hotAPI.createRecord(id, module.exports)
   } else {
@@ -11974,7 +11972,8 @@ exports.default = {
 
         return {
             id: '',
-            quantity: 0
+            quantity: 0,
+            products: []
         };
     },
 
@@ -11995,6 +11994,25 @@ exports.default = {
             _cartStore2.default.add(this.product_id, this.quantity);
         }
 
+    },
+
+    ready: function ready() {
+
+        var self = this;
+
+        var shopClient = ShopifyBuy.buildClient({
+            apiKey: 'f0bd6bfdeb865f6b4e81eba5e6bdb361',
+            myShopifyDomain: 'dallincoons',
+            appId: '6'
+        });
+
+        shopClient.fetchQueryProducts({ collection_id: 234516614 }).then(function (product) {
+            console.log(product[0].attrs);
+            console.log(product[0].options);
+            console.log(product[0].selectedVariant);
+
+            self.$set('products', product);
+        });
     }
 };
 if (module.exports.__esModule) module.exports = module.exports.default
@@ -12002,7 +12020,7 @@ if (module.hot) {(function () {  module.hot.accept()
   var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), true)
   if (!hotAPI.compatible) return
-  var id = "c:\\users\\admin\\projects\\whimsical\\resources\\assets\\js\\components\\SingleProduct.vue"
+  var id = "c:\\Users\\Admin\\Projects\\Whimsical\\resources\\assets\\js\\components\\SingleProduct.vue"
   if (!module.hot.data) {
     hotAPI.createRecord(id, module.exports)
   } else {

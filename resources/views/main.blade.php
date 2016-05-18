@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="description" content="Whimsicals by MarDee is a boutique full of beautiful handmade crafts.">
+    <meta charset="UTF-8">
+    <meta name="description" content="Whimsicals by MarDee is a boutique full of beautiful handmade crafts.">
 
     <title>Whimsicals by MarDee</title>
 
@@ -26,7 +26,8 @@
 
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#whimNav" aria-expanded="false">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#whimNav"
+                        aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -44,9 +45,10 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="/" class="active">Home</a></li>
                     <li><a href="/events">Events</a></li>
+                    <li><a href="/">Our Work</a></li>
                     <li><a href="/contact">Contact</a></li>
                     <li><a href="/contact">About</a></li>
-                    <li><a href="/cart"><i class="fa  fa-shopping-cart "></i> My Cart</a></li>
+                    {{--<li><a href="/cart"><i class="fa  fa-shopping-cart "></i> My Cart</a></li>--}}
                     @if(Auth::guest())
                         {{--<li><a href="/login">Login</a></li>--}}
                     @else
@@ -98,20 +100,76 @@
     <meta id="token" name="token" value="{{ csrf_token() }}">
 
 </div>
+<script src="http://sdks.shopifycdn.com/js-buy-sdk/latest/shopify-buy.polyfilled.globals.js"></script>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/0.7.0/vue-resource.js"></script>
-    <script src="/js/bs_js/bootstrap.min.js"></script>
-    <script src="/js/app.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-    @yield('scripts.footer')
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/0.7.0/vue-resource.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/dropzone.js"></script>
+
+<script src="/js/bs_js/bootstrap.min.js"></script>
+<script src="/js/app.js"></script>
+
+
+
+
+@yield('scripts.footer')
+
+<script>
+//    Dropzone.options.uploadImages = {
+//        autoProcessQueue   : false,
+//        uploadMultiple     : true,
+//        parallelUploads    : 4,
+//        dictDefaultMessage : 'Just drag and drop photos here',
+//        previewsContainer : '#previewsContainer'
+//    };
+
+</script>
+
+<script>
+//    var shopClient = ShopifyBuy.buildClient({
+//        apiKey: 'f0bd6bfdeb865f6b4e81eba5e6bdb361',
+//        myShopifyDomain: 'dallincoons',
+//        appId: '6'
+//    });
+//
+//    shopClient.fetchQueryProducts({collection_id: 234516614})
+//            .then(function (product) {
+//                console.log(product[0].attrs);
+//                console.log(product[0].options);
+//                console.log(product[0].selectedVariant);
+//
+//                shopClient.createCart({id: 123, quantity: 1}).then(function (newCart) {
+//
+//                    // do something with updated cart
+//
+////        cart.addVariants({variant: product.selectedVariant, quantity: 1}).then(function (cart) {
+////            // do something with updated cart
+////        });
+//
+//                    newCart.addVariants({product_id: 6303234566, quantity : 1, variant : product[0].selectedVariant}).then(function(cart){
+//
+//                        console.log(cart.lineItems);
+//
+////                        document.location.href = cart.checkoutUrl;
+//
+//                    });
+//
+//
+//                });
+//
+//            })
+//            .catch(function () {
+//                console.log('Request failed');
+//            });
+
+</script>
+
 
 <script>
 
 
-    $(".thumbnail_img").click(function() {
+    $(".thumbnail_img").click(function () {
 
         var thumbnail_src = $(this).attr('src');
 

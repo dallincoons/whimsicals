@@ -2,374 +2,1589 @@
 1 verbose cli [ 'c:\\Program Files\\nodejs\\node.exe',
 1 verbose cli   'c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
 1 verbose cli   'install',
-1 verbose cli   'babelify' ]
+1 verbose cli   'shopify-buy',
+1 verbose cli   '--save-dev' ]
 2 info using npm@2.15.1
 3 info using node@v4.4.4
-4 verbose install initial load of c:\users\admin\projects\whimsical\package.json
-5 verbose installManyTop reading scoped package data from c:\users\admin\projects\whimsical\node_modules\babel-core\package.json
-6 verbose installManyTop reading scoped package data from c:\users\admin\projects\whimsical\node_modules\babel-plugin-transform-runtime\package.json
-7 verbose installManyTop reading scoped package data from c:\users\admin\projects\whimsical\node_modules\babel-preset-es2015\package.json
-8 verbose installManyTop reading scoped package data from c:\users\admin\projects\whimsical\node_modules\babel-preset-react\package.json
-9 verbose installManyTop reading scoped package data from c:\users\admin\projects\whimsical\node_modules\babel-runtime\package.json
-10 verbose installManyTop reading scoped package data from c:\users\admin\projects\whimsical\node_modules\babelify\package.json
-11 verbose installManyTop reading scoped package data from c:\users\admin\projects\whimsical\node_modules\bootstrap-sass\package.json
-12 verbose installManyTop reading scoped package data from c:\users\admin\projects\whimsical\node_modules\browserify\package.json
-13 verbose installManyTop reading scoped package data from c:\users\admin\projects\whimsical\node_modules\gulp\package.json
-14 verbose installManyTop reading scoped package data from c:\users\admin\projects\whimsical\node_modules\gulp-babel\package.json
-15 verbose installManyTop reading scoped package data from c:\users\admin\projects\whimsical\node_modules\gutil\package.json
-16 verbose installManyTop reading scoped package data from c:\users\admin\projects\whimsical\node_modules\laravel-elixir\package.json
-17 verbose installManyTop reading scoped package data from c:\users\admin\projects\whimsical\node_modules\laravel-elixir-browserify\package.json
-18 verbose installManyTop reading scoped package data from c:\users\admin\projects\whimsical\node_modules\laravel-elixir-vueify\package.json
-19 verbose installManyTop reading scoped package data from c:\users\admin\projects\whimsical\node_modules\lodash.assign\package.json
-20 verbose installManyTop reading scoped package data from c:\users\admin\projects\whimsical\node_modules\node-notifier\package.json
-21 verbose installManyTop reading scoped package data from c:\users\admin\projects\whimsical\node_modules\vinyl-buffer\package.json
-22 verbose installManyTop reading scoped package data from c:\users\admin\projects\whimsical\node_modules\vinyl-source-stream\package.json
-23 verbose installManyTop reading scoped package data from c:\users\admin\projects\whimsical\node_modules\vue\package.json
-24 verbose installManyTop reading scoped package data from c:\users\admin\projects\whimsical\node_modules\vue-hot-reload-api\package.json
-25 verbose installManyTop reading scoped package data from c:\users\admin\projects\whimsical\node_modules\vue-resource\package.json
-26 verbose installManyTop reading scoped package data from c:\users\admin\projects\whimsical\node_modules\vueify\package.json
-27 verbose installManyTop reading scoped package data from c:\users\admin\projects\whimsical\node_modules\vueify-insert-css\package.json
-28 verbose installManyTop reading scoped package data from c:\users\admin\projects\whimsical\node_modules\watchify\package.json
-29 verbose installManyTop reading scoped package data from c:\users\admin\projects\whimsical\node_modules\webpack-stream\package.json
+4 verbose install initial load of c:\Users\Admin\Projects\Whimsical\package.json
+5 verbose installManyTop reading scoped package data from c:\Users\Admin\Projects\Whimsical\node_modules\babel-core\package.json
+6 verbose installManyTop reading scoped package data from c:\Users\Admin\Projects\Whimsical\node_modules\babel-plugin-transform-runtime\package.json
+7 verbose installManyTop reading scoped package data from c:\Users\Admin\Projects\Whimsical\node_modules\babel-preset-es2015\package.json
+8 verbose installManyTop reading scoped package data from c:\Users\Admin\Projects\Whimsical\node_modules\babel-preset-react\package.json
+9 verbose installManyTop reading scoped package data from c:\Users\Admin\Projects\Whimsical\node_modules\babel-runtime\package.json
+10 verbose installManyTop reading scoped package data from c:\Users\Admin\Projects\Whimsical\node_modules\babelify\package.json
+11 verbose installManyTop reading scoped package data from c:\Users\Admin\Projects\Whimsical\node_modules\bootstrap-sass\package.json
+12 verbose installManyTop reading scoped package data from c:\Users\Admin\Projects\Whimsical\node_modules\browserify\package.json
+13 verbose installManyTop reading scoped package data from c:\Users\Admin\Projects\Whimsical\node_modules\gulp\package.json
+14 verbose installManyTop reading scoped package data from c:\Users\Admin\Projects\Whimsical\node_modules\gulp-babel\package.json
+15 verbose installManyTop reading scoped package data from c:\Users\Admin\Projects\Whimsical\node_modules\gutil\package.json
+16 verbose installManyTop reading scoped package data from c:\Users\Admin\Projects\Whimsical\node_modules\laravel-elixir\package.json
+17 verbose installManyTop reading scoped package data from c:\Users\Admin\Projects\Whimsical\node_modules\laravel-elixir-browserify\package.json
+18 verbose installManyTop reading scoped package data from c:\Users\Admin\Projects\Whimsical\node_modules\laravel-elixir-vueify\package.json
+19 verbose installManyTop reading scoped package data from c:\Users\Admin\Projects\Whimsical\node_modules\lodash.assign\package.json
+20 verbose installManyTop reading scoped package data from c:\Users\Admin\Projects\Whimsical\node_modules\node-notifier\package.json
+21 verbose installManyTop reading scoped package data from c:\Users\Admin\Projects\Whimsical\node_modules\vinyl-buffer\package.json
+22 verbose installManyTop reading scoped package data from c:\Users\Admin\Projects\Whimsical\node_modules\vinyl-source-stream\package.json
+23 verbose installManyTop reading scoped package data from c:\Users\Admin\Projects\Whimsical\node_modules\vue\package.json
+24 verbose installManyTop reading scoped package data from c:\Users\Admin\Projects\Whimsical\node_modules\vue-hot-reload-api\package.json
+25 verbose installManyTop reading scoped package data from c:\Users\Admin\Projects\Whimsical\node_modules\vue-resource\package.json
+26 verbose installManyTop reading scoped package data from c:\Users\Admin\Projects\Whimsical\node_modules\vueify\package.json
+27 verbose installManyTop reading scoped package data from c:\Users\Admin\Projects\Whimsical\node_modules\vueify-insert-css\package.json
+28 verbose installManyTop reading scoped package data from c:\Users\Admin\Projects\Whimsical\node_modules\watchify\package.json
+29 verbose installManyTop reading scoped package data from c:\Users\Admin\Projects\Whimsical\node_modules\webpack-stream\package.json
 30 info package.json gutil@1.6.4 No repository field.
 31 info package.json gutil@1.6.4 No license field.
-32 verbose readDependencies loading dependencies from c:\users\admin\projects\whimsical\package.json
-33 verbose install babelify is installed as 7.3.0
-34 silly cache add args [ 'babelify', null ]
-35 verbose cache add spec babelify
-36 silly cache add parsed spec Result {
-36 silly cache add   raw: 'babelify',
-36 silly cache add   scope: null,
-36 silly cache add   name: 'babelify',
-36 silly cache add   rawSpec: '',
-36 silly cache add   spec: 'latest',
-36 silly cache add   type: 'tag' }
-37 silly addNamed babelify@latest
-38 verbose addNamed "latest" is being treated as a dist-tag for babelify
-39 info addNameTag [ 'babelify', 'latest' ]
-40 silly mapToRegistry name babelify
-41 silly mapToRegistry using default registry
-42 silly mapToRegistry registry https://registry.npmjs.org/
-43 silly mapToRegistry data Result {
-43 silly mapToRegistry   raw: 'babelify',
-43 silly mapToRegistry   scope: null,
-43 silly mapToRegistry   name: 'babelify',
-43 silly mapToRegistry   rawSpec: '',
-43 silly mapToRegistry   spec: 'latest',
-43 silly mapToRegistry   type: 'tag' }
-44 silly mapToRegistry uri https://registry.npmjs.org/babelify
-45 verbose addNameTag registry:https://registry.npmjs.org/babelify not in flight; fetching
-46 verbose request uri https://registry.npmjs.org/babelify
-47 verbose request no auth needed
-48 info attempt registry request try #1 at 7:59:37 AM
-49 verbose request id 9c2da35004bc3646
-50 verbose etag "6D9KLNOUOPMEZ5USHT75PN42E"
-51 http request GET https://registry.npmjs.org/babelify
-52 http 304 https://registry.npmjs.org/babelify
-53 verbose headers { date: 'Wed, 11 May 2016 14:59:40 GMT',
-53 verbose headers   via: '1.1 varnish',
-53 verbose headers   'cache-control': 'max-age=300',
-53 verbose headers   etag: '"6D9KLNOUOPMEZ5USHT75PN42E"',
-53 verbose headers   age: '153',
-53 verbose headers   connection: 'keep-alive',
-53 verbose headers   'x-served-by': 'cache-sjc3135-SJC',
-53 verbose headers   'x-cache': 'HIT',
-53 verbose headers   'x-cache-hits': '1',
-53 verbose headers   'x-timer': 'S1462978780.945244,VS0,VE0',
-53 verbose headers   vary: 'Accept-Encoding' }
-54 silly get cb [ 304,
-54 silly get   { date: 'Wed, 11 May 2016 14:59:40 GMT',
-54 silly get     via: '1.1 varnish',
-54 silly get     'cache-control': 'max-age=300',
-54 silly get     etag: '"6D9KLNOUOPMEZ5USHT75PN42E"',
-54 silly get     age: '153',
-54 silly get     connection: 'keep-alive',
-54 silly get     'x-served-by': 'cache-sjc3135-SJC',
-54 silly get     'x-cache': 'HIT',
-54 silly get     'x-cache-hits': '1',
-54 silly get     'x-timer': 'S1462978780.945244,VS0,VE0',
-54 silly get     vary: 'Accept-Encoding' } ]
-55 verbose etag https://registry.npmjs.org/babelify from cache
-56 verbose get saving babelify to C:\Users\Admin\AppData\Roaming\npm-cache\registry.npmjs.org\babelify\.cache.json
-57 verbose correctMkdir C:\Users\Admin\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-58 silly addNameTag next cb for babelify with tag latest
-59 silly addNamed babelify@7.3.0
-60 verbose addNamed "7.3.0" is a plain semver version for babelify
-61 silly cache afterAdd babelify@7.3.0
-62 verbose afterAdd C:\Users\Admin\AppData\Roaming\npm-cache\babelify\7.3.0\package\package.json not in flight; writing
-63 verbose correctMkdir C:\Users\Admin\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-64 verbose afterAdd C:\Users\Admin\AppData\Roaming\npm-cache\babelify\7.3.0\package\package.json written
-65 silly install resolved [ { name: 'babelify',
-65 silly install resolved     description: 'Babel browserify transform',
-65 silly install resolved     version: '7.3.0',
-65 silly install resolved     author: { name: 'Sebastian McKenzie', email: 'sebmck@gmail.com' },
-65 silly install resolved     license: 'MIT',
-65 silly install resolved     homepage: 'https://github.com/babel/babelify',
-65 silly install resolved     repository:
-65 silly install resolved      { type: 'git',
-65 silly install resolved        url: 'git+https://github.com/babel/babelify.git' },
-65 silly install resolved     bugs: { url: 'https://github.com/babel/babelify/issues' },
-65 silly install resolved     dependencies: { 'babel-core': '^6.0.14', 'object-assign': '^4.0.0' },
-65 silly install resolved     devDependencies:
-65 silly install resolved      { 'babel-plugin-transform-es3-property-literals': '^6.0.14',
-65 silly install resolved        'babel-plugin-transform-node-env-inline': '^6.0.14',
-65 silly install resolved        'babel-plugin-transform-react-display-name': '^6.0.14',
-65 silly install resolved        'babel-plugin-undeclared-variables-check': '^6.0.14',
-65 silly install resolved        'babel-preset-es2015': '^6.0.14',
-65 silly install resolved        'babel-preset-react': '^6.0.14',
-65 silly install resolved        browserify: '^13.0.0',
-65 silly install resolved        'convert-source-map': '^1.1.0',
-65 silly install resolved        'lodash.zipobject': '^4.1.3',
-65 silly install resolved        'path-is-absolute': '^1.0.0',
-65 silly install resolved        tap: '^5.7.1' },
-65 silly install resolved     scripts: { test: 'tap test/*.js' },
-65 silly install resolved     gitHead: '27282793d1a4819e7e44a33540a84792f1f79dd9',
-65 silly install resolved     _id: 'babelify@7.3.0',
-65 silly install resolved     _shasum: 'aa56aede7067fd7bd549666ee16dc285087e88e5',
-65 silly install resolved     _from: 'babelify@latest',
-65 silly install resolved     _npmVersion: '3.8.6',
-65 silly install resolved     _nodeVersion: '5.11.0',
-65 silly install resolved     _npmUser: { name: 'zertosh', email: 'zertosh@gmail.com' },
-65 silly install resolved     dist:
-65 silly install resolved      { shasum: 'aa56aede7067fd7bd549666ee16dc285087e88e5',
-65 silly install resolved        tarball: 'https://registry.npmjs.org/babelify/-/babelify-7.3.0.tgz' },
-65 silly install resolved     maintainers: [ [Object], [Object] ],
-65 silly install resolved     _npmOperationalInternal:
-65 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
-65 silly install resolved        tmp: 'tmp/babelify-7.3.0.tgz_1461659111735_0.7071558302268386' },
-65 silly install resolved     directories: {},
-65 silly install resolved     _resolved: 'https://registry.npmjs.org/babelify/-/babelify-7.3.0.tgz',
-65 silly install resolved     readme: 'ERROR: No README data found!' } ]
-66 info install babelify@7.3.0 into c:\users\admin\projects\whimsical
-67 info installOne babelify@7.3.0
-68 verbose installOne of babelify to c:\users\admin\projects\whimsical not in flight; installing
-69 verbose correctMkdir C:\Users\Admin\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
-70 verbose lock using C:\Users\Admin\AppData\Roaming\npm-cache\_locks\babelify-9e4f20b3a04bef62.lock for c:\users\admin\projects\whimsical\node_modules\babelify
-71 silly install write writing babelify 7.3.0 to c:\users\admin\projects\whimsical\node_modules\babelify
-72 verbose unbuild node_modules\babelify
-73 info preuninstall babelify@7.3.0
-74 info uninstall babelify@7.3.0
-75 verbose unbuild rmStuff babelify@7.3.0 from c:\users\admin\projects\whimsical\node_modules
-76 info postuninstall babelify@7.3.0
-77 silly gentlyRm c:\users\admin\projects\whimsical\node_modules\babelify is being purged from base c:\users\admin\projects\whimsical
-78 verbose gentlyRm don't care about contents; nuking c:\users\admin\projects\whimsical\node_modules\babelify
-79 silly vacuum-fs purging c:\users\admin\projects\whimsical\node_modules\babelify
-80 silly vacuum-fs quitting because other entries in c:\users\admin\projects\whimsical\node_modules
-81 verbose tar unpack C:\Users\Admin\AppData\Roaming\npm-cache\babelify\7.3.0\package.tgz
-82 verbose tar unpacking to c:\users\admin\projects\whimsical\node_modules\babelify
-83 silly gentlyRm c:\users\admin\projects\whimsical\node_modules\babelify is being purged
-84 verbose gentlyRm don't care about contents; nuking c:\users\admin\projects\whimsical\node_modules\babelify
-85 silly gunzTarPerm modes [ '777', '666' ]
-86 silly gunzTarPerm extractEntry package.json
-87 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
-88 silly gunzTarPerm extractEntry .npmignore
-89 silly gunzTarPerm modified mode [ '.npmignore', 384, 438 ]
-90 silly gunzTarPerm extractEntry README.md
-91 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
-92 silly gunzTarPerm extractEntry LICENSE
-93 silly gunzTarPerm modified mode [ 'LICENSE', 384, 438 ]
-94 silly gunzTarPerm extractEntry index.js
-95 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
-96 verbose write writing to c:\users\admin\projects\whimsical\node_modules\babelify\package.json
-97 info preinstall babelify@7.3.0
-98 verbose readDependencies loading dependencies from c:\users\admin\projects\whimsical\node_modules\babelify\package.json
-99 silly prepareForInstallMany adding object-assign@^4.0.0 from babelify dependencies
-100 verbose readDependencies loading dependencies from c:\users\admin\projects\whimsical\node_modules\babelify\package.json
-101 silly cache add args [ 'object-assign@^4.0.0', null ]
-102 verbose cache add spec object-assign@^4.0.0
-103 silly cache add parsed spec Result {
-103 silly cache add   raw: 'object-assign@^4.0.0',
-103 silly cache add   scope: null,
-103 silly cache add   name: 'object-assign',
-103 silly cache add   rawSpec: '^4.0.0',
-103 silly cache add   spec: '>=4.0.0 <5.0.0',
-103 silly cache add   type: 'range' }
-104 silly addNamed object-assign@>=4.0.0 <5.0.0
-105 verbose addNamed ">=4.0.0 <5.0.0" is a valid semver range for object-assign
-106 silly addNameRange { name: 'object-assign',
-106 silly addNameRange   range: '>=4.0.0 <5.0.0',
-106 silly addNameRange   hasData: false }
-107 silly mapToRegistry name object-assign
-108 silly mapToRegistry using default registry
-109 silly mapToRegistry registry https://registry.npmjs.org/
-110 silly mapToRegistry data Result {
-110 silly mapToRegistry   raw: 'object-assign',
-110 silly mapToRegistry   scope: null,
-110 silly mapToRegistry   name: 'object-assign',
-110 silly mapToRegistry   rawSpec: '',
-110 silly mapToRegistry   spec: 'latest',
-110 silly mapToRegistry   type: 'tag' }
-111 silly mapToRegistry uri https://registry.npmjs.org/object-assign
-112 verbose addNameRange registry:https://registry.npmjs.org/object-assign not in flight; fetching
-113 verbose request uri https://registry.npmjs.org/object-assign
-114 verbose request no auth needed
-115 info attempt registry request try #1 at 7:59:37 AM
-116 verbose etag "306VXDXQ7C0F3IQRIK18GIP6D"
-117 http request GET https://registry.npmjs.org/object-assign
-118 http 304 https://registry.npmjs.org/object-assign
-119 verbose headers { date: 'Wed, 11 May 2016 14:59:41 GMT',
-119 verbose headers   via: '1.1 varnish',
-119 verbose headers   'cache-control': 'max-age=300',
-119 verbose headers   etag: '"306VXDXQ7C0F3IQRIK18GIP6D"',
-119 verbose headers   age: '200',
-119 verbose headers   connection: 'keep-alive',
-119 verbose headers   'x-served-by': 'cache-sjc3135-SJC',
-119 verbose headers   'x-cache': 'HIT',
-119 verbose headers   'x-cache-hits': '15',
-119 verbose headers   'x-timer': 'S1462978781.142350,VS0,VE0',
-119 verbose headers   vary: 'Accept-Encoding' }
-120 silly get cb [ 304,
-120 silly get   { date: 'Wed, 11 May 2016 14:59:41 GMT',
-120 silly get     via: '1.1 varnish',
-120 silly get     'cache-control': 'max-age=300',
-120 silly get     etag: '"306VXDXQ7C0F3IQRIK18GIP6D"',
-120 silly get     age: '200',
-120 silly get     connection: 'keep-alive',
-120 silly get     'x-served-by': 'cache-sjc3135-SJC',
-120 silly get     'x-cache': 'HIT',
-120 silly get     'x-cache-hits': '15',
-120 silly get     'x-timer': 'S1462978781.142350,VS0,VE0',
-120 silly get     vary: 'Accept-Encoding' } ]
-121 verbose etag https://registry.npmjs.org/object-assign from cache
-122 verbose get saving object-assign to C:\Users\Admin\AppData\Roaming\npm-cache\registry.npmjs.org\object-assign\.cache.json
-123 verbose correctMkdir C:\Users\Admin\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-124 silly addNameRange number 2 { name: 'object-assign', range: '>=4.0.0 <5.0.0', hasData: true }
-125 silly addNameRange versions [ 'object-assign',
-125 silly addNameRange   [ '0.1.0',
-125 silly addNameRange     '0.1.1',
-125 silly addNameRange     '0.1.2',
-125 silly addNameRange     '0.2.0',
-125 silly addNameRange     '0.2.1',
-125 silly addNameRange     '0.2.2',
-125 silly addNameRange     '0.3.0',
-125 silly addNameRange     '0.3.1',
-125 silly addNameRange     '0.4.0',
-125 silly addNameRange     '1.0.0',
-125 silly addNameRange     '2.0.0',
-125 silly addNameRange     '3.0.0',
-125 silly addNameRange     '2.1.1',
-125 silly addNameRange     '4.0.0',
-125 silly addNameRange     '4.0.1',
-125 silly addNameRange     '4.1.0' ] ]
-126 silly addNamed object-assign@4.1.0
-127 verbose addNamed "4.1.0" is a plain semver version for object-assign
-128 silly cache afterAdd object-assign@4.1.0
-129 verbose afterAdd C:\Users\Admin\AppData\Roaming\npm-cache\object-assign\4.1.0\package\package.json not in flight; writing
-130 verbose correctMkdir C:\Users\Admin\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-131 verbose afterAdd C:\Users\Admin\AppData\Roaming\npm-cache\object-assign\4.1.0\package\package.json written
-132 silly install resolved [ { name: 'object-assign',
-132 silly install resolved     version: '4.1.0',
-132 silly install resolved     description: 'ES2015 Object.assign() ponyfill',
-132 silly install resolved     license: 'MIT',
-132 silly install resolved     repository:
-132 silly install resolved      { type: 'git',
-132 silly install resolved        url: 'git+https://github.com/sindresorhus/object-assign.git' },
-132 silly install resolved     author:
-132 silly install resolved      { name: 'Sindre Sorhus',
-132 silly install resolved        email: 'sindresorhus@gmail.com',
-132 silly install resolved        url: 'sindresorhus.com' },
-132 silly install resolved     engines: { node: '>=0.10.0' },
-132 silly install resolved     scripts: { test: 'xo && mocha', bench: 'matcha bench.js' },
-132 silly install resolved     files: [ 'index.js' ],
-132 silly install resolved     keywords:
-132 silly install resolved      [ 'object',
-132 silly install resolved        'assign',
-132 silly install resolved        'extend',
-132 silly install resolved        'properties',
-132 silly install resolved        'es2015',
-132 silly install resolved        'ecmascript',
-132 silly install resolved        'harmony',
-132 silly install resolved        'ponyfill',
-132 silly install resolved        'prollyfill',
-132 silly install resolved        'polyfill',
-132 silly install resolved        'shim',
-132 silly install resolved        'browser' ],
-132 silly install resolved     devDependencies: { lodash: '^4.8.2', matcha: '^0.7.0', mocha: '*', xo: '*' },
-132 silly install resolved     gitHead: '72fe21c86911758f3342fdf41c2a57860d5829bc',
-132 silly install resolved     bugs: { url: 'https://github.com/sindresorhus/object-assign/issues' },
-132 silly install resolved     homepage: 'https://github.com/sindresorhus/object-assign#readme',
-132 silly install resolved     _id: 'object-assign@4.1.0',
-132 silly install resolved     _shasum: '7a3b3d0e98063d43f4c03f2e8ae6cd51a86883a0',
-132 silly install resolved     _from: 'object-assign@>=4.0.0 <5.0.0',
-132 silly install resolved     _npmVersion: '2.14.19',
-132 silly install resolved     _nodeVersion: '4.1.0',
-132 silly install resolved     _npmUser: { name: 'spicyj', email: 'ben@benalpert.com' },
-132 silly install resolved     maintainers: [ [Object], [Object] ],
-132 silly install resolved     dist:
-132 silly install resolved      { shasum: '7a3b3d0e98063d43f4c03f2e8ae6cd51a86883a0',
-132 silly install resolved        tarball: 'https://registry.npmjs.org/object-assign/-/object-assign-4.1.0.tgz' },
-132 silly install resolved     _npmOperationalInternal:
-132 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
-132 silly install resolved        tmp: 'tmp/object-assign-4.1.0.tgz_1462212593641_0.3332549517508596' },
-132 silly install resolved     directories: {},
-132 silly install resolved     _resolved: 'https://registry.npmjs.org/object-assign/-/object-assign-4.1.0.tgz',
-132 silly install resolved     readme: 'ERROR: No README data found!' } ]
-133 info install object-assign@4.1.0 into c:\users\admin\projects\whimsical\node_modules\babelify
-134 info installOne object-assign@4.1.0
-135 verbose installOne of object-assign to c:\users\admin\projects\whimsical\node_modules\babelify not in flight; installing
-136 verbose correctMkdir C:\Users\Admin\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
-137 verbose lock using C:\Users\Admin\AppData\Roaming\npm-cache\_locks\object-assign-c2fb3b7c10e62a5b.lock for c:\users\admin\projects\whimsical\node_modules\babelify\node_modules\object-assign
-138 silly install write writing object-assign 4.1.0 to c:\users\admin\projects\whimsical\node_modules\babelify\node_modules\object-assign
-139 verbose unbuild node_modules\babelify\node_modules\object-assign
-140 silly gentlyRm c:\users\admin\projects\whimsical\node_modules\babelify\node_modules\object-assign is being purged from base c:\users\admin\projects\whimsical
-141 verbose gentlyRm don't care about contents; nuking c:\users\admin\projects\whimsical\node_modules\babelify\node_modules\object-assign
-142 verbose tar unpack C:\Users\Admin\AppData\Roaming\npm-cache\object-assign\4.1.0\package.tgz
-143 verbose tar unpacking to c:\users\admin\projects\whimsical\node_modules\babelify\node_modules\object-assign
-144 silly gentlyRm c:\users\admin\projects\whimsical\node_modules\babelify\node_modules\object-assign is being purged
-145 verbose gentlyRm don't care about contents; nuking c:\users\admin\projects\whimsical\node_modules\babelify\node_modules\object-assign
-146 silly gunzTarPerm modes [ '777', '666' ]
-147 silly gunzTarPerm extractEntry package.json
-148 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
-149 silly gunzTarPerm extractEntry index.js
-150 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
-151 silly gunzTarPerm extractEntry license
-152 silly gunzTarPerm modified mode [ 'license', 420, 438 ]
-153 silly gunzTarPerm extractEntry readme.md
-154 silly gunzTarPerm modified mode [ 'readme.md', 420, 438 ]
-155 verbose write writing to c:\users\admin\projects\whimsical\node_modules\babelify\node_modules\object-assign\package.json
-156 info preinstall object-assign@4.1.0
-157 verbose readDependencies loading dependencies from c:\users\admin\projects\whimsical\node_modules\babelify\node_modules\object-assign\package.json
-158 verbose readDependencies loading dependencies from c:\users\admin\projects\whimsical\node_modules\babelify\node_modules\object-assign\package.json
-159 silly install resolved []
-160 verbose about to build c:\users\admin\projects\whimsical\node_modules\babelify\node_modules\object-assign
-161 info build c:\users\admin\projects\whimsical\node_modules\babelify\node_modules\object-assign
-162 info linkStuff object-assign@4.1.0
-163 silly linkStuff object-assign@4.1.0 has c:\users\admin\projects\whimsical\node_modules\babelify\node_modules as its parent node_modules
-164 verbose linkBins object-assign@4.1.0
-165 verbose linkMans object-assign@4.1.0
-166 verbose rebuildBundles object-assign@4.1.0
-167 info install object-assign@4.1.0
-168 info postinstall object-assign@4.1.0
-169 verbose unlock done using C:\Users\Admin\AppData\Roaming\npm-cache\_locks\object-assign-c2fb3b7c10e62a5b.lock for c:\users\admin\projects\whimsical\node_modules\babelify\node_modules\object-assign
-170 verbose about to build c:\users\admin\projects\whimsical\node_modules\babelify
-171 info build c:\users\admin\projects\whimsical\node_modules\babelify
-172 info linkStuff babelify@7.3.0
-173 silly linkStuff babelify@7.3.0 has c:\users\admin\projects\whimsical\node_modules as its parent node_modules
-174 verbose linkBins babelify@7.3.0
-175 verbose linkMans babelify@7.3.0
-176 verbose rebuildBundles babelify@7.3.0
-177 verbose rebuildBundles [ 'object-assign' ]
-178 info install babelify@7.3.0
-179 info postinstall babelify@7.3.0
-180 verbose unlock done using C:\Users\Admin\AppData\Roaming\npm-cache\_locks\babelify-9e4f20b3a04bef62.lock for c:\users\admin\projects\whimsical\node_modules\babelify
-181 verbose validateInstall loading c:\users\admin\projects\whimsical\package.json for validation
-182 verbose stack Error: The package babel-runtime@5.8.38 does not satisfy its siblings' peerDependencies requirements!
-182 verbose stack     at c:\Program Files\nodejs\node_modules\npm\lib\install.js:125:32
-182 verbose stack     at c:\Program Files\nodejs\node_modules\npm\lib\install.js:268:7
-182 verbose stack     at c:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:142:5
-182 verbose stack     at c:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:263:14
-182 verbose stack     at cb (c:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
-182 verbose stack     at c:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:263:14
-182 verbose stack     at cb (c:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
-182 verbose stack     at c:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:263:14
-182 verbose stack     at cb (c:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
-182 verbose stack     at c:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:263:14
-183 verbose cwd c:\users\admin\projects\whimsical
-184 error Windows_NT 6.3.9600
-185 error argv "c:\\Program Files\\nodejs\\node.exe" "c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "babelify"
-186 error node v4.4.4
-187 error npm  v2.15.1
-188 error code EPEERINVALID
-189 error peerinvalid The package babel-runtime@5.8.38 does not satisfy its siblings' peerDependencies requirements!
-189 error peerinvalid Peer vueify@8.4.1 wants babel-runtime@^6.0.0
-190 verbose exit [ 1, true ]
+32 verbose readDependencies loading dependencies from c:\Users\Admin\Projects\Whimsical\package.json
+33 silly cache add args [ 'shopify-buy', null ]
+34 verbose cache add spec shopify-buy
+35 silly cache add parsed spec Result {
+35 silly cache add   raw: 'shopify-buy',
+35 silly cache add   scope: null,
+35 silly cache add   name: 'shopify-buy',
+35 silly cache add   rawSpec: '',
+35 silly cache add   spec: 'latest',
+35 silly cache add   type: 'tag' }
+36 silly addNamed shopify-buy@latest
+37 verbose addNamed "latest" is being treated as a dist-tag for shopify-buy
+38 info addNameTag [ 'shopify-buy', 'latest' ]
+39 silly mapToRegistry name shopify-buy
+40 silly mapToRegistry using default registry
+41 silly mapToRegistry registry https://registry.npmjs.org/
+42 silly mapToRegistry data Result {
+42 silly mapToRegistry   raw: 'shopify-buy',
+42 silly mapToRegistry   scope: null,
+42 silly mapToRegistry   name: 'shopify-buy',
+42 silly mapToRegistry   rawSpec: '',
+42 silly mapToRegistry   spec: 'latest',
+42 silly mapToRegistry   type: 'tag' }
+43 silly mapToRegistry uri https://registry.npmjs.org/shopify-buy
+44 verbose addNameTag registry:https://registry.npmjs.org/shopify-buy not in flight; fetching
+45 verbose request uri https://registry.npmjs.org/shopify-buy
+46 verbose request no auth needed
+47 info attempt registry request try #1 at 5:13:33 PM
+48 verbose request id a9c7fb1ad5454af2
+49 http request GET https://registry.npmjs.org/shopify-buy
+50 http 200 https://registry.npmjs.org/shopify-buy
+51 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+51 verbose headers   etag: '"BAXYXJ9SOHUCY2E3B6CNYMV0K"',
+51 verbose headers   'content-type': 'application/json',
+51 verbose headers   'content-encoding': 'gzip',
+51 verbose headers   'cache-control': 'max-age=300',
+51 verbose headers   'content-length': '2674',
+51 verbose headers   'accept-ranges': 'bytes',
+51 verbose headers   date: 'Sun, 15 May 2016 00:13:33 GMT',
+51 verbose headers   via: '1.1 varnish',
+51 verbose headers   age: '0',
+51 verbose headers   connection: 'keep-alive',
+51 verbose headers   'x-served-by': 'cache-sjc3128-SJC',
+51 verbose headers   'x-cache': 'MISS',
+51 verbose headers   'x-cache-hits': '0',
+51 verbose headers   'x-timer': 'S1463271212.785140,VS0,VE348',
+51 verbose headers   vary: 'Accept-Encoding' }
+52 silly get cb [ 200,
+52 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+52 silly get     etag: '"BAXYXJ9SOHUCY2E3B6CNYMV0K"',
+52 silly get     'content-type': 'application/json',
+52 silly get     'content-encoding': 'gzip',
+52 silly get     'cache-control': 'max-age=300',
+52 silly get     'content-length': '2674',
+52 silly get     'accept-ranges': 'bytes',
+52 silly get     date: 'Sun, 15 May 2016 00:13:33 GMT',
+52 silly get     via: '1.1 varnish',
+52 silly get     age: '0',
+52 silly get     connection: 'keep-alive',
+52 silly get     'x-served-by': 'cache-sjc3128-SJC',
+52 silly get     'x-cache': 'MISS',
+52 silly get     'x-cache-hits': '0',
+52 silly get     'x-timer': 'S1463271212.785140,VS0,VE348',
+52 silly get     vary: 'Accept-Encoding' } ]
+53 verbose get saving shopify-buy to C:\Users\Admin\AppData\Roaming\npm-cache\registry.npmjs.org\shopify-buy\.cache.json
+54 verbose correctMkdir C:\Users\Admin\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+55 silly addNameTag next cb for shopify-buy with tag latest
+56 silly addNamed shopify-buy@0.1.6
+57 verbose addNamed "0.1.6" is a plain semver version for shopify-buy
+58 silly mapToRegistry name shopify-buy
+59 silly mapToRegistry using default registry
+60 silly mapToRegistry registry https://registry.npmjs.org/
+61 silly mapToRegistry data Result {
+61 silly mapToRegistry   raw: 'shopify-buy',
+61 silly mapToRegistry   scope: null,
+61 silly mapToRegistry   name: 'shopify-buy',
+61 silly mapToRegistry   rawSpec: '',
+61 silly mapToRegistry   spec: 'latest',
+61 silly mapToRegistry   type: 'tag' }
+62 silly mapToRegistry uri https://registry.npmjs.org/shopify-buy
+63 verbose addRemoteTarball https://registry.npmjs.org/shopify-buy/-/shopify-buy-0.1.6.tgz not in flight; adding
+64 verbose addRemoteTarball [ 'https://registry.npmjs.org/shopify-buy/-/shopify-buy-0.1.6.tgz',
+64 verbose addRemoteTarball   '071a1865393b92cba5934184bbc44b3aa84603a1' ]
+65 info retry fetch attempt 1 at 5:13:34 PM
+66 info attempt registry request try #1 at 5:13:34 PM
+67 http fetch GET https://registry.npmjs.org/shopify-buy/-/shopify-buy-0.1.6.tgz
+68 http fetch 200 https://registry.npmjs.org/shopify-buy/-/shopify-buy-0.1.6.tgz
+69 silly fetchAndShaCheck shasum 071a1865393b92cba5934184bbc44b3aa84603a1
+70 verbose addTmpTarball C:\Users\Admin\AppData\Local\Temp\npm-6700-d26533ed\registry.npmjs.org\shopify-buy\-\shopify-buy-0.1.6.tgz not in flight; adding
+71 verbose addTmpTarball already have metadata; skipping unpack for shopify-buy@0.1.6
+72 verbose correctMkdir C:\Users\Admin\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+73 silly cache afterAdd shopify-buy@0.1.6
+74 verbose afterAdd C:\Users\Admin\AppData\Roaming\npm-cache\shopify-buy\0.1.6\package\package.json not in flight; writing
+75 verbose correctMkdir C:\Users\Admin\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+76 verbose afterAdd C:\Users\Admin\AppData\Roaming\npm-cache\shopify-buy\0.1.6\package\package.json written
+77 silly install resolved [ { name: 'shopify-buy',
+77 silly install resolved     version: '0.1.6',
+77 silly install resolved     description: 'The JS Buy SDK is a lightweight library that allows you to build ecommerce into any website. It is based on Shopify\'s API and provides the ability to retrieve products and collections from your shop, add products to a cart, and checkout.',
+77 silly install resolved     main: 'lib/shopify.js',
+77 silly install resolved     repository:
+77 silly install resolved      { type: 'git',
+77 silly install resolved        url: 'git+ssh://git@github.com/Shopify/js-buy-sdk.git' },
+77 silly install resolved     scripts:
+77 silly install resolved      { build: './scripts/build',
+77 silly install resolved        prepublish: './scripts/prepublish',
+77 silly install resolved        'doc-server': 'yuidoc --server 5000',
+77 silly install resolved        start: 'broccoli serve',
+77 silly install resolved        examples: 'env EXAMPLES=1 broccoli serve',
+77 silly install resolved        test: './scripts/test',
+77 silly install resolved        'test-ci': './scripts/ci' },
+77 silly install resolved     author: { name: 'Shopify Inc.' },
+77 silly install resolved     license: 'MIT',
+77 silly install resolved     dependencies: { 'node-fetch': '1.3.3' },
+77 silly install resolved     devDependencies:
+77 silly install resolved      { 'aws-sdk': '2.2.44',
+77 silly install resolved        Base64: '0.3.0',
+77 silly install resolved        'broccoli-sass': '0.7.0',
+77 silly install resolved        'babel-eslint': '5.0.0',
+77 silly install resolved        'babel-preset-es2015': '6.6.0',
+77 silly install resolved        'babel-register': '6.7.2',
+77 silly install resolved        broccoli: '0.16.9',
+77 silly install resolved        'broccoli-asset-rev': '2.4.1',
+77 silly install resolved        'broccoli-babel-transpiler': '5.5.0',
+77 silly install resolved        'broccoli-cli': '1.0.0',
+77 silly install resolved        'broccoli-concat': '2.2.0',
+77 silly install resolved        'broccoli-env': '0.0.1',
+77 silly install resolved        'broccoli-funnel': '1.0.1',
+77 silly install resolved        'broccoli-lint-eslint': '2.2.0',
+77 silly install resolved        'broccoli-merge-trees': '1.1.1',
+77 silly install resolved        'broccoli-plugin': '1.2.1',
+77 silly install resolved        'broccoli-sane-watcher': '1.1.4',
+77 silly install resolved        'broccoli-static-compiler': '0.2.2',
+77 silly install resolved        'broccoli-uglify-js': '0.1.3',
+77 silly install resolved        'broccoli-uglify-sourcemap': '1.1.1',
+77 silly install resolved        escope: '3.3.0',
+77 silly install resolved        'eslint-config-nightmare-mode': '2.3.0',
+77 silly install resolved        'estraverse-fb': '1.3.1',
+77 silly install resolved        'fake-xml-http-request': '1.4.0',
+77 silly install resolved        'js-string-escape': '1.0.0',
+77 silly install resolved        'loader.js': '3.5.0',
+77 silly install resolved        'mime-types': '2.1.10',
+77 silly install resolved        pretender: '0.10.1',
+77 silly install resolved        qunitjs: '1.20.0',
+77 silly install resolved        'route-recognizer': '0.1.9',
+77 silly install resolved        rsvp: '3.1.0',
+77 silly install resolved        testem: '0.9.11',
+77 silly install resolved        'whatwg-fetch': '0.10.1',
+77 silly install resolved        yuidocjs: '0.10.0' },
+77 silly install resolved     gitHead: 'c52ebf39668c37224e8b9f6ef1ccc00170f7ec46',
+77 silly install resolved     bugs: { url: 'https://github.com/Shopify/js-buy-sdk/issues' },
+77 silly install resolved     homepage: 'https://github.com/Shopify/js-buy-sdk#readme',
+77 silly install resolved     _id: 'shopify-buy@0.1.6',
+77 silly install resolved     _shasum: '071a1865393b92cba5934184bbc44b3aa84603a1',
+77 silly install resolved     _from: 'shopify-buy@latest',
+77 silly install resolved     _npmVersion: '3.3.12',
+77 silly install resolved     _nodeVersion: '5.1.1',
+77 silly install resolved     _npmUser: { name: 'minasmart', email: 'm.d.smart@gmail.com' },
+77 silly install resolved     dist:
+77 silly install resolved      { shasum: '071a1865393b92cba5934184bbc44b3aa84603a1',
+77 silly install resolved        tarball: 'https://registry.npmjs.org/shopify-buy/-/shopify-buy-0.1.6.tgz' },
+77 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+77 silly install resolved     _npmOperationalInternal:
+77 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
+77 silly install resolved        tmp: 'tmp/shopify-buy-0.1.6.tgz_1461700577463_0.9642769740894437' },
+77 silly install resolved     directories: {},
+77 silly install resolved     _resolved: 'https://registry.npmjs.org/shopify-buy/-/shopify-buy-0.1.6.tgz' } ]
+78 info install shopify-buy@0.1.6 into c:\Users\Admin\Projects\Whimsical
+79 info installOne shopify-buy@0.1.6
+80 verbose installOne of shopify-buy to c:\Users\Admin\Projects\Whimsical not in flight; installing
+81 verbose correctMkdir C:\Users\Admin\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+82 verbose lock using C:\Users\Admin\AppData\Roaming\npm-cache\_locks\shopify-buy-f5ce2e1eaac59be4.lock for c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy
+83 silly install write writing shopify-buy 0.1.6 to c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy
+84 verbose unbuild node_modules\shopify-buy
+85 silly gentlyRm c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy is being purged from base c:\Users\Admin\Projects\Whimsical
+86 verbose gentlyRm don't care about contents; nuking c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy
+87 verbose tar unpack C:\Users\Admin\AppData\Roaming\npm-cache\shopify-buy\0.1.6\package.tgz
+88 verbose tar unpacking to c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy
+89 silly gentlyRm c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy is being purged
+90 verbose gentlyRm don't care about contents; nuking c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy
+91 silly gunzTarPerm modes [ '777', '666' ]
+92 silly gunzTarPerm extractEntry package.json
+93 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+94 silly gunzTarPerm extractEntry .npmignore
+95 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+96 silly gunzTarPerm extractEntry README.md
+97 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+98 silly gunzTarPerm extractEntry Brocfile.js
+99 silly gunzTarPerm modified mode [ 'Brocfile.js', 420, 438 ]
+100 silly gunzTarPerm extractEntry js-buy-sdk-build.js
+101 silly gunzTarPerm modified mode [ 'js-buy-sdk-build.js', 420, 438 ]
+102 silly gunzTarPerm extractEntry config/secrets.ejson
+103 silly gunzTarPerm modified mode [ 'config/secrets.ejson', 420, 438 ]
+104 silly gunzTarPerm extractEntry .eslintrc
+105 silly gunzTarPerm modified mode [ '.eslintrc', 420, 438 ]
+106 silly gunzTarPerm extractEntry CHANGELOG.md
+107 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 438 ]
+108 silly gunzTarPerm extractEntry CODE_OF_CONDUCT.md
+109 silly gunzTarPerm modified mode [ 'CODE_OF_CONDUCT.md', 420, 438 ]
+110 silly gunzTarPerm extractEntry CONTRIBUTING.md
+111 silly gunzTarPerm modified mode [ 'CONTRIBUTING.md', 420, 438 ]
+112 silly gunzTarPerm extractEntry LICENSE.txt
+113 silly gunzTarPerm modified mode [ 'LICENSE.txt', 420, 438 ]
+114 silly gunzTarPerm extractEntry app-ex.md
+115 silly gunzTarPerm modified mode [ 'app-ex.md', 420, 438 ]
+116 silly gunzTarPerm extractEntry build-lib/examples.js
+117 silly gunzTarPerm modified mode [ 'build-lib/examples.js', 420, 438 ]
+118 silly gunzTarPerm extractEntry build-lib/lib.js
+119 silly gunzTarPerm modified mode [ 'build-lib/lib.js', 420, 438 ]
+120 silly gunzTarPerm extractEntry build-lib/licenser.js
+121 silly gunzTarPerm modified mode [ 'build-lib/licenser.js', 420, 438 ]
+122 silly gunzTarPerm extractEntry build-lib/loader.js
+123 silly gunzTarPerm modified mode [ 'build-lib/loader.js', 420, 438 ]
+124 silly gunzTarPerm extractEntry build-lib/polyfills.js
+125 silly gunzTarPerm modified mode [ 'build-lib/polyfills.js', 420, 438 ]
+126 silly gunzTarPerm extractEntry build-lib/testing.js
+127 silly gunzTarPerm modified mode [ 'build-lib/testing.js', 420, 438 ]
+128 silly gunzTarPerm extractEntry build-lib/util/babel-config.js
+129 silly gunzTarPerm modified mode [ 'build-lib/util/babel-config.js', 420, 438 ]
+130 silly gunzTarPerm extractEntry build-lib/util/linted-tree.js
+131 silly gunzTarPerm modified mode [ 'build-lib/util/linted-tree.js', 420, 438 ]
+132 silly gunzTarPerm extractEntry build-lib/util/tree-from-package.js
+133 silly gunzTarPerm modified mode [ 'build-lib/util/tree-from-package.js', 420, 438 ]
+134 silly gunzTarPerm extractEntry ci/deps
+135 silly gunzTarPerm modified mode [ 'ci/deps', 493, 511 ]
+136 silly gunzTarPerm extractEntry ci/setup-node
+137 silly gunzTarPerm modified mode [ 'ci/setup-node', 493, 511 ]
+138 silly gunzTarPerm extractEntry ci/test
+139 silly gunzTarPerm modified mode [ 'ci/test', 493, 511 ]
+140 silly gunzTarPerm extractEntry circle.yml
+141 silly gunzTarPerm modified mode [ 'circle.yml', 420, 438 ]
+142 silly gunzTarPerm extractEntry dist/shopify-buy.amd.js
+143 silly gunzTarPerm modified mode [ 'dist/shopify-buy.amd.js', 420, 438 ]
+144 silly gunzTarPerm extractEntry dist/shopify-buy.common.js
+145 silly gunzTarPerm modified mode [ 'dist/shopify-buy.common.js', 420, 438 ]
+146 silly gunzTarPerm extractEntry dist/shopify-buy.common.min.js
+147 silly gunzTarPerm modified mode [ 'dist/shopify-buy.common.min.js', 420, 438 ]
+148 silly gunzTarPerm extractEntry dist/shopify-buy.globals.js
+149 silly gunzTarPerm modified mode [ 'dist/shopify-buy.globals.js', 420, 438 ]
+150 silly gunzTarPerm extractEntry dist/shopify-buy.globals.min.js
+151 silly gunzTarPerm modified mode [ 'dist/shopify-buy.globals.min.js', 420, 438 ]
+152 silly gunzTarPerm extractEntry dist/shopify-buy.amd.min.js
+153 silly gunzTarPerm modified mode [ 'dist/shopify-buy.amd.min.js', 420, 438 ]
+154 silly gunzTarPerm extractEntry dist/shopify-buy.polyfilled.amd.min.js
+155 silly gunzTarPerm modified mode [ 'dist/shopify-buy.polyfilled.amd.min.js', 420, 438 ]
+156 silly gunzTarPerm extractEntry dist/shopify-buy.polyfilled.common.js
+157 silly gunzTarPerm modified mode [ 'dist/shopify-buy.polyfilled.common.js', 420, 438 ]
+158 silly gunzTarPerm extractEntry dist/shopify-buy.polyfilled.common.min.js
+159 silly gunzTarPerm modified mode [ 'dist/shopify-buy.polyfilled.common.min.js', 420, 438 ]
+160 silly gunzTarPerm extractEntry dist/shopify-buy.polyfilled.globals.js
+161 silly gunzTarPerm modified mode [ 'dist/shopify-buy.polyfilled.globals.js', 420, 438 ]
+162 silly gunzTarPerm extractEntry dist/shopify-buy.polyfilled.globals.min.js
+163 silly gunzTarPerm modified mode [ 'dist/shopify-buy.polyfilled.globals.min.js', 420, 438 ]
+164 silly gunzTarPerm extractEntry dist/shopify-buy.polyfilled.amd.js
+165 silly gunzTarPerm modified mode [ 'dist/shopify-buy.polyfilled.amd.js', 420, 438 ]
+166 silly gunzTarPerm extractEntry examples/cart/README.md
+167 silly gunzTarPerm modified mode [ 'examples/cart/README.md', 420, 438 ]
+168 silly gunzTarPerm extractEntry examples/cart/index.js
+169 silly gunzTarPerm modified mode [ 'examples/cart/index.js', 420, 438 ]
+170 silly gunzTarPerm extractEntry examples/cart/index.html
+171 silly gunzTarPerm modified mode [ 'examples/cart/index.html', 420, 438 ]
+172 silly gunzTarPerm extractEntry examples/cart/styles/_buttons.scss
+173 silly gunzTarPerm modified mode [ 'examples/cart/styles/_buttons.scss', 420, 438 ]
+174 silly gunzTarPerm extractEntry examples/cart/styles/_cart.scss
+175 silly gunzTarPerm modified mode [ 'examples/cart/styles/_cart.scss', 420, 438 ]
+176 silly gunzTarPerm extractEntry examples/cart/styles/_initializers.scss
+177 silly gunzTarPerm modified mode [ 'examples/cart/styles/_initializers.scss', 420, 438 ]
+178 silly gunzTarPerm extractEntry examples/cart/styles/_product.scss
+179 silly gunzTarPerm modified mode [ 'examples/cart/styles/_product.scss', 420, 438 ]
+180 silly gunzTarPerm extractEntry examples/cart/styles/_utilities.scss
+181 silly gunzTarPerm modified mode [ 'examples/cart/styles/_utilities.scss', 420, 438 ]
+182 silly gunzTarPerm extractEntry examples/cart/styles/_variables.scss
+183 silly gunzTarPerm modified mode [ 'examples/cart/styles/_variables.scss', 420, 438 ]
+184 silly gunzTarPerm extractEntry examples/cart/styles/styles.scss
+185 silly gunzTarPerm modified mode [ 'examples/cart/styles/styles.scss', 420, 438 ]
+186 silly gunzTarPerm extractEntry lib/shopify.js
+187 silly gunzTarPerm modified mode [ 'lib/shopify.js', 420, 438 ]
+188 silly gunzTarPerm extractEntry lib/config.js
+189 silly gunzTarPerm modified mode [ 'lib/config.js', 420, 438 ]
+190 silly gunzTarPerm extractEntry lib/ie9-ajax.js
+191 silly gunzTarPerm modified mode [ 'lib/ie9-ajax.js', 420, 438 ]
+192 silly gunzTarPerm extractEntry lib/isomorphic-btoa.js
+193 silly gunzTarPerm modified mode [ 'lib/isomorphic-btoa.js', 420, 438 ]
+194 silly gunzTarPerm extractEntry lib/isomorphic-fetch.js
+195 silly gunzTarPerm modified mode [ 'lib/isomorphic-fetch.js', 420, 438 ]
+196 silly gunzTarPerm extractEntry lib/ajax.js
+197 silly gunzTarPerm modified mode [ 'lib/ajax.js', 420, 438 ]
+198 silly gunzTarPerm extractEntry lib/promise.js
+199 silly gunzTarPerm modified mode [ 'lib/promise.js', 420, 438 ]
+200 silly gunzTarPerm extractEntry lib/shop-client.js
+201 silly gunzTarPerm modified mode [ 'lib/shop-client.js', 420, 438 ]
+202 silly gunzTarPerm extractEntry lib/adapters/listings-adapter.js
+203 silly gunzTarPerm modified mode [ 'lib/adapters/listings-adapter.js', 420, 438 ]
+204 silly gunzTarPerm extractEntry lib/adapters/local-storage-adapter.js
+205 silly gunzTarPerm modified mode [ 'lib/adapters/local-storage-adapter.js', 420, 438 ]
+206 silly gunzTarPerm extractEntry lib/serializers/cart-serializer.js
+207 silly gunzTarPerm modified mode [ 'lib/serializers/cart-serializer.js', 420, 438 ]
+208 silly gunzTarPerm extractEntry lib/serializers/listings-serializer.js
+209 silly gunzTarPerm modified mode [ 'lib/serializers/listings-serializer.js', 420, 438 ]
+210 silly gunzTarPerm extractEntry lib/serializers/reference-serializer.js
+211 silly gunzTarPerm modified mode [ 'lib/serializers/reference-serializer.js', 420, 438 ]
+212 silly gunzTarPerm extractEntry lib/models/base-model.js
+213 silly gunzTarPerm modified mode [ 'lib/models/base-model.js', 420, 438 ]
+214 silly gunzTarPerm extractEntry lib/models/cart-model.js
+215 silly gunzTarPerm modified mode [ 'lib/models/cart-model.js', 420, 438 ]
+216 silly gunzTarPerm extractEntry lib/models/product-model.js
+217 silly gunzTarPerm modified mode [ 'lib/models/product-model.js', 420, 438 ]
+218 silly gunzTarPerm extractEntry lib/models/product-option-model.js
+219 silly gunzTarPerm modified mode [ 'lib/models/product-option-model.js', 420, 438 ]
+220 silly gunzTarPerm extractEntry lib/models/product-variant-model.js
+221 silly gunzTarPerm modified mode [ 'lib/models/product-variant-model.js', 420, 438 ]
+222 silly gunzTarPerm extractEntry lib/models/reference-model.js
+223 silly gunzTarPerm modified mode [ 'lib/models/reference-model.js', 420, 438 ]
+224 silly gunzTarPerm extractEntry lib/metal/assign.js
+225 silly gunzTarPerm modified mode [ 'lib/metal/assign.js', 420, 438 ]
+226 silly gunzTarPerm extractEntry lib/metal/core-object.js
+227 silly gunzTarPerm modified mode [ 'lib/metal/core-object.js', 420, 438 ]
+228 silly gunzTarPerm extractEntry lib/metal/create-class.js
+229 silly gunzTarPerm modified mode [ 'lib/metal/create-class.js', 420, 438 ]
+230 silly gunzTarPerm extractEntry lib/metal/global.js
+231 silly gunzTarPerm modified mode [ 'lib/metal/global.js', 420, 438 ]
+232 silly gunzTarPerm extractEntry lib/metal/includes.js
+233 silly gunzTarPerm modified mode [ 'lib/metal/includes.js', 420, 438 ]
+234 silly gunzTarPerm extractEntry lib/metal/is-node-like-environment.js
+235 silly gunzTarPerm modified mode [ 'lib/metal/is-node-like-environment.js', 420, 438 ]
+236 silly gunzTarPerm extractEntry lib/metal/set-guid-for.js
+237 silly gunzTarPerm modified mode [ 'lib/metal/set-guid-for.js', 420, 438 ]
+238 silly gunzTarPerm extractEntry lib/metal/uniq.js
+239 silly gunzTarPerm modified mode [ 'lib/metal/uniq.js', 420, 438 ]
+240 silly gunzTarPerm extractEntry .sass-cache/8c958e5859659c56a469d3799a15b4dad0bf7960/custom.scssc
+241 silly gunzTarPerm modified mode [ '.sass-cache/8c958e5859659c56a469d3799a15b4dad0bf7960/custom.scssc',
+241 silly gunzTarPerm   384,
+241 silly gunzTarPerm   438 ]
+242 silly gunzTarPerm extractEntry .sass-cache/8c958e5859659c56a469d3799a15b4dad0bf7960/layout.scssc
+243 silly gunzTarPerm modified mode [ '.sass-cache/8c958e5859659c56a469d3799a15b4dad0bf7960/layout.scssc',
+243 silly gunzTarPerm   384,
+243 silly gunzTarPerm   438 ]
+244 silly gunzTarPerm extractEntry .sass-cache/036429e7fdc6d3d5c5e08c5e43560eb81b4cb346/_px-to-em.scssc
+245 silly gunzTarPerm modified mode [ '.sass-cache/036429e7fdc6d3d5c5e08c5e43560eb81b4cb346/_px-to-em.scssc',
+245 silly gunzTarPerm   384,
+245 silly gunzTarPerm   438 ]
+246 silly gunzTarPerm extractEntry .sass-cache/036429e7fdc6d3d5c5e08c5e43560eb81b4cb346/_assign.scssc
+247 silly gunzTarPerm modified mode [ '.sass-cache/036429e7fdc6d3d5c5e08c5e43560eb81b4cb346/_assign.scssc',
+247 silly gunzTarPerm   384,
+247 silly gunzTarPerm   438 ]
+248 silly gunzTarPerm extractEntry .sass-cache/036429e7fdc6d3d5c5e08c5e43560eb81b4cb346/_flex-grid.scssc
+249 silly gunzTarPerm modified mode [ '.sass-cache/036429e7fdc6d3d5c5e08c5e43560eb81b4cb346/_flex-grid.scssc',
+249 silly gunzTarPerm   384,
+249 silly gunzTarPerm   438 ]
+250 silly gunzTarPerm extractEntry .sass-cache/036429e7fdc6d3d5c5e08c5e43560eb81b4cb346/_golden-ratio.scssc
+251 silly gunzTarPerm modified mode [ '.sass-cache/036429e7fdc6d3d5c5e08c5e43560eb81b4cb346/_golden-ratio.scssc',
+251 silly gunzTarPerm   384,
+251 silly gunzTarPerm   438 ]
+252 silly gunzTarPerm extractEntry .sass-cache/036429e7fdc6d3d5c5e08c5e43560eb81b4cb346/_grid-width.scssc
+253 silly gunzTarPerm modified mode [ '.sass-cache/036429e7fdc6d3d5c5e08c5e43560eb81b4cb346/_grid-width.scssc',
+253 silly gunzTarPerm   384,
+253 silly gunzTarPerm   438 ]
+254 silly gunzTarPerm extractEntry .sass-cache/036429e7fdc6d3d5c5e08c5e43560eb81b4cb346/_modular-scale.scssc
+255 silly gunzTarPerm modified mode [ '.sass-cache/036429e7fdc6d3d5c5e08c5e43560eb81b4cb346/_modular-scale.scssc',
+255 silly gunzTarPerm   384,
+255 silly gunzTarPerm   438 ]
+256 silly gunzTarPerm extractEntry .sass-cache/036429e7fdc6d3d5c5e08c5e43560eb81b4cb346/_color-lightness.scssc
+257 silly gunzTarPerm modified mode [ '.sass-cache/036429e7fdc6d3d5c5e08c5e43560eb81b4cb346/_color-lightness.scssc',
+257 silly gunzTarPerm   384,
+257 silly gunzTarPerm   438 ]
+258 silly gunzTarPerm extractEntry .sass-cache/036429e7fdc6d3d5c5e08c5e43560eb81b4cb346/_px-to-rem.scssc
+259 silly gunzTarPerm modified mode [ '.sass-cache/036429e7fdc6d3d5c5e08c5e43560eb81b4cb346/_px-to-rem.scssc',
+259 silly gunzTarPerm   384,
+259 silly gunzTarPerm   438 ]
+260 silly gunzTarPerm extractEntry .sass-cache/036429e7fdc6d3d5c5e08c5e43560eb81b4cb346/_strip-units.scssc
+261 silly gunzTarPerm modified mode [ '.sass-cache/036429e7fdc6d3d5c5e08c5e43560eb81b4cb346/_strip-units.scssc',
+261 silly gunzTarPerm   384,
+261 silly gunzTarPerm   438 ]
+262 silly gunzTarPerm extractEntry .sass-cache/036429e7fdc6d3d5c5e08c5e43560eb81b4cb346/_tint-shade.scssc
+263 silly gunzTarPerm modified mode [ '.sass-cache/036429e7fdc6d3d5c5e08c5e43560eb81b4cb346/_tint-shade.scssc',
+263 silly gunzTarPerm   384,
+263 silly gunzTarPerm   438 ]
+264 silly gunzTarPerm extractEntry .sass-cache/036429e7fdc6d3d5c5e08c5e43560eb81b4cb346/_transition-property-name.scssc
+265 silly gunzTarPerm modified mode [ '.sass-cache/036429e7fdc6d3d5c5e08c5e43560eb81b4cb346/_transition-property-name.scssc',
+265 silly gunzTarPerm   384,
+265 silly gunzTarPerm   438 ]
+266 silly gunzTarPerm extractEntry .sass-cache/036429e7fdc6d3d5c5e08c5e43560eb81b4cb346/_unpack.scssc
+267 silly gunzTarPerm modified mode [ '.sass-cache/036429e7fdc6d3d5c5e08c5e43560eb81b4cb346/_unpack.scssc',
+267 silly gunzTarPerm   384,
+267 silly gunzTarPerm   438 ]
+268 silly gunzTarPerm extractEntry .sass-cache/301ff3093b88b2f9dd58da3a6380fa25b3f00edb/_linear-side-corner-parser.scssc
+269 silly gunzTarPerm modified mode [ '.sass-cache/301ff3093b88b2f9dd58da3a6380fa25b3f00edb/_linear-side-corner-parser.scssc',
+269 silly gunzTarPerm   384,
+269 silly gunzTarPerm   438 ]
+270 silly gunzTarPerm extractEntry .sass-cache/301ff3093b88b2f9dd58da3a6380fa25b3f00edb/_convert-units.scssc
+271 silly gunzTarPerm modified mode [ '.sass-cache/301ff3093b88b2f9dd58da3a6380fa25b3f00edb/_convert-units.scssc',
+271 silly gunzTarPerm   384,
+271 silly gunzTarPerm   438 ]
+272 silly gunzTarPerm extractEntry .sass-cache/301ff3093b88b2f9dd58da3a6380fa25b3f00edb/_is-num.scssc
+273 silly gunzTarPerm modified mode [ '.sass-cache/301ff3093b88b2f9dd58da3a6380fa25b3f00edb/_is-num.scssc',
+273 silly gunzTarPerm   384,
+273 silly gunzTarPerm   438 ]
+274 silly gunzTarPerm extractEntry .sass-cache/301ff3093b88b2f9dd58da3a6380fa25b3f00edb/_linear-angle-parser.scssc
+275 silly gunzTarPerm modified mode [ '.sass-cache/301ff3093b88b2f9dd58da3a6380fa25b3f00edb/_linear-angle-parser.scssc',
+275 silly gunzTarPerm   384,
+275 silly gunzTarPerm   438 ]
+276 silly gunzTarPerm extractEntry .sass-cache/301ff3093b88b2f9dd58da3a6380fa25b3f00edb/_linear-gradient-parser.scssc
+277 silly gunzTarPerm modified mode [ '.sass-cache/301ff3093b88b2f9dd58da3a6380fa25b3f00edb/_linear-gradient-parser.scssc',
+277 silly gunzTarPerm   384,
+277 silly gunzTarPerm   438 ]
+278 silly gunzTarPerm extractEntry .sass-cache/301ff3093b88b2f9dd58da3a6380fa25b3f00edb/_linear-positions-parser.scssc
+279 silly gunzTarPerm modified mode [ '.sass-cache/301ff3093b88b2f9dd58da3a6380fa25b3f00edb/_linear-positions-parser.scssc',
+279 silly gunzTarPerm   384,
+279 silly gunzTarPerm   438 ]
+280 silly gunzTarPerm extractEntry .sass-cache/301ff3093b88b2f9dd58da3a6380fa25b3f00edb/_gradient-positions-parser.scssc
+281 silly gunzTarPerm modified mode [ '.sass-cache/301ff3093b88b2f9dd58da3a6380fa25b3f00edb/_gradient-positions-parser.scssc',
+281 silly gunzTarPerm   384,
+281 silly gunzTarPerm   438 ]
+282 silly gunzTarPerm extractEntry .sass-cache/301ff3093b88b2f9dd58da3a6380fa25b3f00edb/_radial-arg-parser.scssc
+283 silly gunzTarPerm modified mode [ '.sass-cache/301ff3093b88b2f9dd58da3a6380fa25b3f00edb/_radial-arg-parser.scssc',
+283 silly gunzTarPerm   384,
+283 silly gunzTarPerm   438 ]
+284 silly gunzTarPerm extractEntry .sass-cache/301ff3093b88b2f9dd58da3a6380fa25b3f00edb/_radial-gradient-parser.scssc
+285 silly gunzTarPerm modified mode [ '.sass-cache/301ff3093b88b2f9dd58da3a6380fa25b3f00edb/_radial-gradient-parser.scssc',
+285 silly gunzTarPerm   384,
+285 silly gunzTarPerm   438 ]
+286 silly gunzTarPerm extractEntry .sass-cache/301ff3093b88b2f9dd58da3a6380fa25b3f00edb/_radial-positions-parser.scssc
+287 silly gunzTarPerm modified mode [ '.sass-cache/301ff3093b88b2f9dd58da3a6380fa25b3f00edb/_radial-positions-parser.scssc',
+287 silly gunzTarPerm   384,
+287 silly gunzTarPerm   438 ]
+288 silly gunzTarPerm extractEntry .sass-cache/301ff3093b88b2f9dd58da3a6380fa25b3f00edb/_render-gradients.scssc
+289 silly gunzTarPerm modified mode [ '.sass-cache/301ff3093b88b2f9dd58da3a6380fa25b3f00edb/_render-gradients.scssc',
+289 silly gunzTarPerm   384,
+289 silly gunzTarPerm   438 ]
+290 silly gunzTarPerm extractEntry .sass-cache/301ff3093b88b2f9dd58da3a6380fa25b3f00edb/_shape-size-stripper.scssc
+291 silly gunzTarPerm modified mode [ '.sass-cache/301ff3093b88b2f9dd58da3a6380fa25b3f00edb/_shape-size-stripper.scssc',
+291 silly gunzTarPerm   384,
+291 silly gunzTarPerm   438 ]
+292 silly gunzTarPerm extractEntry .sass-cache/301ff3093b88b2f9dd58da3a6380fa25b3f00edb/_str-to-num.scssc
+293 silly gunzTarPerm modified mode [ '.sass-cache/301ff3093b88b2f9dd58da3a6380fa25b3f00edb/_str-to-num.scssc',
+293 silly gunzTarPerm   384,
+293 silly gunzTarPerm   438 ]
+294 silly gunzTarPerm extractEntry .sass-cache/34c4ca14f25575b11fb9dd81cd2f49397e1740e1/_pad.scssc
+295 silly gunzTarPerm modified mode [ '.sass-cache/34c4ca14f25575b11fb9dd81cd2f49397e1740e1/_pad.scssc',
+295 silly gunzTarPerm   384,
+295 silly gunzTarPerm   438 ]
+296 silly gunzTarPerm extractEntry .sass-cache/34c4ca14f25575b11fb9dd81cd2f49397e1740e1/_box-sizing.scssc
+297 silly gunzTarPerm modified mode [ '.sass-cache/34c4ca14f25575b11fb9dd81cd2f49397e1740e1/_box-sizing.scssc',
+297 silly gunzTarPerm   384,
+297 silly gunzTarPerm   438 ]
+298 silly gunzTarPerm extractEntry .sass-cache/34c4ca14f25575b11fb9dd81cd2f49397e1740e1/_display-context.scssc
+299 silly gunzTarPerm modified mode [ '.sass-cache/34c4ca14f25575b11fb9dd81cd2f49397e1740e1/_display-context.scssc',
+299 silly gunzTarPerm   384,
+299 silly gunzTarPerm   438 ]
+300 silly gunzTarPerm extractEntry .sass-cache/34c4ca14f25575b11fb9dd81cd2f49397e1740e1/_fill-parent.scssc
+301 silly gunzTarPerm modified mode [ '.sass-cache/34c4ca14f25575b11fb9dd81cd2f49397e1740e1/_fill-parent.scssc',
+301 silly gunzTarPerm   384,
+301 silly gunzTarPerm   438 ]
+302 silly gunzTarPerm extractEntry .sass-cache/34c4ca14f25575b11fb9dd81cd2f49397e1740e1/_media.scssc
+303 silly gunzTarPerm modified mode [ '.sass-cache/34c4ca14f25575b11fb9dd81cd2f49397e1740e1/_media.scssc',
+303 silly gunzTarPerm   384,
+303 silly gunzTarPerm   438 ]
+304 silly gunzTarPerm extractEntry .sass-cache/34c4ca14f25575b11fb9dd81cd2f49397e1740e1/_omega.scssc
+305 silly gunzTarPerm modified mode [ '.sass-cache/34c4ca14f25575b11fb9dd81cd2f49397e1740e1/_omega.scssc',
+305 silly gunzTarPerm   384,
+305 silly gunzTarPerm   438 ]
+306 silly gunzTarPerm extractEntry .sass-cache/34c4ca14f25575b11fb9dd81cd2f49397e1740e1/_outer-container.scssc
+307 silly gunzTarPerm modified mode [ '.sass-cache/34c4ca14f25575b11fb9dd81cd2f49397e1740e1/_outer-container.scssc',
+307 silly gunzTarPerm   384,
+307 silly gunzTarPerm   438 ]
+308 silly gunzTarPerm extractEntry .sass-cache/34c4ca14f25575b11fb9dd81cd2f49397e1740e1/_direction-context.scssc
+309 silly gunzTarPerm modified mode [ '.sass-cache/34c4ca14f25575b11fb9dd81cd2f49397e1740e1/_direction-context.scssc',
+309 silly gunzTarPerm   384,
+309 silly gunzTarPerm   438 ]
+310 silly gunzTarPerm extractEntry .sass-cache/34c4ca14f25575b11fb9dd81cd2f49397e1740e1/_private.scssc
+311 silly gunzTarPerm modified mode [ '.sass-cache/34c4ca14f25575b11fb9dd81cd2f49397e1740e1/_private.scssc',
+311 silly gunzTarPerm   384,
+311 silly gunzTarPerm   438 ]
+312 silly gunzTarPerm extractEntry .sass-cache/34c4ca14f25575b11fb9dd81cd2f49397e1740e1/_row.scssc
+313 silly gunzTarPerm modified mode [ '.sass-cache/34c4ca14f25575b11fb9dd81cd2f49397e1740e1/_row.scssc',
+313 silly gunzTarPerm   384,
+313 silly gunzTarPerm   438 ]
+314 silly gunzTarPerm extractEntry .sass-cache/34c4ca14f25575b11fb9dd81cd2f49397e1740e1/_shift.scssc
+315 silly gunzTarPerm modified mode [ '.sass-cache/34c4ca14f25575b11fb9dd81cd2f49397e1740e1/_shift.scssc',
+315 silly gunzTarPerm   384,
+315 silly gunzTarPerm   438 ]
+316 silly gunzTarPerm extractEntry .sass-cache/34c4ca14f25575b11fb9dd81cd2f49397e1740e1/_span-columns.scssc
+317 silly gunzTarPerm modified mode [ '.sass-cache/34c4ca14f25575b11fb9dd81cd2f49397e1740e1/_span-columns.scssc',
+317 silly gunzTarPerm   384,
+317 silly gunzTarPerm   438 ]
+318 silly gunzTarPerm extractEntry .sass-cache/34c4ca14f25575b11fb9dd81cd2f49397e1740e1/_to-deprecate.scssc
+319 silly gunzTarPerm modified mode [ '.sass-cache/34c4ca14f25575b11fb9dd81cd2f49397e1740e1/_to-deprecate.scssc',
+319 silly gunzTarPerm   384,
+319 silly gunzTarPerm   438 ]
+320 silly gunzTarPerm extractEntry .sass-cache/34c4ca14f25575b11fb9dd81cd2f49397e1740e1/_visual-grid.scssc
+321 silly gunzTarPerm modified mode [ '.sass-cache/34c4ca14f25575b11fb9dd81cd2f49397e1740e1/_visual-grid.scssc',
+321 silly gunzTarPerm   384,
+321 silly gunzTarPerm   438 ]
+322 silly gunzTarPerm extractEntry .sass-cache/47a831ad02a946d4f2379699818a75c13a80ba4e/_global.scssc
+323 silly gunzTarPerm modified mode [ '.sass-cache/47a831ad02a946d4f2379699818a75c13a80ba4e/_global.scssc',
+323 silly gunzTarPerm   384,
+323 silly gunzTarPerm   438 ]
+324 silly gunzTarPerm extractEntry .sass-cache/47a831ad02a946d4f2379699818a75c13a80ba4e/_grid.scssc
+325 silly gunzTarPerm modified mode [ '.sass-cache/47a831ad02a946d4f2379699818a75c13a80ba4e/_grid.scssc',
+325 silly gunzTarPerm   384,
+325 silly gunzTarPerm   438 ]
+326 silly gunzTarPerm extractEntry .sass-cache/47a831ad02a946d4f2379699818a75c13a80ba4e/_icons.scssc
+327 silly gunzTarPerm modified mode [ '.sass-cache/47a831ad02a946d4f2379699818a75c13a80ba4e/_icons.scssc',
+327 silly gunzTarPerm   384,
+327 silly gunzTarPerm   438 ]
+328 silly gunzTarPerm extractEntry .sass-cache/47a831ad02a946d4f2379699818a75c13a80ba4e/_typography.scssc
+329 silly gunzTarPerm modified mode [ '.sass-cache/47a831ad02a946d4f2379699818a75c13a80ba4e/_typography.scssc',
+329 silly gunzTarPerm   384,
+329 silly gunzTarPerm   438 ]
+330 silly gunzTarPerm extractEntry .sass-cache/47a831ad02a946d4f2379699818a75c13a80ba4e/_utils.scssc
+331 silly gunzTarPerm modified mode [ '.sass-cache/47a831ad02a946d4f2379699818a75c13a80ba4e/_utils.scssc',
+331 silly gunzTarPerm   384,
+331 silly gunzTarPerm   438 ]
+332 silly gunzTarPerm extractEntry .sass-cache/53dce341e219b385422e94086a84ccdccf1c6aa5/_bourbon-deprecated-upcoming.scssc
+333 silly gunzTarPerm modified mode [ '.sass-cache/53dce341e219b385422e94086a84ccdccf1c6aa5/_bourbon-deprecated-upcoming.scssc',
+333 silly gunzTarPerm   384,
+333 silly gunzTarPerm   438 ]
+334 silly gunzTarPerm extractEntry .sass-cache/53dce341e219b385422e94086a84ccdccf1c6aa5/_bourbon.scssc
+335 silly gunzTarPerm modified mode [ '.sass-cache/53dce341e219b385422e94086a84ccdccf1c6aa5/_bourbon.scssc',
+335 silly gunzTarPerm   384,
+335 silly gunzTarPerm   438 ]
+336 silly gunzTarPerm extractEntry .sass-cache/6e962ae0604883a0a3a388e1830f971dbea4baa8/_breakpoints.scssc
+337 silly gunzTarPerm modified mode [ '.sass-cache/6e962ae0604883a0a3a388e1830f971dbea4baa8/_breakpoints.scssc',
+337 silly gunzTarPerm   384,
+337 silly gunzTarPerm   438 ]
+338 silly gunzTarPerm extractEntry .sass-cache/6e962ae0604883a0a3a388e1830f971dbea4baa8/_mixins.scssc
+339 silly gunzTarPerm modified mode [ '.sass-cache/6e962ae0604883a0a3a388e1830f971dbea4baa8/_mixins.scssc',
+339 silly gunzTarPerm   384,
+339 silly gunzTarPerm   438 ]
+340 silly gunzTarPerm extractEntry .sass-cache/6e962ae0604883a0a3a388e1830f971dbea4baa8/_variables.scssc
+341 silly gunzTarPerm modified mode [ '.sass-cache/6e962ae0604883a0a3a388e1830f971dbea4baa8/_variables.scssc',
+341 silly gunzTarPerm   384,
+341 silly gunzTarPerm   438 ]
+342 silly gunzTarPerm extractEntry .sass-cache/78a5d8d28089ed25e55ee7e4da816ab0683bde7a/_position.scssc
+343 silly gunzTarPerm modified mode [ '.sass-cache/78a5d8d28089ed25e55ee7e4da816ab0683bde7a/_position.scssc',
+343 silly gunzTarPerm   384,
+343 silly gunzTarPerm   438 ]
+344 silly gunzTarPerm extractEntry .sass-cache/78a5d8d28089ed25e55ee7e4da816ab0683bde7a/_button.scssc
+345 silly gunzTarPerm modified mode [ '.sass-cache/78a5d8d28089ed25e55ee7e4da816ab0683bde7a/_button.scssc',
+345 silly gunzTarPerm   384,
+345 silly gunzTarPerm   438 ]
+346 silly gunzTarPerm extractEntry .sass-cache/78a5d8d28089ed25e55ee7e4da816ab0683bde7a/_directional-values.scssc
+347 silly gunzTarPerm modified mode [ '.sass-cache/78a5d8d28089ed25e55ee7e4da816ab0683bde7a/_directional-values.scssc',
+347 silly gunzTarPerm   384,
+347 silly gunzTarPerm   438 ]
+348 silly gunzTarPerm extractEntry .sass-cache/78a5d8d28089ed25e55ee7e4da816ab0683bde7a/_ellipsis.scssc
+349 silly gunzTarPerm modified mode [ '.sass-cache/78a5d8d28089ed25e55ee7e4da816ab0683bde7a/_ellipsis.scssc',
+349 silly gunzTarPerm   384,
+349 silly gunzTarPerm   438 ]
+350 silly gunzTarPerm extractEntry .sass-cache/78a5d8d28089ed25e55ee7e4da816ab0683bde7a/_font-family.scssc
+351 silly gunzTarPerm modified mode [ '.sass-cache/78a5d8d28089ed25e55ee7e4da816ab0683bde7a/_font-family.scssc',
+351 silly gunzTarPerm   384,
+351 silly gunzTarPerm   438 ]
+352 silly gunzTarPerm extractEntry .sass-cache/78a5d8d28089ed25e55ee7e4da816ab0683bde7a/_hide-text.scssc
+353 silly gunzTarPerm modified mode [ '.sass-cache/78a5d8d28089ed25e55ee7e4da816ab0683bde7a/_hide-text.scssc',
+353 silly gunzTarPerm   384,
+353 silly gunzTarPerm   438 ]
+354 silly gunzTarPerm extractEntry .sass-cache/78a5d8d28089ed25e55ee7e4da816ab0683bde7a/_html5-input-types.scssc
+355 silly gunzTarPerm modified mode [ '.sass-cache/78a5d8d28089ed25e55ee7e4da816ab0683bde7a/_html5-input-types.scssc',
+355 silly gunzTarPerm   384,
+355 silly gunzTarPerm   438 ]
+356 silly gunzTarPerm extractEntry .sass-cache/78a5d8d28089ed25e55ee7e4da816ab0683bde7a/_clearfix.scssc
+357 silly gunzTarPerm modified mode [ '.sass-cache/78a5d8d28089ed25e55ee7e4da816ab0683bde7a/_clearfix.scssc',
+357 silly gunzTarPerm   384,
+357 silly gunzTarPerm   438 ]
+358 silly gunzTarPerm extractEntry .sass-cache/78a5d8d28089ed25e55ee7e4da816ab0683bde7a/_prefixer.scssc
+359 silly gunzTarPerm modified mode [ '.sass-cache/78a5d8d28089ed25e55ee7e4da816ab0683bde7a/_prefixer.scssc',
+359 silly gunzTarPerm   384,
+359 silly gunzTarPerm   438 ]
+360 silly gunzTarPerm extractEntry .sass-cache/78a5d8d28089ed25e55ee7e4da816ab0683bde7a/_retina-image.scssc
+361 silly gunzTarPerm modified mode [ '.sass-cache/78a5d8d28089ed25e55ee7e4da816ab0683bde7a/_retina-image.scssc',
+361 silly gunzTarPerm   384,
+361 silly gunzTarPerm   438 ]
+362 silly gunzTarPerm extractEntry .sass-cache/78a5d8d28089ed25e55ee7e4da816ab0683bde7a/_size.scssc
+363 silly gunzTarPerm modified mode [ '.sass-cache/78a5d8d28089ed25e55ee7e4da816ab0683bde7a/_size.scssc',
+363 silly gunzTarPerm   384,
+363 silly gunzTarPerm   438 ]
+364 silly gunzTarPerm extractEntry .sass-cache/78a5d8d28089ed25e55ee7e4da816ab0683bde7a/_timing-functions.scssc
+365 silly gunzTarPerm modified mode [ '.sass-cache/78a5d8d28089ed25e55ee7e4da816ab0683bde7a/_timing-functions.scssc',
+365 silly gunzTarPerm   384,
+365 silly gunzTarPerm   438 ]
+366 silly gunzTarPerm extractEntry .sass-cache/78a5d8d28089ed25e55ee7e4da816ab0683bde7a/_triangle.scssc
+367 silly gunzTarPerm modified mode [ '.sass-cache/78a5d8d28089ed25e55ee7e4da816ab0683bde7a/_triangle.scssc',
+367 silly gunzTarPerm   384,
+367 silly gunzTarPerm   438 ]
+368 silly gunzTarPerm extractEntry .sass-cache/78a5d8d28089ed25e55ee7e4da816ab0683bde7a/_word-wrap.scssc
+369 silly gunzTarPerm modified mode [ '.sass-cache/78a5d8d28089ed25e55ee7e4da816ab0683bde7a/_word-wrap.scssc',
+369 silly gunzTarPerm   384,
+369 silly gunzTarPerm   438 ]
+370 silly gunzTarPerm extractEntry .sass-cache/0d8a7722b01afdb26d12a1aad6572b71a2f45b7b/_disable-warnings.scssc
+371 silly gunzTarPerm modified mode [ '.sass-cache/0d8a7722b01afdb26d12a1aad6572b71a2f45b7b/_disable-warnings.scssc',
+371 silly gunzTarPerm   384,
+371 silly gunzTarPerm   438 ]
+372 silly gunzTarPerm extractEntry .sass-cache/0d8a7722b01afdb26d12a1aad6572b71a2f45b7b/_grid.scssc
+373 silly gunzTarPerm modified mode [ '.sass-cache/0d8a7722b01afdb26d12a1aad6572b71a2f45b7b/_grid.scssc',
+373 silly gunzTarPerm   384,
+373 silly gunzTarPerm   438 ]
+374 silly gunzTarPerm extractEntry .sass-cache/0d8a7722b01afdb26d12a1aad6572b71a2f45b7b/_visual-grid.scssc
+375 silly gunzTarPerm modified mode [ '.sass-cache/0d8a7722b01afdb26d12a1aad6572b71a2f45b7b/_visual-grid.scssc',
+375 silly gunzTarPerm   384,
+375 silly gunzTarPerm   438 ]
+376 silly gunzTarPerm extractEntry .sass-cache/a54b49c25a949f1277307dfb6696f2e0e57a795b/_sass-helpers.scssc
+377 silly gunzTarPerm modified mode [ '.sass-cache/a54b49c25a949f1277307dfb6696f2e0e57a795b/_sass-helpers.scssc',
+377 silly gunzTarPerm   384,
+377 silly gunzTarPerm   438 ]
+378 silly gunzTarPerm extractEntry .sass-cache/dae4ec3146e8018b195f97409f6843cb6f8949b3/_new-breakpoint.scssc
+379 silly gunzTarPerm modified mode [ '.sass-cache/dae4ec3146e8018b195f97409f6843cb6f8949b3/_new-breakpoint.scssc',
+379 silly gunzTarPerm   384,
+379 silly gunzTarPerm   438 ]
+380 silly gunzTarPerm extractEntry .sass-cache/dae4ec3146e8018b195f97409f6843cb6f8949b3/_private.scssc
+381 silly gunzTarPerm modified mode [ '.sass-cache/dae4ec3146e8018b195f97409f6843cb6f8949b3/_private.scssc',
+381 silly gunzTarPerm   384,
+381 silly gunzTarPerm   438 ]
+382 silly gunzTarPerm extractEntry .sass-cache/e9523983633af75ab05abd02b2029a64991b656c/_yuidoc.scssc
+383 silly gunzTarPerm modified mode [ '.sass-cache/e9523983633af75ab05abd02b2029a64991b656c/_yuidoc.scssc',
+383 silly gunzTarPerm   384,
+383 silly gunzTarPerm   438 ]
+384 silly gunzTarPerm extractEntry .sass-cache/e9523983633af75ab05abd02b2029a64991b656c/syntax_highlighting.scssc
+385 silly gunzTarPerm modified mode [ '.sass-cache/e9523983633af75ab05abd02b2029a64991b656c/syntax_highlighting.scssc',
+385 silly gunzTarPerm   384,
+385 silly gunzTarPerm   438 ]
+386 silly gunzTarPerm extractEntry .sass-cache/ed5a2ef795acbacfdd87b2ef525b8836e63acd0a/_colors.scssc
+387 silly gunzTarPerm modified mode [ '.sass-cache/ed5a2ef795acbacfdd87b2ef525b8836e63acd0a/_colors.scssc',
+387 silly gunzTarPerm   384,
+387 silly gunzTarPerm   438 ]
+388 silly gunzTarPerm extractEntry .sass-cache/ed5a2ef795acbacfdd87b2ef525b8836e63acd0a/_grid.scssc
+389 silly gunzTarPerm modified mode [ '.sass-cache/ed5a2ef795acbacfdd87b2ef525b8836e63acd0a/_grid.scssc',
+389 silly gunzTarPerm   384,
+389 silly gunzTarPerm   438 ]
+390 silly gunzTarPerm extractEntry .sass-cache/ed5a2ef795acbacfdd87b2ef525b8836e63acd0a/_measurements.scssc
+391 silly gunzTarPerm modified mode [ '.sass-cache/ed5a2ef795acbacfdd87b2ef525b8836e63acd0a/_measurements.scssc',
+391 silly gunzTarPerm   384,
+391 silly gunzTarPerm   438 ]
+392 silly gunzTarPerm extractEntry .sass-cache/ed5a2ef795acbacfdd87b2ef525b8836e63acd0a/_typography.scssc
+393 silly gunzTarPerm modified mode [ '.sass-cache/ed5a2ef795acbacfdd87b2ef525b8836e63acd0a/_typography.scssc',
+393 silly gunzTarPerm   384,
+393 silly gunzTarPerm   438 ]
+394 silly gunzTarPerm extractEntry .sass-cache/f7fbfd2a80fc0fa1e9f004e7b211096acd58be35/_asset-pipeline.scssc
+395 silly gunzTarPerm modified mode [ '.sass-cache/f7fbfd2a80fc0fa1e9f004e7b211096acd58be35/_asset-pipeline.scssc',
+395 silly gunzTarPerm   384,
+395 silly gunzTarPerm   438 ]
+396 silly gunzTarPerm extractEntry .sass-cache/f7fbfd2a80fc0fa1e9f004e7b211096acd58be35/_prefixer.scssc
+397 silly gunzTarPerm modified mode [ '.sass-cache/f7fbfd2a80fc0fa1e9f004e7b211096acd58be35/_prefixer.scssc',
+397 silly gunzTarPerm   384,
+397 silly gunzTarPerm   438 ]
+398 silly gunzTarPerm extractEntry .sass-cache/f7fbfd2a80fc0fa1e9f004e7b211096acd58be35/_px-to-em.scssc
+399 silly gunzTarPerm modified mode [ '.sass-cache/f7fbfd2a80fc0fa1e9f004e7b211096acd58be35/_px-to-em.scssc',
+399 silly gunzTarPerm   384,
+399 silly gunzTarPerm   438 ]
+400 silly gunzTarPerm extractEntry .sass-cache/f8f5b042fcb65183920065a75a6e9567f14e80ae/_neat-helpers.scssc
+401 silly gunzTarPerm modified mode [ '.sass-cache/f8f5b042fcb65183920065a75a6e9567f14e80ae/_neat-helpers.scssc',
+401 silly gunzTarPerm   384,
+401 silly gunzTarPerm   438 ]
+402 silly gunzTarPerm extractEntry .sass-cache/f8f5b042fcb65183920065a75a6e9567f14e80ae/_neat.scssc
+403 silly gunzTarPerm modified mode [ '.sass-cache/f8f5b042fcb65183920065a75a6e9567f14e80ae/_neat.scssc',
+403 silly gunzTarPerm   384,
+403 silly gunzTarPerm   438 ]
+404 silly gunzTarPerm extractEntry .sass-cache/f98a254b5a8763114cf642363a8a7f814872b435/_font-face.scssc
+405 silly gunzTarPerm modified mode [ '.sass-cache/f98a254b5a8763114cf642363a8a7f814872b435/_font-face.scssc',
+405 silly gunzTarPerm   384,
+405 silly gunzTarPerm   438 ]
+406 silly gunzTarPerm extractEntry .sass-cache/f98a254b5a8763114cf642363a8a7f814872b435/_animation.scssc
+407 silly gunzTarPerm modified mode [ '.sass-cache/f98a254b5a8763114cf642363a8a7f814872b435/_animation.scssc',
+407 silly gunzTarPerm   384,
+407 silly gunzTarPerm   438 ]
+408 silly gunzTarPerm extractEntry .sass-cache/f98a254b5a8763114cf642363a8a7f814872b435/_backface-visibility.scssc
+409 silly gunzTarPerm modified mode [ '.sass-cache/f98a254b5a8763114cf642363a8a7f814872b435/_backface-visibility.scssc',
+409 silly gunzTarPerm   384,
+409 silly gunzTarPerm   438 ]
+410 silly gunzTarPerm extractEntry .sass-cache/f98a254b5a8763114cf642363a8a7f814872b435/_background-image.scssc
+411 silly gunzTarPerm modified mode [ '.sass-cache/f98a254b5a8763114cf642363a8a7f814872b435/_background-image.scssc',
+411 silly gunzTarPerm   384,
+411 silly gunzTarPerm   438 ]
+412 silly gunzTarPerm extractEntry .sass-cache/f98a254b5a8763114cf642363a8a7f814872b435/_background.scssc
+413 silly gunzTarPerm modified mode [ '.sass-cache/f98a254b5a8763114cf642363a8a7f814872b435/_background.scssc',
+413 silly gunzTarPerm   384,
+413 silly gunzTarPerm   438 ]
+414 silly gunzTarPerm extractEntry .sass-cache/f98a254b5a8763114cf642363a8a7f814872b435/_border-image.scssc
+415 silly gunzTarPerm modified mode [ '.sass-cache/f98a254b5a8763114cf642363a8a7f814872b435/_border-image.scssc',
+415 silly gunzTarPerm   384,
+415 silly gunzTarPerm   438 ]
+416 silly gunzTarPerm extractEntry .sass-cache/f98a254b5a8763114cf642363a8a7f814872b435/_border-radius.scssc
+417 silly gunzTarPerm modified mode [ '.sass-cache/f98a254b5a8763114cf642363a8a7f814872b435/_border-radius.scssc',
+417 silly gunzTarPerm   384,
+417 silly gunzTarPerm   438 ]
+418 silly gunzTarPerm extractEntry .sass-cache/f98a254b5a8763114cf642363a8a7f814872b435/_box-sizing.scssc
+419 silly gunzTarPerm modified mode [ '.sass-cache/f98a254b5a8763114cf642363a8a7f814872b435/_box-sizing.scssc',
+419 silly gunzTarPerm   384,
+419 silly gunzTarPerm   438 ]
+420 silly gunzTarPerm extractEntry .sass-cache/f98a254b5a8763114cf642363a8a7f814872b435/_calc.scssc
+421 silly gunzTarPerm modified mode [ '.sass-cache/f98a254b5a8763114cf642363a8a7f814872b435/_calc.scssc',
+421 silly gunzTarPerm   384,
+421 silly gunzTarPerm   438 ]
+422 silly gunzTarPerm extractEntry .sass-cache/f98a254b5a8763114cf642363a8a7f814872b435/_columns.scssc
+423 silly gunzTarPerm modified mode [ '.sass-cache/f98a254b5a8763114cf642363a8a7f814872b435/_columns.scssc',
+423 silly gunzTarPerm   384,
+423 silly gunzTarPerm   438 ]
+424 silly gunzTarPerm extractEntry .sass-cache/f98a254b5a8763114cf642363a8a7f814872b435/_filter.scssc
+425 silly gunzTarPerm modified mode [ '.sass-cache/f98a254b5a8763114cf642363a8a7f814872b435/_filter.scssc',
+425 silly gunzTarPerm   384,
+425 silly gunzTarPerm   438 ]
+426 silly gunzTarPerm extractEntry .sass-cache/f98a254b5a8763114cf642363a8a7f814872b435/_flex-box.scssc
+427 silly gunzTarPerm modified mode [ '.sass-cache/f98a254b5a8763114cf642363a8a7f814872b435/_flex-box.scssc',
+427 silly gunzTarPerm   384,
+427 silly gunzTarPerm   438 ]
+428 silly gunzTarPerm extractEntry .sass-cache/f98a254b5a8763114cf642363a8a7f814872b435/_appearance.scssc
+429 silly gunzTarPerm modified mode [ '.sass-cache/f98a254b5a8763114cf642363a8a7f814872b435/_appearance.scssc',
+429 silly gunzTarPerm   384,
+429 silly gunzTarPerm   438 ]
+430 silly gunzTarPerm extractEntry .sass-cache/f98a254b5a8763114cf642363a8a7f814872b435/_font-feature-settings.scssc
+431 silly gunzTarPerm modified mode [ '.sass-cache/f98a254b5a8763114cf642363a8a7f814872b435/_font-feature-settings.scssc',
+431 silly gunzTarPerm   384,
+431 silly gunzTarPerm   438 ]
+432 silly gunzTarPerm extractEntry .sass-cache/f98a254b5a8763114cf642363a8a7f814872b435/_hidpi-media-query.scssc
+433 silly gunzTarPerm modified mode [ '.sass-cache/f98a254b5a8763114cf642363a8a7f814872b435/_hidpi-media-query.scssc',
+433 silly gunzTarPerm   384,
+433 silly gunzTarPerm   438 ]
+434 silly gunzTarPerm extractEntry .sass-cache/f98a254b5a8763114cf642363a8a7f814872b435/_hyphens.scssc
+435 silly gunzTarPerm modified mode [ '.sass-cache/f98a254b5a8763114cf642363a8a7f814872b435/_hyphens.scssc',
+435 silly gunzTarPerm   384,
+435 silly gunzTarPerm   438 ]
+436 silly gunzTarPerm extractEntry .sass-cache/f98a254b5a8763114cf642363a8a7f814872b435/_image-rendering.scssc
+437 silly gunzTarPerm modified mode [ '.sass-cache/f98a254b5a8763114cf642363a8a7f814872b435/_image-rendering.scssc',
+437 silly gunzTarPerm   384,
+437 silly gunzTarPerm   438 ]
+438 silly gunzTarPerm extractEntry .sass-cache/f98a254b5a8763114cf642363a8a7f814872b435/_keyframes.scssc
+439 silly gunzTarPerm modified mode [ '.sass-cache/f98a254b5a8763114cf642363a8a7f814872b435/_keyframes.scssc',
+439 silly gunzTarPerm   384,
+439 silly gunzTarPerm   438 ]
+440 silly gunzTarPerm extractEntry .sass-cache/f98a254b5a8763114cf642363a8a7f814872b435/_linear-gradient.scssc
+441 silly gunzTarPerm modified mode [ '.sass-cache/f98a254b5a8763114cf642363a8a7f814872b435/_linear-gradient.scssc',
+441 silly gunzTarPerm   384,
+441 silly gunzTarPerm   438 ]
+442 silly gunzTarPerm extractEntry .sass-cache/f98a254b5a8763114cf642363a8a7f814872b435/_perspective.scssc
+443 silly gunzTarPerm modified mode [ '.sass-cache/f98a254b5a8763114cf642363a8a7f814872b435/_perspective.scssc',
+443 silly gunzTarPerm   384,
+443 silly gunzTarPerm   438 ]
+444 silly gunzTarPerm extractEntry .sass-cache/f98a254b5a8763114cf642363a8a7f814872b435/_placeholder.scssc
+445 silly gunzTarPerm modified mode [ '.sass-cache/f98a254b5a8763114cf642363a8a7f814872b435/_placeholder.scssc',
+445 silly gunzTarPerm   384,
+445 silly gunzTarPerm   438 ]
+446 silly gunzTarPerm extractEntry .sass-cache/f98a254b5a8763114cf642363a8a7f814872b435/_radial-gradient.scssc
+447 silly gunzTarPerm modified mode [ '.sass-cache/f98a254b5a8763114cf642363a8a7f814872b435/_radial-gradient.scssc',
+447 silly gunzTarPerm   384,
+447 silly gunzTarPerm   438 ]
+448 silly gunzTarPerm extractEntry .sass-cache/f98a254b5a8763114cf642363a8a7f814872b435/_transform.scssc
+449 silly gunzTarPerm modified mode [ '.sass-cache/f98a254b5a8763114cf642363a8a7f814872b435/_transform.scssc',
+449 silly gunzTarPerm   384,
+449 silly gunzTarPerm   438 ]
+450 silly gunzTarPerm extractEntry .sass-cache/f98a254b5a8763114cf642363a8a7f814872b435/_transition.scssc
+451 silly gunzTarPerm modified mode [ '.sass-cache/f98a254b5a8763114cf642363a8a7f814872b435/_transition.scssc',
+451 silly gunzTarPerm   384,
+451 silly gunzTarPerm   438 ]
+452 silly gunzTarPerm extractEntry .sass-cache/f98a254b5a8763114cf642363a8a7f814872b435/_user-select.scssc
+453 silly gunzTarPerm modified mode [ '.sass-cache/f98a254b5a8763114cf642363a8a7f814872b435/_user-select.scssc',
+453 silly gunzTarPerm   384,
+453 silly gunzTarPerm   438 ]
+454 silly gunzTarPerm extractEntry release.rb
+455 silly gunzTarPerm modified mode [ 'release.rb', 420, 438 ]
+456 silly gunzTarPerm extractEntry scripts/build
+457 silly gunzTarPerm modified mode [ 'scripts/build', 493, 511 ]
+458 silly gunzTarPerm extractEntry scripts/ci
+459 silly gunzTarPerm modified mode [ 'scripts/ci', 493, 511 ]
+460 silly gunzTarPerm extractEntry scripts/deploy
+461 silly gunzTarPerm modified mode [ 'scripts/deploy', 493, 511 ]
+462 silly gunzTarPerm extractEntry scripts/prepublish
+463 silly gunzTarPerm modified mode [ 'scripts/prepublish', 493, 511 ]
+464 silly gunzTarPerm extractEntry scripts/test
+465 silly gunzTarPerm modified mode [ 'scripts/test', 493, 511 ]
+466 silly gunzTarPerm extractEntry shims/promise.js
+467 silly gunzTarPerm modified mode [ 'shims/promise.js', 420, 438 ]
+468 silly gunzTarPerm extractEntry shims/qunit.js
+469 silly gunzTarPerm modified mode [ 'shims/qunit.js', 420, 438 ]
+470 silly gunzTarPerm extractEntry shipit.yml
+471 silly gunzTarPerm modified mode [ 'shipit.yml', 420, 438 ]
+472 silly gunzTarPerm extractEntry src/shopify.js
+473 silly gunzTarPerm modified mode [ 'src/shopify.js', 420, 438 ]
+474 silly gunzTarPerm extractEntry src/config.js
+475 silly gunzTarPerm modified mode [ 'src/config.js', 420, 438 ]
+476 silly gunzTarPerm extractEntry src/ie9-ajax.js
+477 silly gunzTarPerm modified mode [ 'src/ie9-ajax.js', 420, 438 ]
+478 silly gunzTarPerm extractEntry src/isomorphic-btoa.js
+479 silly gunzTarPerm modified mode [ 'src/isomorphic-btoa.js', 420, 438 ]
+480 silly gunzTarPerm extractEntry src/ajax.js
+481 silly gunzTarPerm modified mode [ 'src/ajax.js', 420, 438 ]
+482 silly gunzTarPerm extractEntry src/shop-client.js
+483 silly gunzTarPerm modified mode [ 'src/shop-client.js', 420, 438 ]
+484 silly gunzTarPerm extractEntry src/isomorphic-fetch.js
+485 silly gunzTarPerm modified mode [ 'src/isomorphic-fetch.js', 420, 438 ]
+486 silly gunzTarPerm extractEntry src/models/base-model.js
+487 silly gunzTarPerm modified mode [ 'src/models/base-model.js', 420, 438 ]
+488 silly gunzTarPerm extractEntry src/models/cart-model.js
+489 silly gunzTarPerm modified mode [ 'src/models/cart-model.js', 420, 438 ]
+490 silly gunzTarPerm extractEntry src/models/product-model.js
+491 silly gunzTarPerm modified mode [ 'src/models/product-model.js', 420, 438 ]
+492 silly gunzTarPerm extractEntry src/models/product-option-model.js
+493 silly gunzTarPerm modified mode [ 'src/models/product-option-model.js', 420, 438 ]
+494 silly gunzTarPerm extractEntry src/models/product-variant-model.js
+495 silly gunzTarPerm modified mode [ 'src/models/product-variant-model.js', 420, 438 ]
+496 silly gunzTarPerm extractEntry src/models/reference-model.js
+497 silly gunzTarPerm modified mode [ 'src/models/reference-model.js', 420, 438 ]
+498 silly gunzTarPerm extractEntry src/serializers/cart-serializer.js
+499 silly gunzTarPerm modified mode [ 'src/serializers/cart-serializer.js', 420, 438 ]
+500 silly gunzTarPerm extractEntry src/serializers/listings-serializer.js
+501 silly gunzTarPerm modified mode [ 'src/serializers/listings-serializer.js', 420, 438 ]
+502 silly gunzTarPerm extractEntry src/serializers/reference-serializer.js
+503 silly gunzTarPerm modified mode [ 'src/serializers/reference-serializer.js', 420, 438 ]
+504 silly gunzTarPerm extractEntry src/metal/assign.js
+505 silly gunzTarPerm modified mode [ 'src/metal/assign.js', 420, 438 ]
+506 silly gunzTarPerm extractEntry src/metal/core-object.js
+507 silly gunzTarPerm modified mode [ 'src/metal/core-object.js', 420, 438 ]
+508 silly gunzTarPerm extractEntry src/metal/create-class.js
+509 silly gunzTarPerm modified mode [ 'src/metal/create-class.js', 420, 438 ]
+510 silly gunzTarPerm extractEntry src/metal/global.js
+511 silly gunzTarPerm modified mode [ 'src/metal/global.js', 420, 438 ]
+512 silly gunzTarPerm extractEntry src/metal/includes.js
+513 silly gunzTarPerm modified mode [ 'src/metal/includes.js', 420, 438 ]
+514 silly gunzTarPerm extractEntry src/metal/is-node-like-environment.js
+515 silly gunzTarPerm modified mode [ 'src/metal/is-node-like-environment.js', 420, 438 ]
+516 silly gunzTarPerm extractEntry src/metal/set-guid-for.js
+517 silly gunzTarPerm modified mode [ 'src/metal/set-guid-for.js', 420, 438 ]
+518 silly gunzTarPerm extractEntry src/metal/uniq.js
+519 silly gunzTarPerm modified mode [ 'src/metal/uniq.js', 420, 438 ]
+520 silly gunzTarPerm extractEntry src/adapters/listings-adapter.js
+521 silly gunzTarPerm modified mode [ 'src/adapters/listings-adapter.js', 420, 438 ]
+522 silly gunzTarPerm extractEntry src/adapters/local-storage-adapter.js
+523 silly gunzTarPerm modified mode [ 'src/adapters/local-storage-adapter.js', 420, 438 ]
+524 silly gunzTarPerm extractEntry testem.json
+525 silly gunzTarPerm modified mode [ 'testem.json', 420, 438 ]
+526 silly gunzTarPerm extractEntry tests/fixtures/cart-fixture.js
+527 silly gunzTarPerm modified mode [ 'tests/fixtures/cart-fixture.js', 420, 438 ]
+528 silly gunzTarPerm extractEntry tests/fixtures/collection-fixture.js
+529 silly gunzTarPerm modified mode [ 'tests/fixtures/collection-fixture.js', 420, 438 ]
+530 silly gunzTarPerm extractEntry tests/fixtures/product-fixture.js
+531 silly gunzTarPerm modified mode [ 'tests/fixtures/product-fixture.js', 420, 438 ]
+532 silly gunzTarPerm extractEntry tests/helpers/assert-step.js
+533 silly gunzTarPerm modified mode [ 'tests/helpers/assert-step.js', 420, 438 ]
+534 silly gunzTarPerm extractEntry tests/index.html
+535 silly gunzTarPerm modified mode [ 'tests/index.html', 420, 438 ]
+536 silly gunzTarPerm extractEntry tests/integration/shop-client-cart-test.js
+537 silly gunzTarPerm modified mode [ 'tests/integration/shop-client-cart-test.js', 420, 438 ]
+538 silly gunzTarPerm extractEntry tests/integration/shop-client-fetch-collection-test.js
+539 silly gunzTarPerm modified mode [ 'tests/integration/shop-client-fetch-collection-test.js',
+539 silly gunzTarPerm   420,
+539 silly gunzTarPerm   438 ]
+540 silly gunzTarPerm extractEntry tests/integration/shop-client-fetch-product-test.js
+541 silly gunzTarPerm modified mode [ 'tests/integration/shop-client-fetch-product-test.js',
+541 silly gunzTarPerm   420,
+541 silly gunzTarPerm   438 ]
+542 silly gunzTarPerm extractEntry tests/integration/shop-client-recent-cart-test.js
+543 silly gunzTarPerm modified mode [ 'tests/integration/shop-client-recent-cart-test.js', 420, 438 ]
+544 silly gunzTarPerm extractEntry tests/unit/adapters/listings-adapter-test.js
+545 silly gunzTarPerm modified mode [ 'tests/unit/adapters/listings-adapter-test.js', 420, 438 ]
+546 silly gunzTarPerm extractEntry tests/unit/adapters/local-storage-adapter-test.js
+547 silly gunzTarPerm modified mode [ 'tests/unit/adapters/local-storage-adapter-test.js', 420, 438 ]
+548 silly gunzTarPerm extractEntry tests/unit/api/ajax-test.js
+549 silly gunzTarPerm modified mode [ 'tests/unit/api/ajax-test.js', 420, 438 ]
+550 silly gunzTarPerm extractEntry tests/unit/api/config-test.js
+551 silly gunzTarPerm modified mode [ 'tests/unit/api/config-test.js', 420, 438 ]
+552 silly gunzTarPerm extractEntry tests/unit/api/shop-client-test.js
+553 silly gunzTarPerm modified mode [ 'tests/unit/api/shop-client-test.js', 420, 438 ]
+554 silly gunzTarPerm extractEntry tests/unit/metal/core-object-test.js
+555 silly gunzTarPerm modified mode [ 'tests/unit/metal/core-object-test.js', 420, 438 ]
+556 silly gunzTarPerm extractEntry tests/unit/metal/create-class-test.js
+557 silly gunzTarPerm modified mode [ 'tests/unit/metal/create-class-test.js', 420, 438 ]
+558 silly gunzTarPerm extractEntry tests/unit/metal/set-guid-for.js
+559 silly gunzTarPerm modified mode [ 'tests/unit/metal/set-guid-for.js', 420, 438 ]
+560 silly gunzTarPerm extractEntry tests/unit/metal/uniq-test.js
+561 silly gunzTarPerm modified mode [ 'tests/unit/metal/uniq-test.js', 420, 438 ]
+562 silly gunzTarPerm extractEntry tests/unit/models/base-model-test.js
+563 silly gunzTarPerm modified mode [ 'tests/unit/models/base-model-test.js', 420, 438 ]
+564 silly gunzTarPerm extractEntry tests/unit/models/cart-model-test.js
+565 silly gunzTarPerm modified mode [ 'tests/unit/models/cart-model-test.js', 420, 438 ]
+566 silly gunzTarPerm extractEntry tests/unit/models/product-model-test.js
+567 silly gunzTarPerm modified mode [ 'tests/unit/models/product-model-test.js', 420, 438 ]
+568 silly gunzTarPerm extractEntry tests/unit/models/product-option-model-test.js
+569 silly gunzTarPerm modified mode [ 'tests/unit/models/product-option-model-test.js', 420, 438 ]
+570 silly gunzTarPerm extractEntry tests/unit/models/product-variant-test.js
+571 silly gunzTarPerm modified mode [ 'tests/unit/models/product-variant-test.js', 420, 438 ]
+572 silly gunzTarPerm extractEntry tests/unit/models/reference-model.js
+573 silly gunzTarPerm modified mode [ 'tests/unit/models/reference-model.js', 420, 438 ]
+574 silly gunzTarPerm extractEntry tests/unit/serializers/cart-serializer-test.js
+575 silly gunzTarPerm modified mode [ 'tests/unit/serializers/cart-serializer-test.js', 420, 438 ]
+576 silly gunzTarPerm extractEntry tests/unit/serializers/listings-serializer-test.js
+577 silly gunzTarPerm modified mode [ 'tests/unit/serializers/listings-serializer-test.js',
+577 silly gunzTarPerm   420,
+577 silly gunzTarPerm   438 ]
+578 silly gunzTarPerm extractEntry tests/unit/serializers/reference-serializer.js
+579 silly gunzTarPerm modified mode [ 'tests/unit/serializers/reference-serializer.js', 420, 438 ]
+580 silly gunzTarPerm extractEntry yuidoc.json
+581 silly gunzTarPerm modified mode [ 'yuidoc.json', 420, 438 ]
+582 verbose write writing to c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy\package.json
+583 info preinstall shopify-buy@0.1.6
+584 verbose readDependencies loading dependencies from c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy\package.json
+585 silly prepareForInstallMany adding node-fetch@1.3.3 from shopify-buy dependencies
+586 verbose readDependencies loading dependencies from c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy\package.json
+587 silly cache add args [ 'node-fetch@1.3.3', null ]
+588 verbose cache add spec node-fetch@1.3.3
+589 silly cache add parsed spec Result {
+589 silly cache add   raw: 'node-fetch@1.3.3',
+589 silly cache add   scope: null,
+589 silly cache add   name: 'node-fetch',
+589 silly cache add   rawSpec: '1.3.3',
+589 silly cache add   spec: '1.3.3',
+589 silly cache add   type: 'version' }
+590 silly addNamed node-fetch@1.3.3
+591 verbose addNamed "1.3.3" is a plain semver version for node-fetch
+592 silly mapToRegistry name node-fetch
+593 silly mapToRegistry using default registry
+594 silly mapToRegistry registry https://registry.npmjs.org/
+595 silly mapToRegistry data Result {
+595 silly mapToRegistry   raw: 'node-fetch',
+595 silly mapToRegistry   scope: null,
+595 silly mapToRegistry   name: 'node-fetch',
+595 silly mapToRegistry   rawSpec: '',
+595 silly mapToRegistry   spec: 'latest',
+595 silly mapToRegistry   type: 'tag' }
+596 silly mapToRegistry uri https://registry.npmjs.org/node-fetch
+597 verbose addNameVersion registry:https://registry.npmjs.org/node-fetch not in flight; fetching
+598 verbose request uri https://registry.npmjs.org/node-fetch
+599 verbose request no auth needed
+600 info attempt registry request try #1 at 5:13:38 PM
+601 http request GET https://registry.npmjs.org/node-fetch
+602 http 200 https://registry.npmjs.org/node-fetch
+603 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+603 verbose headers   etag: '"62JEDOPJHX62ENBRXVDJQOAHP"',
+603 verbose headers   'content-type': 'application/json',
+603 verbose headers   'content-encoding': 'gzip',
+603 verbose headers   'cache-control': 'max-age=300',
+603 verbose headers   'content-length': '6461',
+603 verbose headers   'accept-ranges': 'bytes',
+603 verbose headers   date: 'Sun, 15 May 2016 00:13:37 GMT',
+603 verbose headers   via: '1.1 varnish',
+603 verbose headers   age: '251',
+603 verbose headers   connection: 'keep-alive',
+603 verbose headers   'x-served-by': 'cache-sjc3128-SJC',
+603 verbose headers   'x-cache': 'HIT',
+603 verbose headers   'x-cache-hits': '2',
+603 verbose headers   'x-timer': 'S1463271217.798223,VS0,VE0',
+603 verbose headers   vary: 'Accept-Encoding' }
+604 silly get cb [ 200,
+604 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+604 silly get     etag: '"62JEDOPJHX62ENBRXVDJQOAHP"',
+604 silly get     'content-type': 'application/json',
+604 silly get     'content-encoding': 'gzip',
+604 silly get     'cache-control': 'max-age=300',
+604 silly get     'content-length': '6461',
+604 silly get     'accept-ranges': 'bytes',
+604 silly get     date: 'Sun, 15 May 2016 00:13:37 GMT',
+604 silly get     via: '1.1 varnish',
+604 silly get     age: '251',
+604 silly get     connection: 'keep-alive',
+604 silly get     'x-served-by': 'cache-sjc3128-SJC',
+604 silly get     'x-cache': 'HIT',
+604 silly get     'x-cache-hits': '2',
+604 silly get     'x-timer': 'S1463271217.798223,VS0,VE0',
+604 silly get     vary: 'Accept-Encoding' } ]
+605 verbose get saving node-fetch to C:\Users\Admin\AppData\Roaming\npm-cache\registry.npmjs.org\node-fetch\.cache.json
+606 verbose correctMkdir C:\Users\Admin\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+607 silly mapToRegistry name node-fetch
+608 silly mapToRegistry using default registry
+609 silly mapToRegistry registry https://registry.npmjs.org/
+610 silly mapToRegistry data Result {
+610 silly mapToRegistry   raw: 'node-fetch',
+610 silly mapToRegistry   scope: null,
+610 silly mapToRegistry   name: 'node-fetch',
+610 silly mapToRegistry   rawSpec: '',
+610 silly mapToRegistry   spec: 'latest',
+610 silly mapToRegistry   type: 'tag' }
+611 silly mapToRegistry uri https://registry.npmjs.org/node-fetch
+612 verbose addRemoteTarball https://registry.npmjs.org/node-fetch/-/node-fetch-1.3.3.tgz not in flight; adding
+613 verbose addRemoteTarball [ 'https://registry.npmjs.org/node-fetch/-/node-fetch-1.3.3.tgz',
+613 verbose addRemoteTarball   '880228be75fd207a8a9baa2042ead437e6edaf84' ]
+614 info retry fetch attempt 1 at 5:13:38 PM
+615 info attempt registry request try #1 at 5:13:38 PM
+616 http fetch GET https://registry.npmjs.org/node-fetch/-/node-fetch-1.3.3.tgz
+617 http fetch 200 https://registry.npmjs.org/node-fetch/-/node-fetch-1.3.3.tgz
+618 silly fetchAndShaCheck shasum 880228be75fd207a8a9baa2042ead437e6edaf84
+619 verbose addTmpTarball C:\Users\Admin\AppData\Local\Temp\npm-6700-d26533ed\registry.npmjs.org\node-fetch\-\node-fetch-1.3.3.tgz not in flight; adding
+620 verbose addTmpTarball already have metadata; skipping unpack for node-fetch@1.3.3
+621 verbose correctMkdir C:\Users\Admin\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+622 silly cache afterAdd node-fetch@1.3.3
+623 verbose afterAdd C:\Users\Admin\AppData\Roaming\npm-cache\node-fetch\1.3.3\package\package.json not in flight; writing
+624 verbose correctMkdir C:\Users\Admin\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+625 verbose afterAdd C:\Users\Admin\AppData\Roaming\npm-cache\node-fetch\1.3.3\package\package.json written
+626 silly install resolved [ { name: 'node-fetch',
+626 silly install resolved     version: '1.3.3',
+626 silly install resolved     description: 'A light-weight module that brings window.fetch to node.js and io.js',
+626 silly install resolved     main: 'index.js',
+626 silly install resolved     scripts:
+626 silly install resolved      { test: 'mocha test/test.js',
+626 silly install resolved        report: 'istanbul cover _mocha -- -R spec test/test.js',
+626 silly install resolved        coverage: 'istanbul cover _mocha --report lcovonly -- -R spec test/test.js && cat ./coverage/lcov.info | coveralls' },
+626 silly install resolved     repository:
+626 silly install resolved      { type: 'git',
+626 silly install resolved        url: 'git+https://github.com/bitinn/node-fetch.git' },
+626 silly install resolved     keywords: [ 'fetch', 'http', 'promise' ],
+626 silly install resolved     author: { name: 'David Frank' },
+626 silly install resolved     license: 'MIT',
+626 silly install resolved     bugs: { url: 'https://github.com/bitinn/node-fetch/issues' },
+626 silly install resolved     homepage: 'https://github.com/bitinn/node-fetch',
+626 silly install resolved     devDependencies:
+626 silly install resolved      { bluebird: '^2.9.1',
+626 silly install resolved        chai: '^1.10.0',
+626 silly install resolved        'chai-as-promised': '^4.1.1',
+626 silly install resolved        coveralls: '^2.11.2',
+626 silly install resolved        'form-data': '^1.0.0-rc1',
+626 silly install resolved        istanbul: '^0.3.5',
+626 silly install resolved        mocha: '^2.1.0',
+626 silly install resolved        parted: '^0.1.1',
+626 silly install resolved        promise: '^6.1.0',
+626 silly install resolved        resumer: '0.0.0' },
+626 silly install resolved     dependencies: { encoding: '^0.1.11' },
+626 silly install resolved     gitHead: 'fd3f89fcd94e5bcee31de4cbca4c15cd79999b07',
+626 silly install resolved     _id: 'node-fetch@1.3.3',
+626 silly install resolved     _shasum: '880228be75fd207a8a9baa2042ead437e6edaf84',
+626 silly install resolved     _from: 'node-fetch@1.3.3',
+626 silly install resolved     _npmVersion: '2.11.1',
+626 silly install resolved     _nodeVersion: '2.3.0',
+626 silly install resolved     _npmUser: { name: 'bitinn', email: 'bitinn@gmail.com' },
+626 silly install resolved     maintainers: [ [Object] ],
+626 silly install resolved     dist:
+626 silly install resolved      { shasum: '880228be75fd207a8a9baa2042ead437e6edaf84',
+626 silly install resolved        tarball: 'https://registry.npmjs.org/node-fetch/-/node-fetch-1.3.3.tgz' },
+626 silly install resolved     directories: {},
+626 silly install resolved     _resolved: 'https://registry.npmjs.org/node-fetch/-/node-fetch-1.3.3.tgz' } ]
+627 info install node-fetch@1.3.3 into c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy
+628 info installOne node-fetch@1.3.3
+629 verbose installOne of node-fetch to c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy not in flight; installing
+630 verbose correctMkdir C:\Users\Admin\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+631 verbose lock using C:\Users\Admin\AppData\Roaming\npm-cache\_locks\node-fetch-1069ea32263f9eb9.lock for c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy\node_modules\node-fetch
+632 silly install write writing node-fetch 1.3.3 to c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy\node_modules\node-fetch
+633 verbose unbuild node_modules\shopify-buy\node_modules\node-fetch
+634 silly gentlyRm c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy\node_modules\node-fetch is being purged from base c:\Users\Admin\Projects\Whimsical
+635 verbose gentlyRm don't care about contents; nuking c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy\node_modules\node-fetch
+636 verbose tar unpack C:\Users\Admin\AppData\Roaming\npm-cache\node-fetch\1.3.3\package.tgz
+637 verbose tar unpacking to c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy\node_modules\node-fetch
+638 silly gentlyRm c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy\node_modules\node-fetch is being purged
+639 verbose gentlyRm don't care about contents; nuking c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy\node_modules\node-fetch
+640 silly gunzTarPerm modes [ '777', '666' ]
+641 silly gunzTarPerm extractEntry package.json
+642 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+643 silly gunzTarPerm extractEntry .npmignore
+644 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+645 silly gunzTarPerm extractEntry README.md
+646 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+647 silly gunzTarPerm extractEntry index.js
+648 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+649 silly gunzTarPerm extractEntry LICENSE.md
+650 silly gunzTarPerm modified mode [ 'LICENSE.md', 420, 438 ]
+651 silly gunzTarPerm extractEntry LIMITS.md
+652 silly gunzTarPerm modified mode [ 'LIMITS.md', 420, 438 ]
+653 silly gunzTarPerm extractEntry .travis.yml
+654 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+655 silly gunzTarPerm extractEntry lib/headers.js
+656 silly gunzTarPerm modified mode [ 'lib/headers.js', 420, 438 ]
+657 silly gunzTarPerm extractEntry lib/request.js
+658 silly gunzTarPerm modified mode [ 'lib/request.js', 420, 438 ]
+659 silly gunzTarPerm extractEntry lib/response.js
+660 silly gunzTarPerm modified mode [ 'lib/response.js', 420, 438 ]
+661 silly gunzTarPerm extractEntry CHANGELOG.md
+662 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 438 ]
+663 silly gunzTarPerm extractEntry test/server.js
+664 silly gunzTarPerm modified mode [ 'test/server.js', 420, 438 ]
+665 silly gunzTarPerm extractEntry test/test.js
+666 silly gunzTarPerm modified mode [ 'test/test.js', 420, 438 ]
+667 verbose write writing to c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy\node_modules\node-fetch\package.json
+668 info preinstall node-fetch@1.3.3
+669 verbose readDependencies loading dependencies from c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy\node_modules\node-fetch\package.json
+670 silly prepareForInstallMany adding encoding@^0.1.11 from node-fetch dependencies
+671 verbose readDependencies loading dependencies from c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy\node_modules\node-fetch\package.json
+672 silly cache add args [ 'encoding@^0.1.11', null ]
+673 verbose cache add spec encoding@^0.1.11
+674 silly cache add parsed spec Result {
+674 silly cache add   raw: 'encoding@^0.1.11',
+674 silly cache add   scope: null,
+674 silly cache add   name: 'encoding',
+674 silly cache add   rawSpec: '^0.1.11',
+674 silly cache add   spec: '>=0.1.11 <0.2.0',
+674 silly cache add   type: 'range' }
+675 silly addNamed encoding@>=0.1.11 <0.2.0
+676 verbose addNamed ">=0.1.11 <0.2.0" is a valid semver range for encoding
+677 silly addNameRange { name: 'encoding', range: '>=0.1.11 <0.2.0', hasData: false }
+678 silly mapToRegistry name encoding
+679 silly mapToRegistry using default registry
+680 silly mapToRegistry registry https://registry.npmjs.org/
+681 silly mapToRegistry data Result {
+681 silly mapToRegistry   raw: 'encoding',
+681 silly mapToRegistry   scope: null,
+681 silly mapToRegistry   name: 'encoding',
+681 silly mapToRegistry   rawSpec: '',
+681 silly mapToRegistry   spec: 'latest',
+681 silly mapToRegistry   type: 'tag' }
+682 silly mapToRegistry uri https://registry.npmjs.org/encoding
+683 verbose addNameRange registry:https://registry.npmjs.org/encoding not in flight; fetching
+684 verbose request uri https://registry.npmjs.org/encoding
+685 verbose request no auth needed
+686 info attempt registry request try #1 at 5:13:38 PM
+687 http request GET https://registry.npmjs.org/encoding
+688 http 200 https://registry.npmjs.org/encoding
+689 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+689 verbose headers   etag: '"ED80P0SXOPGKRRYI0EVINPZUR"',
+689 verbose headers   'content-type': 'application/json',
+689 verbose headers   'content-encoding': 'gzip',
+689 verbose headers   'cache-control': 'max-age=300',
+689 verbose headers   'content-length': '2658',
+689 verbose headers   'accept-ranges': 'bytes',
+689 verbose headers   date: 'Sun, 15 May 2016 00:13:38 GMT',
+689 verbose headers   via: '1.1 varnish',
+689 verbose headers   age: '48',
+689 verbose headers   connection: 'keep-alive',
+689 verbose headers   'x-served-by': 'cache-sjc3128-SJC',
+689 verbose headers   'x-cache': 'HIT',
+689 verbose headers   'x-cache-hits': '1',
+689 verbose headers   'x-timer': 'S1463271218.172959,VS0,VE0',
+689 verbose headers   vary: 'Accept-Encoding' }
+690 silly get cb [ 200,
+690 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+690 silly get     etag: '"ED80P0SXOPGKRRYI0EVINPZUR"',
+690 silly get     'content-type': 'application/json',
+690 silly get     'content-encoding': 'gzip',
+690 silly get     'cache-control': 'max-age=300',
+690 silly get     'content-length': '2658',
+690 silly get     'accept-ranges': 'bytes',
+690 silly get     date: 'Sun, 15 May 2016 00:13:38 GMT',
+690 silly get     via: '1.1 varnish',
+690 silly get     age: '48',
+690 silly get     connection: 'keep-alive',
+690 silly get     'x-served-by': 'cache-sjc3128-SJC',
+690 silly get     'x-cache': 'HIT',
+690 silly get     'x-cache-hits': '1',
+690 silly get     'x-timer': 'S1463271218.172959,VS0,VE0',
+690 silly get     vary: 'Accept-Encoding' } ]
+691 verbose get saving encoding to C:\Users\Admin\AppData\Roaming\npm-cache\registry.npmjs.org\encoding\.cache.json
+692 verbose correctMkdir C:\Users\Admin\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+693 silly addNameRange number 2 { name: 'encoding', range: '>=0.1.11 <0.2.0', hasData: true }
+694 silly addNameRange versions [ 'encoding',
+694 silly addNameRange   [ '0.1.1',
+694 silly addNameRange     '0.1.2',
+694 silly addNameRange     '0.1.3',
+694 silly addNameRange     '0.1.4',
+694 silly addNameRange     '0.1.5',
+694 silly addNameRange     '0.1.6',
+694 silly addNameRange     '0.1.7',
+694 silly addNameRange     '0.1.8',
+694 silly addNameRange     '0.1.9',
+694 silly addNameRange     '0.1.10',
+694 silly addNameRange     '0.1.11',
+694 silly addNameRange     '0.1.12' ] ]
+695 silly addNamed encoding@0.1.12
+696 verbose addNamed "0.1.12" is a plain semver version for encoding
+697 silly mapToRegistry name encoding
+698 silly mapToRegistry using default registry
+699 silly mapToRegistry registry https://registry.npmjs.org/
+700 silly mapToRegistry data Result {
+700 silly mapToRegistry   raw: 'encoding',
+700 silly mapToRegistry   scope: null,
+700 silly mapToRegistry   name: 'encoding',
+700 silly mapToRegistry   rawSpec: '',
+700 silly mapToRegistry   spec: 'latest',
+700 silly mapToRegistry   type: 'tag' }
+701 silly mapToRegistry uri https://registry.npmjs.org/encoding
+702 verbose addRemoteTarball https://registry.npmjs.org/encoding/-/encoding-0.1.12.tgz not in flight; adding
+703 verbose addRemoteTarball [ 'https://registry.npmjs.org/encoding/-/encoding-0.1.12.tgz',
+703 verbose addRemoteTarball   '538b66f3ee62cd1ab51ec323829d1f9480c74beb' ]
+704 info retry fetch attempt 1 at 5:13:38 PM
+705 info attempt registry request try #1 at 5:13:38 PM
+706 http fetch GET https://registry.npmjs.org/encoding/-/encoding-0.1.12.tgz
+707 http fetch 200 https://registry.npmjs.org/encoding/-/encoding-0.1.12.tgz
+708 silly fetchAndShaCheck shasum 538b66f3ee62cd1ab51ec323829d1f9480c74beb
+709 verbose addTmpTarball C:\Users\Admin\AppData\Local\Temp\npm-6700-d26533ed\registry.npmjs.org\encoding\-\encoding-0.1.12.tgz not in flight; adding
+710 verbose addTmpTarball already have metadata; skipping unpack for encoding@0.1.12
+711 verbose correctMkdir C:\Users\Admin\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+712 silly cache afterAdd encoding@0.1.12
+713 verbose afterAdd C:\Users\Admin\AppData\Roaming\npm-cache\encoding\0.1.12\package\package.json not in flight; writing
+714 verbose correctMkdir C:\Users\Admin\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+715 verbose afterAdd C:\Users\Admin\AppData\Roaming\npm-cache\encoding\0.1.12\package\package.json written
+716 silly install resolved [ { name: 'encoding',
+716 silly install resolved     version: '0.1.12',
+716 silly install resolved     description: 'Convert encodings, uses iconv by default and fallbacks to iconv-lite if needed',
+716 silly install resolved     main: 'lib/encoding.js',
+716 silly install resolved     scripts: { test: 'nodeunit test' },
+716 silly install resolved     repository:
+716 silly install resolved      { type: 'git',
+716 silly install resolved        url: 'git+https://github.com/andris9/encoding.git' },
+716 silly install resolved     author: { name: 'Andris Reinman' },
+716 silly install resolved     license: 'MIT',
+716 silly install resolved     dependencies: { 'iconv-lite': '~0.4.13' },
+716 silly install resolved     devDependencies: { iconv: '~2.1.11', nodeunit: '~0.9.1' },
+716 silly install resolved     gitHead: '91ae950aaa854a119122c27cdbabd8c5585106f7',
+716 silly install resolved     bugs: { url: 'https://github.com/andris9/encoding/issues' },
+716 silly install resolved     homepage: 'https://github.com/andris9/encoding#readme',
+716 silly install resolved     _id: 'encoding@0.1.12',
+716 silly install resolved     _shasum: '538b66f3ee62cd1ab51ec323829d1f9480c74beb',
+716 silly install resolved     _from: 'encoding@>=0.1.11 <0.2.0',
+716 silly install resolved     _npmVersion: '3.3.12',
+716 silly install resolved     _nodeVersion: '5.3.0',
+716 silly install resolved     _npmUser: { name: 'andris', email: 'andris@kreata.ee' },
+716 silly install resolved     dist:
+716 silly install resolved      { shasum: '538b66f3ee62cd1ab51ec323829d1f9480c74beb',
+716 silly install resolved        tarball: 'https://registry.npmjs.org/encoding/-/encoding-0.1.12.tgz' },
+716 silly install resolved     maintainers: [ [Object] ],
+716 silly install resolved     directories: {},
+716 silly install resolved     _resolved: 'https://registry.npmjs.org/encoding/-/encoding-0.1.12.tgz' } ]
+717 info install encoding@0.1.12 into c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy\node_modules\node-fetch
+718 info installOne encoding@0.1.12
+719 verbose installOne of encoding to c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy\node_modules\node-fetch not in flight; installing
+720 verbose correctMkdir C:\Users\Admin\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+721 verbose lock using C:\Users\Admin\AppData\Roaming\npm-cache\_locks\encoding-7f7c00def9f1236b.lock for c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy\node_modules\node-fetch\node_modules\encoding
+722 silly install write writing encoding 0.1.12 to c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy\node_modules\node-fetch\node_modules\encoding
+723 verbose unbuild node_modules\shopify-buy\node_modules\node-fetch\node_modules\encoding
+724 silly gentlyRm c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy\node_modules\node-fetch\node_modules\encoding is being purged from base c:\Users\Admin\Projects\Whimsical
+725 verbose gentlyRm don't care about contents; nuking c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy\node_modules\node-fetch\node_modules\encoding
+726 verbose tar unpack C:\Users\Admin\AppData\Roaming\npm-cache\encoding\0.1.12\package.tgz
+727 verbose tar unpacking to c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy\node_modules\node-fetch\node_modules\encoding
+728 silly gentlyRm c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy\node_modules\node-fetch\node_modules\encoding is being purged
+729 verbose gentlyRm don't care about contents; nuking c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy\node_modules\node-fetch\node_modules\encoding
+730 silly gunzTarPerm modes [ '777', '666' ]
+731 silly gunzTarPerm extractEntry package.json
+732 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+733 silly gunzTarPerm extractEntry .npmignore
+734 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+735 silly gunzTarPerm extractEntry README.md
+736 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+737 silly gunzTarPerm extractEntry LICENSE
+738 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+739 silly gunzTarPerm extractEntry .travis.yml
+740 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+741 silly gunzTarPerm extractEntry lib/encoding.js
+742 silly gunzTarPerm modified mode [ 'lib/encoding.js', 420, 438 ]
+743 silly gunzTarPerm extractEntry lib/iconv-loader.js
+744 silly gunzTarPerm modified mode [ 'lib/iconv-loader.js', 420, 438 ]
+745 silly gunzTarPerm extractEntry test/test.js
+746 silly gunzTarPerm modified mode [ 'test/test.js', 420, 438 ]
+747 verbose write writing to c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy\node_modules\node-fetch\node_modules\encoding\package.json
+748 info preinstall encoding@0.1.12
+749 verbose readDependencies loading dependencies from c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy\node_modules\node-fetch\node_modules\encoding\package.json
+750 silly prepareForInstallMany adding iconv-lite@~0.4.13 from encoding dependencies
+751 verbose readDependencies loading dependencies from c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy\node_modules\node-fetch\node_modules\encoding\package.json
+752 silly cache add args [ 'iconv-lite@~0.4.13', null ]
+753 verbose cache add spec iconv-lite@~0.4.13
+754 silly cache add parsed spec Result {
+754 silly cache add   raw: 'iconv-lite@~0.4.13',
+754 silly cache add   scope: null,
+754 silly cache add   name: 'iconv-lite',
+754 silly cache add   rawSpec: '~0.4.13',
+754 silly cache add   spec: '>=0.4.13 <0.5.0',
+754 silly cache add   type: 'range' }
+755 silly addNamed iconv-lite@>=0.4.13 <0.5.0
+756 verbose addNamed ">=0.4.13 <0.5.0" is a valid semver range for iconv-lite
+757 silly addNameRange { name: 'iconv-lite', range: '>=0.4.13 <0.5.0', hasData: false }
+758 silly mapToRegistry name iconv-lite
+759 silly mapToRegistry using default registry
+760 silly mapToRegistry registry https://registry.npmjs.org/
+761 silly mapToRegistry data Result {
+761 silly mapToRegistry   raw: 'iconv-lite',
+761 silly mapToRegistry   scope: null,
+761 silly mapToRegistry   name: 'iconv-lite',
+761 silly mapToRegistry   rawSpec: '',
+761 silly mapToRegistry   spec: 'latest',
+761 silly mapToRegistry   type: 'tag' }
+762 silly mapToRegistry uri https://registry.npmjs.org/iconv-lite
+763 verbose addNameRange registry:https://registry.npmjs.org/iconv-lite not in flight; fetching
+764 verbose request uri https://registry.npmjs.org/iconv-lite
+765 verbose request no auth needed
+766 info attempt registry request try #1 at 5:13:39 PM
+767 http request GET https://registry.npmjs.org/iconv-lite
+768 http 200 https://registry.npmjs.org/iconv-lite
+769 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+769 verbose headers   etag: '"7AJK9OFDQY6LGFZTZNQRHZNCB"',
+769 verbose headers   'content-type': 'application/json',
+769 verbose headers   'content-encoding': 'gzip',
+769 verbose headers   'cache-control': 'max-age=300',
+769 verbose headers   'content-length': '8540',
+769 verbose headers   'accept-ranges': 'bytes',
+769 verbose headers   date: 'Sun, 15 May 2016 00:13:38 GMT',
+769 verbose headers   via: '1.1 varnish',
+769 verbose headers   age: '36',
+769 verbose headers   connection: 'keep-alive',
+769 verbose headers   'x-served-by': 'cache-sjc3128-SJC',
+769 verbose headers   'x-cache': 'HIT',
+769 verbose headers   'x-cache-hits': '1',
+769 verbose headers   'x-timer': 'S1463271218.366075,VS0,VE0',
+769 verbose headers   vary: 'Accept-Encoding' }
+770 silly get cb [ 200,
+770 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+770 silly get     etag: '"7AJK9OFDQY6LGFZTZNQRHZNCB"',
+770 silly get     'content-type': 'application/json',
+770 silly get     'content-encoding': 'gzip',
+770 silly get     'cache-control': 'max-age=300',
+770 silly get     'content-length': '8540',
+770 silly get     'accept-ranges': 'bytes',
+770 silly get     date: 'Sun, 15 May 2016 00:13:38 GMT',
+770 silly get     via: '1.1 varnish',
+770 silly get     age: '36',
+770 silly get     connection: 'keep-alive',
+770 silly get     'x-served-by': 'cache-sjc3128-SJC',
+770 silly get     'x-cache': 'HIT',
+770 silly get     'x-cache-hits': '1',
+770 silly get     'x-timer': 'S1463271218.366075,VS0,VE0',
+770 silly get     vary: 'Accept-Encoding' } ]
+771 verbose get saving iconv-lite to C:\Users\Admin\AppData\Roaming\npm-cache\registry.npmjs.org\iconv-lite\.cache.json
+772 verbose correctMkdir C:\Users\Admin\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+773 silly addNameRange number 2 { name: 'iconv-lite', range: '>=0.4.13 <0.5.0', hasData: true }
+774 silly addNameRange versions [ 'iconv-lite',
+774 silly addNameRange   [ '0.1.0',
+774 silly addNameRange     '0.1.1',
+774 silly addNameRange     '0.1.2',
+774 silly addNameRange     '0.1.3',
+774 silly addNameRange     '0.1.4',
+774 silly addNameRange     '0.2.0',
+774 silly addNameRange     '0.2.1',
+774 silly addNameRange     '0.2.3',
+774 silly addNameRange     '0.2.4',
+774 silly addNameRange     '0.2.5',
+774 silly addNameRange     '0.2.6',
+774 silly addNameRange     '0.2.7',
+774 silly addNameRange     '0.2.8',
+774 silly addNameRange     '0.2.9',
+774 silly addNameRange     '0.2.10',
+774 silly addNameRange     '0.2.11',
+774 silly addNameRange     '0.4.0-pre',
+774 silly addNameRange     '0.4.0-pre2',
+774 silly addNameRange     '0.4.0-pre3',
+774 silly addNameRange     '0.4.0',
+774 silly addNameRange     '0.4.1',
+774 silly addNameRange     '0.4.2',
+774 silly addNameRange     '0.4.3',
+774 silly addNameRange     '0.4.4',
+774 silly addNameRange     '0.4.5',
+774 silly addNameRange     '0.4.6',
+774 silly addNameRange     '0.4.7',
+774 silly addNameRange     '0.4.8',
+774 silly addNameRange     '0.4.9',
+774 silly addNameRange     '0.4.10',
+774 silly addNameRange     '0.4.11',
+774 silly addNameRange     '0.4.12',
+774 silly addNameRange     '0.4.13' ] ]
+775 silly addNamed iconv-lite@0.4.13
+776 verbose addNamed "0.4.13" is a plain semver version for iconv-lite
+777 silly mapToRegistry name iconv-lite
+778 silly mapToRegistry using default registry
+779 silly mapToRegistry registry https://registry.npmjs.org/
+780 silly mapToRegistry data Result {
+780 silly mapToRegistry   raw: 'iconv-lite',
+780 silly mapToRegistry   scope: null,
+780 silly mapToRegistry   name: 'iconv-lite',
+780 silly mapToRegistry   rawSpec: '',
+780 silly mapToRegistry   spec: 'latest',
+780 silly mapToRegistry   type: 'tag' }
+781 silly mapToRegistry uri https://registry.npmjs.org/iconv-lite
+782 verbose addRemoteTarball https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.4.13.tgz not in flight; adding
+783 verbose addRemoteTarball [ 'https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.4.13.tgz',
+783 verbose addRemoteTarball   '1f88aba4ab0b1508e8312acc39345f36e992e2f2' ]
+784 info retry fetch attempt 1 at 5:13:39 PM
+785 info attempt registry request try #1 at 5:13:39 PM
+786 http fetch GET https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.4.13.tgz
+787 http fetch 200 https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.4.13.tgz
+788 silly fetchAndShaCheck shasum 1f88aba4ab0b1508e8312acc39345f36e992e2f2
+789 verbose addTmpTarball C:\Users\Admin\AppData\Local\Temp\npm-6700-d26533ed\registry.npmjs.org\iconv-lite\-\iconv-lite-0.4.13.tgz not in flight; adding
+790 verbose addTmpTarball already have metadata; skipping unpack for iconv-lite@0.4.13
+791 verbose correctMkdir C:\Users\Admin\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+792 silly cache afterAdd iconv-lite@0.4.13
+793 verbose afterAdd C:\Users\Admin\AppData\Roaming\npm-cache\iconv-lite\0.4.13\package\package.json not in flight; writing
+794 verbose correctMkdir C:\Users\Admin\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+795 verbose afterAdd C:\Users\Admin\AppData\Roaming\npm-cache\iconv-lite\0.4.13\package\package.json written
+796 silly install resolved [ { name: 'iconv-lite',
+796 silly install resolved     description: 'Convert character encodings in pure javascript.',
+796 silly install resolved     version: '0.4.13',
+796 silly install resolved     license: 'MIT',
+796 silly install resolved     keywords: [ 'iconv', 'convert', 'charset', 'icu' ],
+796 silly install resolved     author: { name: 'Alexander Shtuchkin', email: 'ashtuchkin@gmail.com' },
+796 silly install resolved     contributors:
+796 silly install resolved      [ [Object],
+796 silly install resolved        [Object],
+796 silly install resolved        [Object],
+796 silly install resolved        [Object],
+796 silly install resolved        [Object],
+796 silly install resolved        [Object],
+796 silly install resolved        [Object],
+796 silly install resolved        [Object],
+796 silly install resolved        [Object],
+796 silly install resolved        [Object],
+796 silly install resolved        [Object],
+796 silly install resolved        [Object] ],
+796 silly install resolved     main: './lib/index.js',
+796 silly install resolved     homepage: 'https://github.com/ashtuchkin/iconv-lite',
+796 silly install resolved     bugs: { url: 'https://github.com/ashtuchkin/iconv-lite/issues' },
+796 silly install resolved     repository:
+796 silly install resolved      { type: 'git',
+796 silly install resolved        url: 'git://github.com/ashtuchkin/iconv-lite.git' },
+796 silly install resolved     engines: { node: '>=0.8.0' },
+796 silly install resolved     scripts:
+796 silly install resolved      { coverage: 'istanbul cover _mocha -- --grep .',
+796 silly install resolved        'coverage-open': 'open coverage/lcov-report/index.html',
+796 silly install resolved        test: 'mocha --reporter spec --grep .' },
+796 silly install resolved     browser: { './extend-node': false, './streams': false },
+796 silly install resolved     devDependencies:
+796 silly install resolved      { mocha: '*',
+796 silly install resolved        request: '2.47',
+796 silly install resolved        unorm: '*',
+796 silly install resolved        errto: '*',
+796 silly install resolved        async: '*',
+796 silly install resolved        istanbul: '*',
+796 silly install resolved        iconv: '2.1' },
+796 silly install resolved     gitHead: 'f5ec51b1e7dd1477a3570824960641eebdc5fbc6',
+796 silly install resolved     _id: 'iconv-lite@0.4.13',
+796 silly install resolved     _shasum: '1f88aba4ab0b1508e8312acc39345f36e992e2f2',
+796 silly install resolved     _from: 'iconv-lite@>=0.4.13 <0.5.0',
+796 silly install resolved     _npmVersion: '2.14.4',
+796 silly install resolved     _nodeVersion: '4.1.1',
+796 silly install resolved     _npmUser: { name: 'ashtuchkin', email: 'ashtuchkin@gmail.com' },
+796 silly install resolved     maintainers: [ [Object] ],
+796 silly install resolved     dist:
+796 silly install resolved      { shasum: '1f88aba4ab0b1508e8312acc39345f36e992e2f2',
+796 silly install resolved        tarball: 'https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.4.13.tgz' },
+796 silly install resolved     directories: {},
+796 silly install resolved     _resolved: 'https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.4.13.tgz' } ]
+797 info install iconv-lite@0.4.13 into c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy\node_modules\node-fetch\node_modules\encoding
+798 info installOne iconv-lite@0.4.13
+799 verbose installOne of iconv-lite to c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy\node_modules\node-fetch\node_modules\encoding not in flight; installing
+800 verbose correctMkdir C:\Users\Admin\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+801 verbose lock using C:\Users\Admin\AppData\Roaming\npm-cache\_locks\iconv-lite-4b86dc1359081440.lock for c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy\node_modules\node-fetch\node_modules\encoding\node_modules\iconv-lite
+802 silly install write writing iconv-lite 0.4.13 to c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy\node_modules\node-fetch\node_modules\encoding\node_modules\iconv-lite
+803 verbose unbuild node_modules\shopify-buy\node_modules\node-fetch\node_modules\encoding\node_modules\iconv-lite
+804 silly gentlyRm c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy\node_modules\node-fetch\node_modules\encoding\node_modules\iconv-lite is being purged from base c:\Users\Admin\Projects\Whimsical
+805 verbose gentlyRm don't care about contents; nuking c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy\node_modules\node-fetch\node_modules\encoding\node_modules\iconv-lite
+806 verbose tar unpack C:\Users\Admin\AppData\Roaming\npm-cache\iconv-lite\0.4.13\package.tgz
+807 verbose tar unpacking to c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy\node_modules\node-fetch\node_modules\encoding\node_modules\iconv-lite
+808 silly gentlyRm c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy\node_modules\node-fetch\node_modules\encoding\node_modules\iconv-lite is being purged
+809 verbose gentlyRm don't care about contents; nuking c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy\node_modules\node-fetch\node_modules\encoding\node_modules\iconv-lite
+810 silly gunzTarPerm modes [ '777', '666' ]
+811 silly gunzTarPerm extractEntry package.json
+812 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+813 silly gunzTarPerm extractEntry .npmignore
+814 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+815 silly gunzTarPerm extractEntry README.md
+816 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+817 silly gunzTarPerm extractEntry LICENSE
+818 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+819 silly gunzTarPerm extractEntry encodings/dbcs-codec.js
+820 silly gunzTarPerm modified mode [ 'encodings/dbcs-codec.js', 420, 438 ]
+821 silly gunzTarPerm extractEntry encodings/dbcs-data.js
+822 silly gunzTarPerm modified mode [ 'encodings/dbcs-data.js', 420, 438 ]
+823 silly gunzTarPerm extractEntry encodings/index.js
+824 silly gunzTarPerm modified mode [ 'encodings/index.js', 420, 438 ]
+825 silly gunzTarPerm extractEntry encodings/internal.js
+826 silly gunzTarPerm modified mode [ 'encodings/internal.js', 420, 438 ]
+827 silly gunzTarPerm extractEntry encodings/sbcs-codec.js
+828 silly gunzTarPerm modified mode [ 'encodings/sbcs-codec.js', 420, 438 ]
+829 silly gunzTarPerm extractEntry encodings/sbcs-data-generated.js
+830 silly gunzTarPerm modified mode [ 'encodings/sbcs-data-generated.js', 420, 438 ]
+831 silly gunzTarPerm extractEntry encodings/sbcs-data.js
+832 silly gunzTarPerm modified mode [ 'encodings/sbcs-data.js', 420, 438 ]
+833 silly gunzTarPerm extractEntry encodings/utf16.js
+834 silly gunzTarPerm modified mode [ 'encodings/utf16.js', 420, 438 ]
+835 silly gunzTarPerm extractEntry encodings/utf7.js
+836 silly gunzTarPerm modified mode [ 'encodings/utf7.js', 420, 438 ]
+837 silly gunzTarPerm extractEntry encodings/tables/big5-added.json
+838 silly gunzTarPerm modified mode [ 'encodings/tables/big5-added.json', 420, 438 ]
+839 silly gunzTarPerm extractEntry encodings/tables/cp936.json
+840 silly gunzTarPerm modified mode [ 'encodings/tables/cp936.json', 420, 438 ]
+841 silly gunzTarPerm extractEntry encodings/tables/cp949.json
+842 silly gunzTarPerm modified mode [ 'encodings/tables/cp949.json', 420, 438 ]
+843 silly gunzTarPerm extractEntry encodings/tables/cp950.json
+844 silly gunzTarPerm modified mode [ 'encodings/tables/cp950.json', 420, 438 ]
+845 silly gunzTarPerm extractEntry encodings/tables/eucjp.json
+846 silly gunzTarPerm modified mode [ 'encodings/tables/eucjp.json', 420, 438 ]
+847 silly gunzTarPerm extractEntry encodings/tables/gb18030-ranges.json
+848 silly gunzTarPerm modified mode [ 'encodings/tables/gb18030-ranges.json', 420, 438 ]
+849 silly gunzTarPerm extractEntry encodings/tables/gbk-added.json
+850 silly gunzTarPerm modified mode [ 'encodings/tables/gbk-added.json', 420, 438 ]
+851 silly gunzTarPerm extractEntry encodings/tables/shiftjis.json
+852 silly gunzTarPerm modified mode [ 'encodings/tables/shiftjis.json', 420, 438 ]
+853 silly gunzTarPerm extractEntry .travis.yml
+854 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+855 silly gunzTarPerm extractEntry lib/bom-handling.js
+856 silly gunzTarPerm modified mode [ 'lib/bom-handling.js', 420, 438 ]
+857 silly gunzTarPerm extractEntry lib/extend-node.js
+858 silly gunzTarPerm modified mode [ 'lib/extend-node.js', 420, 438 ]
+859 silly gunzTarPerm extractEntry lib/index.js
+860 silly gunzTarPerm modified mode [ 'lib/index.js', 420, 438 ]
+861 silly gunzTarPerm extractEntry lib/streams.js
+862 silly gunzTarPerm modified mode [ 'lib/streams.js', 420, 438 ]
+863 silly gunzTarPerm extractEntry Changelog.md
+864 silly gunzTarPerm modified mode [ 'Changelog.md', 420, 438 ]
+865 verbose write writing to c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy\node_modules\node-fetch\node_modules\encoding\node_modules\iconv-lite\package.json
+866 info preinstall iconv-lite@0.4.13
+867 verbose readDependencies loading dependencies from c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy\node_modules\node-fetch\node_modules\encoding\node_modules\iconv-lite\package.json
+868 verbose readDependencies loading dependencies from c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy\node_modules\node-fetch\node_modules\encoding\node_modules\iconv-lite\package.json
+869 silly install resolved []
+870 verbose about to build c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy\node_modules\node-fetch\node_modules\encoding\node_modules\iconv-lite
+871 info build c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy\node_modules\node-fetch\node_modules\encoding\node_modules\iconv-lite
+872 info linkStuff iconv-lite@0.4.13
+873 silly linkStuff iconv-lite@0.4.13 has c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy\node_modules\node-fetch\node_modules\encoding\node_modules as its parent node_modules
+874 verbose linkBins iconv-lite@0.4.13
+875 verbose linkMans iconv-lite@0.4.13
+876 verbose rebuildBundles iconv-lite@0.4.13
+877 info install iconv-lite@0.4.13
+878 info postinstall iconv-lite@0.4.13
+879 verbose unlock done using C:\Users\Admin\AppData\Roaming\npm-cache\_locks\iconv-lite-4b86dc1359081440.lock for c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy\node_modules\node-fetch\node_modules\encoding\node_modules\iconv-lite
+880 verbose about to build c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy\node_modules\node-fetch\node_modules\encoding
+881 info build c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy\node_modules\node-fetch\node_modules\encoding
+882 info linkStuff encoding@0.1.12
+883 silly linkStuff encoding@0.1.12 has c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy\node_modules\node-fetch\node_modules as its parent node_modules
+884 verbose linkBins encoding@0.1.12
+885 verbose linkMans encoding@0.1.12
+886 verbose rebuildBundles encoding@0.1.12
+887 verbose rebuildBundles [ 'iconv-lite' ]
+888 info install encoding@0.1.12
+889 info postinstall encoding@0.1.12
+890 verbose unlock done using C:\Users\Admin\AppData\Roaming\npm-cache\_locks\encoding-7f7c00def9f1236b.lock for c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy\node_modules\node-fetch\node_modules\encoding
+891 verbose about to build c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy\node_modules\node-fetch
+892 info build c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy\node_modules\node-fetch
+893 info linkStuff node-fetch@1.3.3
+894 silly linkStuff node-fetch@1.3.3 has c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy\node_modules as its parent node_modules
+895 verbose linkBins node-fetch@1.3.3
+896 verbose linkMans node-fetch@1.3.3
+897 verbose rebuildBundles node-fetch@1.3.3
+898 verbose rebuildBundles [ 'encoding' ]
+899 info install node-fetch@1.3.3
+900 info postinstall node-fetch@1.3.3
+901 verbose unlock done using C:\Users\Admin\AppData\Roaming\npm-cache\_locks\node-fetch-1069ea32263f9eb9.lock for c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy\node_modules\node-fetch
+902 verbose about to build c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy
+903 info build c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy
+904 info linkStuff shopify-buy@0.1.6
+905 silly linkStuff shopify-buy@0.1.6 has c:\Users\Admin\Projects\Whimsical\node_modules as its parent node_modules
+906 verbose linkBins shopify-buy@0.1.6
+907 verbose linkMans shopify-buy@0.1.6
+908 verbose rebuildBundles shopify-buy@0.1.6
+909 verbose rebuildBundles [ 'node-fetch' ]
+910 info install shopify-buy@0.1.6
+911 info postinstall shopify-buy@0.1.6
+912 verbose unlock done using C:\Users\Admin\AppData\Roaming\npm-cache\_locks\shopify-buy-f5ce2e1eaac59be4.lock for c:\Users\Admin\Projects\Whimsical\node_modules\shopify-buy
+913 verbose validateInstall loading c:\Users\Admin\Projects\Whimsical\package.json for validation
+914 verbose stack Error: The package babel-runtime@5.8.38 does not satisfy its siblings' peerDependencies requirements!
+914 verbose stack     at c:\Program Files\nodejs\node_modules\npm\lib\install.js:125:32
+914 verbose stack     at c:\Program Files\nodejs\node_modules\npm\lib\install.js:268:7
+914 verbose stack     at c:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:142:5
+914 verbose stack     at c:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:263:14
+914 verbose stack     at cb (c:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
+914 verbose stack     at c:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:263:14
+914 verbose stack     at cb (c:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
+914 verbose stack     at c:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:263:14
+914 verbose stack     at cb (c:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
+914 verbose stack     at c:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:263:14
+915 verbose cwd c:\Users\Admin\Projects\Whimsical
+916 error Windows_NT 6.3.9600
+917 error argv "c:\\Program Files\\nodejs\\node.exe" "c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "shopify-buy" "--save-dev"
+918 error node v4.4.4
+919 error npm  v2.15.1
+920 error code EPEERINVALID
+921 error peerinvalid The package babel-runtime@5.8.38 does not satisfy its siblings' peerDependencies requirements!
+921 error peerinvalid Peer vueify@8.4.1 wants babel-runtime@^6.0.0
+922 verbose exit [ 1, true ]
