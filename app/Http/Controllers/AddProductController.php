@@ -17,19 +17,6 @@ class AddProductController extends Controller
 
     }
 
-    public function index()
-    {
-        return view('products.add');
-    }
-    
-    public function store(AddProductRequest $request)
-    {
-
-        Product::create($request->all());
-
-        return redirect('/');
-    }
-
     public function addImage(Request $request)
     {
         $file = $request->file('file');

@@ -49,8 +49,9 @@
             <div class="row">
                 <div class="event_container">
                     <div class="event_date">
-                        <h3>{{$event->time->format('M, d')}}</h3>
-                        <h3>{{$event->time->year}}</h3>
+                        <h3>{{$event->start_date->format('M')}}, {{$event->start_date->format('d')}}</h3>
+                        <h3>{{$event->start_date->year}}</h3>
+                        <h3></h3>
                     </div>
                     <div class="event_info">
                         <h3>{{$event->venue_name}}</h3>

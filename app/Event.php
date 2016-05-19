@@ -7,9 +7,30 @@ use Carbon\Carbon;
 
 class Event extends Model
 {
-    protected $fillable = ['title', 'time', 'street_address', 'city', 'state', 'venue_details', 'venue_name', 'details'];
+    protected $fillable = [
+        'title',
+        'start_date',
+        'end_date',
+        'start_day',
+        'start_month',
+        'start_year',
+        'end_day',
+        'end_month',
+        'end_year',
+        'street_address',
+        'city',
+        'state',
+        'venue_details',
+        'venue_name',
+        'details'
+    ];
 
-    protected $dates = ['time'];
+    protected $dates = [
+        'start_day',
+        'start_year',
+        'end_day',
+        'end_month',
+        'end_year',];
 
     public function events()
     {
@@ -18,11 +39,16 @@ class Event extends Model
 
     public function scopeFuture($query)
     {
-        $query->where('time', '>=', Carbon::now());
+        $query->where('start_date', '>=', Carbon::now());
     }
 
-    public function setTimeAtAttribute($time)
+    public function getStartDateAttribute($time)
     {
-        $this->attributes['time'] = Carbon::parse($time);
+        return Carbon::parse($time);
     }
+//
+//    public function getEndDateAttribute($time)
+//    {
+//        $this->attributes['end_date'] = Carbon::parse($time);
+//    }
 }

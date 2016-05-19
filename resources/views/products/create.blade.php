@@ -25,7 +25,7 @@
 
         <div class="col-sm-4 col-sm-offset-1">
 
-            <form method="POST" action="/product/add" enctype="multipart/form-data">
+            <form method="POST" action="/product" enctype="multipart/form-data">
 
                 <fieldset class="form-group">
                     <label for="Title">Title</label>

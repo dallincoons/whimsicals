@@ -107,7 +107,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/0.7.0/vue-resource.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/dropzone.js"></script>
 
-<script src="/js/bs_js/bootstrap.min.js"></script>
+<script src="/js/bs_js/bootstrap.min.js" type="text/javascript"></script>
 <script src="/js/app.js"></script>
 
 

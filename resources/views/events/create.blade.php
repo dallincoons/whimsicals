@@ -1,40 +1,145 @@
-<form method="POST" action="/events" enctype="multipart/form-data">
 
-    <fieldset class="form-group">
-        <label for="Title">Title</label>
-        <input type="text" class="form-control" id="Title" name="title">
-    </fieldset>
-    <fieldset class="form-group">
-        <label for="StreetAddress">Street Address</label>
-        <input type="text" class="form-control" id="StreetAddress" name="street_address">
-    </fieldset>
-    <fieldset class="form-group">
-        <label for="city">City</label>
-        <input type="text" class="form-control" type="number" id="city" name="city" />
-    </fieldset>
-    <fieldset class="form-group">
-        <label for="state">State</label>
-        <input  type="text" class="form-control" id="state" rows="3" name="state" />
-    </fieldset>
-    <fieldset class="form-group">
-        <label for="time">Time</label>
-        <input  type="date" class="form-control" id="time" rows="3" name="time" />
-    </fieldset>
-    <fieldset class="form-group">
-        <label for="venue_details">venue_details</label>
-        <textarea class="form-control" id="venue_details" rows="3" name="venue_details"></textarea>
-    </fieldset>
-    <fieldset class="form-group">
-        <label for="venue_name">venue_name</label>
-        <textarea class="form-control" id="venue_name" rows="3" name="venue_name"></textarea>
-    </fieldset>
-    <fieldset class="form-group">
-        <label for="details">details</label>
-        <textarea class="form-control" id="details" rows="3" name="details"></textarea>
-    </fieldset>
 
-    <button type="submit" class="btn btn-default pro_sub" id="addProduct">Add Product</button>
+@extends('main')
 
-    {{ csrf_field() }}
+@section('content')
 
-</form>
+    <div class="container add_event">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="sidebar-nav">
+                    <div class="navbar navbar-default" role="navigation">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <span class="visible-xs navbar-brand">Edit/Update Options</span>
+                        </div>
+                        <div class="navbar-collapse collapse sidebar-navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="/create"><i class="fa fa-calendar-plus-o"></i> Add New Event</a></li>
+                                <li role="separator" class="line_divide"></li>
+                                <li><a href="#"><i class="fa fa-calendar-check-o"></i> Edit Events</a></li>
+                                <li role="separator" class="line_divide"></li>
+                                <li><a href="/add"><i class="fa fa-plus-circle"></i> Add New Example Product</a></li>
+                                <li role="separator" class="line_divide"></li>
+                                <li><a href="#"><i class="fa  fa-edit"></i> Edit Example Products</a></li>
+                            </ul>
+                        </div><!--/.nav-collapse -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-9">
+                <h2>Add New Event</h2>
+                <form method="POST" action="/events" enctype="multipart/form-data">
+
+                    <fieldset class="form-group">
+                        <label for="Title">Title</label>
+                        <input type="text" class="form-control" id="Title" name="title">
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <label for="StreetAddress">Street Address</label>
+                        <input type="text" class="form-control" id="StreetAddress" name="street_address">
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <label for="city">City</label>
+                        <input type="text" class="form-control" type="number" id="city" name="city" />
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <label for="state">State</label>
+                        <input  type="text" class="form-control" id="state" name="state" />
+                    </fieldset>
+
+                    <span>Start Date</span>
+                    <fieldset class="form-group">
+                        <select name="start_month">
+                            <option value="1">January</option>
+                            <option value="2">February</option>
+                            <option value="3">March</option>
+                            <option value="4">April</option>
+                            <option value="5">May</option>
+                            <option value="6">June</option>
+                            <option value="7">July</option>
+                            <option value="8">August</option>
+                            <option value="9">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+                        <select name="start_day">
+                            @foreach(range(1, 31) as $day)
+                                <option>{{$day}}</option>
+                            @endforeach
+                        </select>
+                        <select name="start_year">
+                            <option>{{$now->year}}</option>
+                            <option>{{$now->copy()->addYear()->year}}</option>
+                        </select>
+                    </fieldset>
+
+                    <span>End Date</span>
+                    <fieldset class="form-group">
+                        <select name="end_month">
+                            <option value="1">January</option>
+                            <option value="2">February</option>
+                            <option value="3">March</option>
+                            <option value="4">April</option>
+                            <option value="5">May</option>
+                            <option value="6">June</option>
+                            <option value="7">July</option>
+                            <option value="8">August</option>
+                            <option value="9">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+                        <select name="end_day">
+                            @foreach(range(1, 31) as $day)
+                                <option>{{$day}}</option>
+                            @endforeach
+                        </select>
+                        <select name="end_year">
+                            <option>{{$now->year}}</option>
+                            <option>{{$now->copy()->addYear()->year}}</option>
+                        </select>
+                    </fieldset>
+
+                    <fieldset class="form-group">
+                        <label for="start_date">start_date</label>
+                        <input  type="date" class="form-control" id="start_date"  name="start_date" />
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <label for="venue_details">venue_details</label>
+                        <textarea class="form-control" id="venue_details" rows="3" name="venue_details"></textarea>
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <label for="venue_name">venue_name</label>
+                        <textarea class="form-control" id="venue_name" rows="3" name="venue_name"></textarea>
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <label for="details">details</label>
+                        <textarea class="form-control" id="details" rows="3" name="details"></textarea>
+                    </fieldset>
+
+                    <button type="submit" class="btn btn-default pro_sub" id="addProduct">Add Event</button>
+
+                    {{ csrf_field() }}
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+@stop
+
+
+@section('scripts.footer')
+@stop

@@ -24,10 +24,16 @@ class AddEventRequest extends Request
     public function rules()
     {
         return [
-            'title' => 'required',
-            'street_address' => 'required',
-            'city' => 'required',
-            'state' => 'required'
+//            'title' => 'required',
+//            'street_address' => 'required',
+//            'city' => 'required',
+//            'state' => 'required',
+//            'start_day' => 'required',
+//            'start_month' => 'required',
+//            'start_year' => 'required',
+//            'end_day' => 'required',
+//            'end_month' => 'required',
+//            'end_year' => 'required',
         ];
     }
 }
