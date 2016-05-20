@@ -31,8 +31,8 @@ Route::group(['middleware' => ['web']], function(){
 
     });
 
-    Route::get('member-home', function(){
-        return view('member-home');
+    Route::get('portal', function(){
+        return view('member_portal');
     });
 
     /**

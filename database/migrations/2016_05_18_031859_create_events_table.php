@@ -16,13 +16,13 @@ class CreateEventsTable extends Migration
             $table->increments('id');
             $table->string('title');
             $table->date('start_date');
-            $table->date('end_date');
+            $table->date('end_date')->nullable();
             $table->integer('start_month');
             $table->integer('start_day');
             $table->integer('start_year');
-            $table->integer('end_month');
-            $table->integer('end_day');
-            $table->integer('end_year');
+            $table->integer('end_month')->nullable();
+            $table->integer('end_day')->nullable();
+            $table->integer('end_year')->nullable();
             $table->string('street_address');
             $table->string('city');
             $table->string('state');

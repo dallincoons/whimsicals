@@ -25,12 +25,7 @@ class Event extends Model
         'details'
     ];
 
-    protected $dates = [
-        'start_day',
-        'start_year',
-        'end_day',
-        'end_month',
-        'end_year',];
+    protected $dates = [];
 
     public function events()
     {

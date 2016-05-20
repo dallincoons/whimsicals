@@ -29,7 +29,11 @@ class EventsController extends Controller
     {
 
         $request->merge(['start_date' => Carbon::createFromDate($request->start_year, $request->start_month, $request->start_day)->toDateTimeString()]);
-        $request->merge(['end_date' => Carbon::createFromDate($request->end_year, $request->end_month, $request->end_day)->toDateTimeString()]);
+
+        if($request->dateType === 'multi')
+        {
+            $request->merge(['end_date' => Carbon::createFromDate($request->end_year, $request->end_month, $request->end_day)->toDateTimeString()]);
+        }
 
         $event->create($request->all());
 
