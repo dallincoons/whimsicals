@@ -49,7 +49,7 @@
             <div class="row">
                 <div class="event_container">
                     <div class="event_date">
-                        <h3>{{$event->start_date->format('M')}}, {{$event->start_date->format('d')}}</h3>
+                        <h3>{{$event->start_date->format('M')}}, {{$event->start_date->format('d')}} @if($event->end_date > $event->start_date) - {{ $event->end_date->format('d') }}@endif</h3>
                         <h3>{{$event->start_date->year}}</h3>
                         <h3></h3>
                     </div>
@@ -66,8 +66,6 @@
 
         @endforeach
 
-
     </div>
-
 
 @stop

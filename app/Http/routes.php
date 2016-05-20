@@ -31,6 +31,10 @@ Route::group(['middleware' => ['web']], function(){
 
     });
 
+    Route::get('member-home', function(){
+        return view('member-home');
+    });
+
     /**
      * turn into a resource
      */

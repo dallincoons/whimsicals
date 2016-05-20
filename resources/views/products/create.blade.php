@@ -32,14 +32,6 @@
                     <input type="text" class="form-control" id="Title" name="title" placeholder="Adorable Apron">
                 </fieldset>
                 <fieldset class="form-group">
-                    <label for="Price">Price</label>
-                    <input type="number" class="form-control" id="Price" placeholder="$0.00" name="price">
-                </fieldset>
-                <fieldset class="form-group">
-                    <label for="quantity">Quantity</label>
-                    <input class="form-control" type="number" id="quantity" name="quantity" />
-                </fieldset>
-                <fieldset class="form-group">
                     <label for="description">Description</label>
                     <textarea class="form-control" id="description" rows="3" name="description"></textarea>
                 </fieldset>

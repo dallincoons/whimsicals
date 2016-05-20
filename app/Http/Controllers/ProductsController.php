@@ -7,6 +7,7 @@ use DB;
 use View;
 use App\Product;
 use Carbon\Carbon;
+use App\Http\Requests\AddProductRequest;
 
 
 use App\Http\Requests;

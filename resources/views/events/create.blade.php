@@ -53,7 +53,7 @@
                         <input  type="text" class="form-control" id="state" name="state" />
                     </fieldset>
 
-                    <span>Start Date</span>
+                    <label>Start Date</label>
                     <fieldset class="form-group">
                         <select name="start_month">
                             <option value="1">January</option>
@@ -79,8 +79,14 @@
                             <option>{{$now->copy()->addYear()->year}}</option>
                         </select>
                     </fieldset>
+                    <span></span>
 
-                    <span>End Date</span>
+                    <label>End Date</label>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> End Date Same as Start Date
+                        </label>
+                    </div>
                     <fieldset class="form-group">
                         <select name="end_month">
                             <option value="1">January</option>
@@ -107,10 +113,6 @@
                         </select>
                     </fieldset>
 
-                    <fieldset class="form-group">
-                        <label for="start_date">start_date</label>
-                        <input  type="date" class="form-control" id="start_date"  name="start_date" />
-                    </fieldset>
                     <fieldset class="form-group">
                         <label for="venue_details">venue_details</label>
                         <textarea class="form-control" id="venue_details" rows="3" name="venue_details"></textarea>

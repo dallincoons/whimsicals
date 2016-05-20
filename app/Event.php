@@ -46,9 +46,9 @@ class Event extends Model
     {
         return Carbon::parse($time);
     }
-//
-//    public function getEndDateAttribute($time)
-//    {
-//        $this->attributes['end_date'] = Carbon::parse($time);
-//    }
+
+    public function getEndDateAttribute($time)
+    {
+        return Carbon::parse($time);
+    }
 }
