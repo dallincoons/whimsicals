@@ -10,6 +10,9 @@
 | and give it the controller to call when that URI is requested.
 |
 */
+Route::get('/events/edit-single', function() {
+    return view('events.edit-single');
+});
 
 Route::group(['middleware' => ['web']], function(){
 
@@ -17,13 +20,22 @@ Route::group(['middleware' => ['web']], function(){
         return view('home');
     });
 
+    Route::get('/events/edit', function() {
+        return view('events.edit');
+    });
+
+
+
     Route::resource('events', 'EventsController');
+
 
     Route::post('product/image', 'AddProductController@addImage');
 
     Route::resource('product', 'ProductsController');
 
     Route::get('product/{product}', 'ProductsController@show');
+
+    Route::get('product/image/{id}', 'ProductsController@addImage');
 
     Route::get('contact', function(){
 
@@ -32,7 +44,9 @@ Route::group(['middleware' => ['web']], function(){
     });
 
     Route::get('portal', function(){
+
         return view('member_portal');
+
     });
 
     /**

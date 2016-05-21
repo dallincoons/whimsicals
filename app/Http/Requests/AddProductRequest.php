@@ -25,8 +25,6 @@ class AddProductRequest extends Request
     {
         return [
             'title' => 'required',
-            'price' => 'required',
-            'quantity' => 'required',
             'description' => 'required'
         ];
     }

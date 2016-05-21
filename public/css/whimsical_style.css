@@ -498,14 +498,15 @@ body {
 }
 
 .event_date {
-    width: 100px;
-    height: 100px;
+    width: 145px;
+    height: 120px;
+    padding: 3px;
     background: #B26885;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0 20px;
+    margin: 10px 20px;
     -webkit-box-shadow: 0px 9px 25px -4px rgba(0,0,0,0.5);
     -moz-box-shadow: 0px 9px 25px -4px rgba(0,0,0,0.5);
     box-shadow: 0px 9px 25px -4px rgba(0,0,0,0.5);
@@ -584,6 +585,53 @@ body {
 .member_choices {
     margin-top: 10%;
 }
+
+
+/*Edit Events*/
+.edit_event h2 {
+    color: #B26885;
+    margin-top: 0;
+}
+
+.edit_event .sidebar-nav {
+    margin-top: 10px;
+}
+
+.edit_event th, td {
+    text-align: center;
+}
+
+.edit_event td a {
+    background: #B26885;
+    padding: 5px;
+    color: white;
+    border-radius: 4px;
+    -webkit-box-shadow: 2px -2px 5px 0px rgba(0,0,0,0.14);
+    -moz-box-shadow: 2px -2px 5px 0px rgba(0,0,0,0.14);
+    box-shadow: 2px -2px 5px 0px rgba(0,0,0,0.14);
+}
+
+.edit_event td a:hover {
+    cursor: pointer;
+    background: #965870;
+    text-decoration: none;
+}
+
+.update_event .btn-default {
+    background: #B26885;
+    color: white;
+}
+
+.update_event .btn-default:hover {
+    background: #965870;
+}
+
+.update_event h2 {
+    color: #B26885;
+    margin: 0;
+}
+
+
 
 /*Footer*/
 

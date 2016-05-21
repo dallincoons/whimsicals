@@ -23,8 +23,8 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
 $factory->define(App\Product::class, function (Faker\Generator $faker) {
     return [
         'title' => $faker->word,
-        'quantity' => $faker->numberBetween(1, 50),
-        'price' => $faker->randomFloat(2, 1, 1000),
+//        'quantity' => $faker->numberBetween(1, 50),
+//        'price' => $faker->randomFloat(2, 1, 1000),
         'description' => $faker->paragraph
     ];
 });

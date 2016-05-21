@@ -60,7 +60,7 @@
                                 <li role="separator" class="divider"></li>
                                 <li><a href="#">Edit Events</a></li>
                                 <li role="separator" class="divider"></li>
-                                <li><a href="/products/create">Add New Product</a></li>
+                                <li><a href="/product/create">Add New Product</a></li>
                                 <li role="separator" class="divider"></li>
                                 <li><a href="#">Edit Products</a></li>
                             </ul>

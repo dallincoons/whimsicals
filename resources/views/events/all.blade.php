@@ -11,7 +11,7 @@
         <div class="row">
             <div class="event_container">
                 <div class="event_date">
-                    <h3>June 1-2</h3>
+                    <h3>June 01-02</h3>
                     <h3>2016</h3>
                 </div>
                 <div class="event_info">
@@ -49,7 +49,7 @@
             <div class="row">
                 <div class="event_container">
                     <div class="event_date">
-                        <h3>{{$event->start_date->format('M')}}, {{$event->start_date->format('d')}} @if($event->end_date > $event->start_date) - {{ $event->end_date->format('d') }}@endif</h3>
+                        <h3>{{$event->start_date->format('M')}} {{$event->start_date->format('d')}} @if($event->end_date > $event->start_date) - {{ $event->end_date->format('d') }}@endif</h3>
                         <h3>{{$event->start_date->year}}</h3>
                         <h3></h3>
                     </div>
@@ -59,7 +59,7 @@
                         <h4>{{$event->venue_details}}</h4>
                     </div>
                     <div class="event_description">
-                        <p>{{$event->detail}}</p>
+                        <p>{{$event->details}}</p>
                     </div>
                 </div>
             </div>

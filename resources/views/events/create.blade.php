@@ -118,15 +118,15 @@
                     </div>
 
                     <fieldset class="form-group">
-                        <label for="venue_details">venue_details</label>
+                        <label for="venue_name">Venue Name</label>
+                        <input  type="text" class="form-control" id="venue_name" name="venue_name" />
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <label for="venue_details">Venue Details</label>
                         <textarea class="form-control" id="venue_details" rows="3" name="venue_details"></textarea>
                     </fieldset>
                     <fieldset class="form-group">
-                        <label for="venue_name">venue_name</label>
-                        <textarea class="form-control" id="venue_name" rows="3" name="venue_name"></textarea>
-                    </fieldset>
-                    <fieldset class="form-group">
-                        <label for="details">details</label>
+                        <label for="details">Additional Information</label>
                         <textarea class="form-control" id="details" rows="3" name="details"></textarea>
                     </fieldset>
 

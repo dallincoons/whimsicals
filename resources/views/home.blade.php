@@ -5,7 +5,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-3 home_option our_work">
-                <a href="/all"><h2 class="animated slideInUp">Our Work</h2></a>
+                <a href="/products"><h2 class="animated slideInUp">Our Work</h2></a>
             </div>
 
             <div class="col-sm-3 col-sm-offset-1 home_option our_story">

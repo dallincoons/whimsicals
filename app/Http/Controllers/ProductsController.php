@@ -59,9 +59,9 @@ class ProductsController extends Controller
     public function store(AddProductRequest $request)
     {
 
-        Product::create($request->all());
+        $product = Product::create($request->all());
 
-        return redirect('/product');
+        return redirect('/product/image/' . $product->id);
 
     }
 
@@ -77,6 +77,11 @@ class ProductsController extends Controller
 
         return redirect('/');
 
+    }
+
+    public function addImage($id)
+    {
+        return view('products.add_image', compact('id'));
     }
 
 }
