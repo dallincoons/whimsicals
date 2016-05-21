@@ -131,12 +131,18 @@ class ProductsController extends Controller
 
         $selectedProducts = $request->selected_products;
 
-        foreach($selectedProducts as $id)
-        {
-            Product::find($id)->delete();
-        }
+        Product::destroy($selectedProducts);
 
         return back();
+    }
+
+    public function destroy($id)
+    {
+        $product = Product::find($id);
+
+        $product->delete();
+
+        return 'success';
     }
 
 }

@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="container update_event">
+    <div class="container update_event" id="update_event" inline-template>
         <div class="row">
             <div class="col-sm-3">
 
@@ -10,7 +10,7 @@
 
             </div>
             <div class="col-sm-9">
-                <h2>Edit Event</h2>
+                <h2>Edit Product</h2>
                 <form method="POST" action="/products/{{$product->id}}">
                     {{ method_field('PATCH') }}
                     <div class="form-group">
@@ -23,8 +23,8 @@
                     </div>
                     <button type="submit" class="btn btn-default">Update</button>
                     <div class="other_options pull-right">
-                        <button type="submit" class="btn btn-danger">Delete</button>
-                        <button type="submit" class="btn btn-warning">Go Back</button>
+                        <button class="btn btn-danger" @click.prevent="deleteEvent({{$product->id}})">Delete</button>
+                        <a type="submit" class="btn btn-warning" href="/products/edit">Go Back</a>
                     </div>
                     {{ csrf_field() }}
                 </form>
