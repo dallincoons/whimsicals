@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="container add_pro">
+<div class="container add_pro" id="add_product" inline-template>
     <div class="row">
         <div class="col-sm-10">
             <h1>Add a New Product</h1>
@@ -43,23 +43,19 @@
             </form>
 
         @if(count($errors) > 0)
-                <div class="alert alert-danger">
-                    <ul>
-                        @foreach ($errors->all() as $error)
-                            <li>{{ $error  }}</li>
-                        @endforeach
-                    </ul>
-                </div>
-            @endif
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error  }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
 
         </div>
     </div>
 
-
 </div>
-
-
-
 
 @stop
 

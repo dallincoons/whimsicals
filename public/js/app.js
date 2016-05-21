@@ -11863,28 +11863,31 @@ var _CreateEvent = require('./components/CreateEvent.vue');
 
 var _CreateEvent2 = _interopRequireDefault(_CreateEvent);
 
-var _UpdateProduct = require('./components/UpdateProduct.vue');
+var _EditProduct = require('./components/EditProduct.vue');
 
-var _UpdateProduct2 = _interopRequireDefault(_UpdateProduct);
+var _EditProduct2 = _interopRequireDefault(_EditProduct);
+
+var _EditEvent = require('./components/EditEvent.vue');
+
+var _EditEvent2 = _interopRequireDefault(_EditEvent);
+
+var _CreateProduct = require('./components/CreateProduct.vue');
+
+var _CreateProduct2 = _interopRequireDefault(_CreateProduct);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Vue = require('vue');
 
-Vue.filter('subtotal', function (list) {
-
-	console.log(list);
-});
-
 new Vue({
 
 	el: '#app',
 
-	components: { SingleProduct: _SingleProduct2.default, Cart: _Cart2.default, CreateEvent: _CreateEvent2.default, UpdateProduct: _UpdateProduct2.default }
+	components: { SingleProduct: _SingleProduct2.default, Cart: _Cart2.default, CreateEvent: _CreateEvent2.default, EditProduct: _EditProduct2.default, EditEvent: _EditEvent2.default, CreateProduct: _CreateProduct2.default }
 
 });
 
-},{"./components/Cart.vue":29,"./components/CreateEvent.vue":30,"./components/SingleProduct.vue":31,"./components/UpdateProduct.vue":32,"vue":27}],29:[function(require,module,exports){
+},{"./components/Cart.vue":29,"./components/CreateEvent.vue":30,"./components/CreateProduct.vue":31,"./components/EditEvent.vue":32,"./components/EditProduct.vue":33,"./components/SingleProduct.vue":34,"vue":27}],29:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -11953,7 +11956,7 @@ if (module.hot) {(function () {  module.hot.accept()
     hotAPI.update(id, module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
   }
 })()}
-},{"../stores/cartStore.js":33,"vue":27,"vue-hot-reload-api":2,"vue-resource":16}],30:[function(require,module,exports){
+},{"../stores/cartStore.js":35,"vue":27,"vue-hot-reload-api":2,"vue-resource":16}],30:[function(require,module,exports){
 'use strict';
 
 var Vue = require('vue');
@@ -11990,6 +11993,122 @@ if (module.hot) {(function () {  module.hot.accept()
   }
 })()}
 },{"vue":27,"vue-hot-reload-api":2,"vue-resource":16}],31:[function(require,module,exports){
+'use strict';
+
+var Vue = require('vue');
+
+require('vue-resource');
+Vue.use(require('vue-resource'));
+Vue.http.headers.common['X-CSRF-TOKEN'] = document.querySelector('#token').getAttribute('value');
+
+var vue = new Vue({
+
+    el: "#add_product",
+
+    data: function data() {
+
+        return {};
+    },
+
+    ready: function ready() {}
+});
+if (module.exports.__esModule) module.exports = module.exports.default
+if (module.hot) {(function () {  module.hot.accept()
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), true)
+  if (!hotAPI.compatible) return
+  var id = "c:\\users\\admin\\projects\\whimsical\\resources\\assets\\js\\components\\CreateProduct.vue"
+  if (!module.hot.data) {
+    hotAPI.createRecord(id, module.exports)
+  } else {
+    hotAPI.update(id, module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
+  }
+})()}
+},{"vue":27,"vue-hot-reload-api":2,"vue-resource":16}],32:[function(require,module,exports){
+'use strict';
+
+var Vue = require('vue');
+
+require('vue-resource');
+Vue.use(require('vue-resource'));
+Vue.http.headers.common['X-CSRF-TOKEN'] = document.querySelector('#token').getAttribute('value');
+
+var vue = new Vue({
+
+    el: "#update_event",
+
+    data: function data() {
+
+        return {};
+    },
+
+    methods: {
+
+        deleteEvent: function deleteEvent(id) {
+
+            Vue.http.delete('/events/' + id).success(function (data) {
+
+                window.location = "/events/edit";
+            });
+        }
+    }
+
+});
+if (module.exports.__esModule) module.exports = module.exports.default
+if (module.hot) {(function () {  module.hot.accept()
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), true)
+  if (!hotAPI.compatible) return
+  var id = "c:\\users\\admin\\projects\\whimsical\\resources\\assets\\js\\components\\EditEvent.vue"
+  if (!module.hot.data) {
+    hotAPI.createRecord(id, module.exports)
+  } else {
+    hotAPI.update(id, module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
+  }
+})()}
+},{"vue":27,"vue-hot-reload-api":2,"vue-resource":16}],33:[function(require,module,exports){
+'use strict';
+
+var Vue = require('vue');
+
+require('vue-resource');
+Vue.use(require('vue-resource'));
+Vue.http.headers.common['X-CSRF-TOKEN'] = document.querySelector('#token').getAttribute('value');
+
+var vue = new Vue({
+
+    el: "#update_product",
+
+    data: function data() {
+
+        return {};
+    },
+
+    methods: {
+
+        deleteProduct: function deleteProduct(id) {
+
+            Vue.http.delete('/products/' + id).success(function (data) {
+
+                window.location = "/products/edit";
+            });
+        }
+    }
+
+});
+if (module.exports.__esModule) module.exports = module.exports.default
+if (module.hot) {(function () {  module.hot.accept()
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), true)
+  if (!hotAPI.compatible) return
+  var id = "c:\\users\\admin\\projects\\whimsical\\resources\\assets\\js\\components\\EditProduct.vue"
+  if (!module.hot.data) {
+    hotAPI.createRecord(id, module.exports)
+  } else {
+    hotAPI.update(id, module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
+  }
+})()}
+},{"vue":27,"vue-hot-reload-api":2,"vue-resource":16}],34:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -12071,49 +12190,7 @@ if (module.hot) {(function () {  module.hot.accept()
     hotAPI.update(id, module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
   }
 })()}
-},{"../stores/cartStore.js":33,"vue":27,"vue-hot-reload-api":2,"vue-resource":16}],32:[function(require,module,exports){
-'use strict';
-
-var Vue = require('vue');
-
-require('vue-resource');
-Vue.use(require('vue-resource'));
-Vue.http.headers.common['X-CSRF-TOKEN'] = document.querySelector('#token').getAttribute('value');
-
-var vue = new Vue({
-
-    el: "#update_event",
-
-    data: function data() {
-
-        return {};
-    },
-
-    methods: {
-
-        deleteEvent: function deleteEvent(id) {
-
-            Vue.http.delete('/products/' + id).success(function (data) {
-
-                window.location = "/products/edit";
-            });
-        }
-    }
-
-});
-if (module.exports.__esModule) module.exports = module.exports.default
-if (module.hot) {(function () {  module.hot.accept()
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), true)
-  if (!hotAPI.compatible) return
-  var id = "c:\\users\\admin\\projects\\whimsical\\resources\\assets\\js\\components\\UpdateProduct.vue"
-  if (!module.hot.data) {
-    hotAPI.createRecord(id, module.exports)
-  } else {
-    hotAPI.update(id, module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
-  }
-})()}
-},{"vue":27,"vue-hot-reload-api":2,"vue-resource":16}],33:[function(require,module,exports){
+},{"../stores/cartStore.js":35,"vue":27,"vue-hot-reload-api":2,"vue-resource":16}],35:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {

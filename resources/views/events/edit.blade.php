@@ -4,7 +4,7 @@
 
 @section('content')
 
-  <div class="container update_event">
+  <div class="container update_event" id="update_event">
     <div class="row">
       <div class="col-sm-3">
 
@@ -51,8 +51,8 @@
           </div>
           <button type="submit" class="btn btn-default">Update</button>
           <div class="other_options pull-right">
-            <button type="submit" class="btn btn-danger">Delete</button>
-            <button type="submit" class="btn btn-warning">Go Back</button>
+            <button class="btn btn-danger" @click.prevent="deleteEvent({{$event->id}})">Delete</button>
+            <button class="btn btn-warning">Go Back</button>
           </div>
           {{ csrf_field() }}
         </form>

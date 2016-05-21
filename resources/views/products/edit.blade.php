@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="container update_event" id="update_event" inline-template>
+    <div class="container update_event" id="update_product" inline-template>
         <div class="row">
             <div class="col-sm-3">
 
@@ -23,7 +23,7 @@
                     </div>
                     <button type="submit" class="btn btn-default">Update</button>
                     <div class="other_options pull-right">
-                        <button class="btn btn-danger" @click.prevent="deleteEvent({{$product->id}})">Delete</button>
+                        <button class="btn btn-danger" @click.prevent="deleteProduct({{$product->id}})">Delete</button>
                         <a type="submit" class="btn btn-warning" href="/products/edit">Go Back</a>
                     </div>
                     {{ csrf_field() }}

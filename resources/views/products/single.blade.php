@@ -4,12 +4,6 @@
 
     <script type="text/template-vue" id="singleProductView">
 
-        {{--<div v-for="product in products">--}}
-            {{--<div v-for="img in product.images">--}}
-                {{--<img src="@{{img.src}}">--}}
-            {{--</div>--}}
-        {{--</div>--}}
-
         <div class="container whim_product">
 
             <div class="row">
@@ -28,21 +22,11 @@
                     <h1>{{ $product->title  }}</h1>
                    <h4> {{ $product->description  }} </h4>
                    <p>See more varieties at our next <a href="/events">event</a> or <a href="/contact">contact us</a> for a quote for a custom piece.</p>
-                    {{--<h4>{{ $product->price }}</h4>--}}
-                        {{--<select v-model="quantity">--}}
-                            {{--@foreach(range(1, $quantity) as $index)--}}
-                                {{--<option>{{$index}}</option>--}}
-                            {{--@endforeach--}}
-                        {{--</select>--}}
-
-                        {{--<button @click="addToCart()" type="button" class="btn whim_submit" id="whim_submit">Add to Cart!</button>--}}
-
-                    </div>
-
                 </div>
 
+                @if(!Auth::guest())<a href="/products/{{$product->id}}/edit" >edit</a>@endif
+
             </div>
-        </div>
 
         </div>
 

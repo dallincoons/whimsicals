@@ -23,9 +23,9 @@
 
             deleteEvent : function(id){
 
-                Vue.http.delete('/products/' + id).success(function (data) {
+                Vue.http.delete('/events/' + id).success(function (data) {
 
-                    window.location = "/products/edit";
+                    window.location = "/events/edit";
 
                 });
 
