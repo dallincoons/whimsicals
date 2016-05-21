@@ -28,3 +28,19 @@ $factory->define(App\Product::class, function (Faker\Generator $faker) {
         'description' => $faker->paragraph
     ];
 });
+
+$factory->define(App\Event::class, function (Faker\Generator $faker) {
+    return [
+        'title' => $faker->word,
+        'start_date' => $faker->dateTimeBetween('now', '+2 years'),
+        'start_month' => '1',
+        'start_day' => '1',
+        'start_year' => '2016',
+        'street_address' => $faker->streetAddress,
+        'city' => $faker->city,
+        'state' => $faker->state,
+        'venue_details' => $faker->sentence,
+        'venue_name' => $faker->word,
+        'details' => $faker->paragraph
+    ];
+});

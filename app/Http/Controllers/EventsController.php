@@ -13,7 +13,7 @@ class EventsController extends Controller
 {
     public function index()
     {
-        $events = Event::latest('start_date')->future()->get();
+        $events = $this->latestEvents();
 
         return view('events.all', compact('events'));
     }
@@ -38,5 +38,35 @@ class EventsController extends Controller
         $event->create($request->all());
 
         return redirect('/events');
+    }
+
+    public function edit($id)
+    {
+        $event = Event::find($id);
+
+        return view('events.edit', compact('event'));
+    }
+
+    public function showPanel()
+    {
+        $events = Event::latest('start_date')->future()->get();
+
+        return view('events.panel', compact('events'));
+    }
+
+    private function latestEvents()
+    {
+        return $events = Event::latest('start_date')->future()->get();
+
+    }
+
+    public function update(Request $request, $id)
+    {
+
+        $event = Event::find($id);
+
+        $event->update($request->all());
+
+        return redirect('/events/edit');
     }
 }

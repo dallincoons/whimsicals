@@ -20,14 +20,9 @@ Route::group(['middleware' => ['web']], function(){
         return view('home');
     });
 
-    Route::get('/events/edit', function() {
-        return view('events.edit');
-    });
-
-
+    Route::get('/events/edit', 'EventsController@showPanel');
 
     Route::resource('events', 'EventsController');
-
 
     Route::post('product/image', 'AddProductController@addImage');
 
