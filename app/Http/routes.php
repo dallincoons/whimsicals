@@ -20,6 +20,8 @@ Route::group(['middleware' => ['web']], function(){
         return view('home');
     });
 
+    Route::delete('/events', 'EventsController@delete');
+
     Route::get('/events/edit', 'EventsController@showPanel');
 
     Route::resource('events', 'EventsController');

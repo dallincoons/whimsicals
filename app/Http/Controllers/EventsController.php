@@ -69,4 +69,16 @@ class EventsController extends Controller
 
         return redirect('/events/edit');
     }
+
+    public function delete(Request $request)
+    {
+        $selectedEvents = $request->selected_events;
+
+        foreach($selectedEvents as $id)
+        {
+            Event::find($id)->delete();
+        }
+
+        return back();
+    }
 }
