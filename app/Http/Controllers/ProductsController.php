@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use DB;
 use View;
 use App\Product;
+use App\Image;
 use Carbon\Carbon;
 use App\Http\Requests\AddProductRequest;
 
@@ -59,9 +60,19 @@ class ProductsController extends Controller
     public function store(AddProductRequest $request)
     {
 
+        $file = $request->file('product_image');
+
+        $name = time() . $file->getClientOriginalName();
+
         $product = Product::create($request->all());
 
-        return redirect('/product/image/' . $product->id);
+        $url = 'asset_product_images/' . $product->id;
+
+        $file->move($url, $name);
+
+        Image::create(['product_id' => $product->id, 'url' => '/' . $url . '/' . $name]);
+
+        return redirect('/products/' . $product->id);
 
     }
 

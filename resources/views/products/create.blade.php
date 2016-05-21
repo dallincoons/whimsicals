@@ -11,13 +11,16 @@
 
     <div class="row">
 
+        <form method="POST" action="/products" enctype="multipart/form-data" class="dropzone" id="upload_images">
+
         <div class="col-sm-4 col-sm-offset-1">
 
-                <button type="submit" class="btn btn-default">Upload Photos</button>
+                <input type="file" class="btn btn-default" value="Upload Photos" name="product_image">
                 <h4>Or Drag & Drop Pictures Below</h4>
-                <form action="/products/image" method="POST" class="dropzone upload-drop-zone" id="upload_images">
-                    {{ csrf_field() }}
-                </form>
+                {{--<form action="/products/image" method="POST" >--}}
+                    {{--{{ csrf_field() }}--}}
+                {{--</form>--}}
+                <div class="dropzone-previews upload-drop-zone"></div>
 
                 {{--<div class="dropzone-previews" id="previewsContainer"></div>--}}
 
@@ -25,7 +28,7 @@
 
         <div class="col-sm-4 col-sm-offset-1">
 
-            <form method="POST" action="/products" enctype="multipart/form-data">
+
 
                 <fieldset class="form-group">
                     <label for="Title">Title</label>
@@ -40,7 +43,6 @@
 
                 {{ csrf_field() }}
 
-            </form>
 
         @if(count($errors) > 0)
             <div class="alert alert-danger">
@@ -53,6 +55,9 @@
         @endif
 
         </div>
+
+        </form>
+
     </div>
 
 </div>

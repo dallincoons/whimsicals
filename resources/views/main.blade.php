@@ -127,13 +127,13 @@
 @yield('scripts.footer')
 
 <script>
-//    Dropzone.options.uploadImages = {
-//        autoProcessQueue   : false,
+    Dropzone.options.uploadImages = {
+        autoProcessQueue   : false,
 //        uploadMultiple     : true,
-//        parallelUploads    : 4,
+        parallelUploads    : 4,
 //        dictDefaultMessage : 'Just drag and drop photos here',
 //        previewsContainer : '#previewsContainer'
-//    };
+    };
 
 </script>
 

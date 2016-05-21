@@ -8,14 +8,7 @@
 
             <div class="row">
                 <div class="col-sm-4 pro_img">
-                    <img src="/img/whim_roses_1.png" id="main_photo">
-                </div>
-                <div class="col-sm-1 pro_img">
-                    @foreach($product->images as $image)
-
-                        <img src="{{$image->url}}" class="thumbnail_img">
-
-                    @endforeach
+                    <img src="{{$product->images[0]->url}}" id="main_photo">
                 </div>
 
                 <div class="col-sm-3 col-sm-offset-1">
