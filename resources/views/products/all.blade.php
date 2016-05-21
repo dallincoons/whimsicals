@@ -30,11 +30,11 @@
 
                     <div class="col-sm-3">
                         <div class="thumbnail">
-                            <a href="/product/{{$product->id}}">
+                            <a href="/products/{{$product->id}}">
                                 <img src="/img/whim_roses_1.png" alt="...">
                             </a>
                             <div class="caption">
-                                <a href="/product/{{$product->id}}"><h3>{{ $product->title }}</h3></a>
+                                <a href="/products/{{$product->id}}"><h3>{{ $product->title }}</h3></a>
                             </div>
                         </div>
 

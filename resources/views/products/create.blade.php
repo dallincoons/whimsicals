@@ -15,7 +15,7 @@
 
                 <button type="submit" class="btn btn-default">Upload Photos</button>
                 <h4>Or Drag & Drop Pictures Below</h4>
-                <form action="/product/image" method="POST" class="dropzone upload-drop-zone" id="upload_images">
+                <form action="/products/image" method="POST" class="dropzone upload-drop-zone" id="upload_images">
                     {{ csrf_field() }}
                 </form>
 
@@ -25,7 +25,7 @@
 
         <div class="col-sm-4 col-sm-offset-1">
 
-            <form method="POST" action="/product" enctype="multipart/form-data">
+            <form method="POST" action="/products" enctype="multipart/form-data">
 
                 <fieldset class="form-group">
                     <label for="Title">Title</label>

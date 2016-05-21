@@ -70,6 +70,10 @@ class EventsController extends Controller
         return redirect('/events/edit');
     }
 
+    /**
+     * @param Request $request
+     * @return mixed
+     */
     public function delete(Request $request)
     {
         $selectedEvents = $request->selected_events;

@@ -15,7 +15,7 @@
 
                 <button type="submit" class="btn btn-default">Upload Photos</button>
                 <h4>Or Drag & Drop Pictures Below</h4>
-                <form action="/product/image" method="POST" class="dropzone upload-drop-zone" id="upload_images">
+                <form action="/products/image" method="POST" class="dropzone upload-drop-zone" id="upload_images">
                     {{ csrf_field() }}
                 </form>
 

@@ -79,9 +79,64 @@ class ProductsController extends Controller
 
     }
 
+    /**
+     * @param $id
+     * @return View
+     */
     public function addImage($id)
     {
         return view('products.add_image', compact('id'));
+    }
+
+    /**
+     * @return View
+     */
+    public function showPanel()
+    {
+        $products = Product::all();
+
+        return view('products.panel', compact('products'));
+    }
+
+    /**
+     * @param Request $request
+     * @param $id
+     * @return View
+     */
+    public function edit(Request $request, $id)
+    {
+        $product = Product::find($id);
+
+        return view('products.edit', compact('product'));
+    }
+
+    /**
+     *
+     */
+    public function update(Request $request, $id)
+    {
+        $product = Product::find($id);
+
+        $product->update($request->all());
+
+        return redirect('/products/edit');
+    }
+
+    /**
+     * @param Request $request
+     * @return mixed
+     */
+    public function delete(Request $request)
+    {
+
+        $selectedProducts = $request->selected_products;
+
+        foreach($selectedProducts as $id)
+        {
+            Product::find($id)->delete();
+        }
+
+        return back();
     }
 
 }
