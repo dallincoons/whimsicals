@@ -45,7 +45,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="/" class="active">Home</a></li>
                     <li><a href="/events">Events</a></li>
-                    <li><a href="/">Our Work</a></li>
+                    <li><a href="/products/all">Our Work</a></li>
                     <li><a href="/contact">Contact</a></li>
                     <li><a href="/contact">About</a></li>
                     {{--<li><a href="/cart"><i class="fa  fa-shopping-cart "></i> My Cart</a></li>--}}
@@ -54,15 +54,15 @@
                     @else
                         {{--<li><a>{{ Auth::user()->name }}</a></li>--}}
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Add & Update <span class="caret"></span></a>
+                            <a href="/member_portal" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Add & Update <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="/events/create">Add Event</a></li>
                                 <li role="separator" class="divider"></li>
-                                <li><a href="#">Edit Events</a></li>
+                                <li><a href="/events/edit">Edit Events</a></li>
                                 <li role="separator" class="divider"></li>
                                 <li><a href="/products/create">Add New Product</a></li>
                                 <li role="separator" class="divider"></li>
-                                <li><a href="#">Edit Products</a></li>
+                                <li><a href="/products/edit">Edit Products</a></li>
                             </ul>
                         </li>
                         <li><a href="/logout">Logout</a></li>
@@ -85,26 +85,7 @@
 
     @else
 
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <h5>(801) 500-5000</h5>
-                    </div>
-
-                    <div class="col-sm-4">
-                        <h4>Whimsicals</h4>
-                        <h6>by MarDee</h6>
-                    </div>
-
-                    <div class="col-sm-4">
-                        <h5>123 Main St Salt Lake City, UT</h5>
-                    </div>
-
-                </div>
-
-            </div>
-        </footer>
+       @include('partials.footer')
 
     @endif
 

@@ -62,15 +62,19 @@ class ProductsController extends Controller
 
         $file = $request->file('product_image');
 
-        $name = time() . $file->getClientOriginalName();
-
         $product = Product::create($request->all());
 
-        $url = 'asset_product_images/' . $product->id;
+        if(!empty($file)) {
 
-        $file->move($url, $name);
+            $name = time() . $file->getClientOriginalName();
 
-        Image::create(['product_id' => $product->id, 'url' => '/' . $url . '/' . $name]);
+            $url = 'asset_product_images/' . $product->id;
+
+            $file->move($url, $name);
+
+            Image::create(['product_id' => $product->id, 'url' => '/' . $url . '/' . $name]);
+
+        }
 
         return redirect('/products/' . $product->id);
 

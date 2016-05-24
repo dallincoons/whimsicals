@@ -272,6 +272,14 @@ body {
     margin: 10px;
 }
 
+.product_disclaimer {
+    margin-top: 20px;
+}
+
+.whim_product a:hover {
+    cursor: pointer;
+}
+
 /*About and Contact*/
 
 .about h2, .contact h2 {
@@ -464,14 +472,8 @@ body {
 
 /*Events*/
 
+
 .events_wrapper {
-    /*background: rgba(0,0,0,0.2);*/
-
-
-    background: #ee9ca7; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #B26885 , #ffdde1); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #B26885 , #ffdde1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -479,18 +481,14 @@ body {
 }
 
 .events_wrapper h2 {
-    color: #f8f8f8;
     padding: 10px;
     text-align: center;
+    color:#B26886;
 }
 
-.events_wrapper span {
-    font-family: Sacramento, cursive;
-    display: block;
-}
 
 .event_container {
-    background: #f8f8f8;
+    /*background: #f8f8f8;*/
     margin: 15px;
     display: flex;
     align-items: center;
@@ -501,7 +499,7 @@ body {
     width: 145px;
     height: 120px;
     padding: 3px;
-    background: #B26885;
+    background-color: rgba(104,178,109,.8);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -654,6 +652,20 @@ footer h4 {
 
 footer .row {
 padding: 10px 10px 0 10px;
+}
+
+.admin_login {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.admin_login a {
+    color: #B26885;
+}
+
+.admin_login:hover {
+    cursor: pointer;
 }
 
 /*Error*/

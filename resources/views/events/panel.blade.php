@@ -77,8 +77,8 @@
               <td>{{$event->street_address}}</td>
               <td>{{$event->city}}</td>
               <td>{{$event->state}}</td>
-              <td>{{$event->start_date}}</td>
-              <td>{{$event->end_date}}</td>
+              <td>{{$event->start_date->format('m/d/Y')}}</td>
+              <td>{{$event->end_date->format('m/d/Y')}}</td>
               <td>{{$event->venue_name}}</td>
               <td>{{$event->venue_details}}</td>
               <td>{{$event->details}}</td>

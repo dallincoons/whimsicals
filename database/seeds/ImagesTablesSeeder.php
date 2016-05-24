@@ -31,16 +31,21 @@ class ImagesTablesSeeder extends Seeder
 
             $random_num = $faker->numberBetween(1, 5);
 
-            foreach(range(1, $random_num) as $index){
+            Image::create([
+                'product_id' => $product_id,
+                'url' => $images[$random_num],
+            ]);
 
-                $random_image_num = $faker->numberBetween(1, (count($images)-1));
-
-                Image::create([
-                    'product_id' => $product_id,
-                    'url' => $images[$random_image_num],
-                ]);
-
-            }
+//            foreach(range(1, $random_num) as $index){
+//
+//                $random_image_num = $faker->numberBetween(1, (count($images)-1));
+//
+//                Image::create([
+//                    'product_id' => $product_id,
+//                    'url' => $images[$random_image_num],
+//                ]);
+//
+//            }
 
         }
 

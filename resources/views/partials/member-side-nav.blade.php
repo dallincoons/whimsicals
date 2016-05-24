@@ -11,13 +11,13 @@
         </div>
         <div class="navbar-collapse collapse sidebar-navbar-collapse">
             <ul class="nav navbar-nav">
-                <li><a href="/events/create"><i class="fa fa-calendar-plus-o"></i> Add New Event</a></li>
+                <li @if(Request::is('events/create')) class="active" @endif><a href="/events/create"><i class="fa fa-calendar-plus-o"></i> Add New Event</a></li>
                 <li role="separator" class="line_divide"></li>
-                <li class="active"><a href="/events/edit"><i class="fa fa-calendar-check-o"></i> Edit Events</a></li>
+                <li @if(Request::is('events/edit')) class="active" @endif><a href="/events/edit"><i class="fa fa-calendar-check-o"></i> Edit Events</a></li>
                 <li role="separator" class="line_divide"></li>
-                <li><a href="/products/create"><i class="fa fa-plus-circle"></i> Add New Example Product</a></li>
+                <li @if(Request::is('products/create')) class="active" @endif><a href="/products/create"><i class="fa fa-plus-circle"></i> Add New Example Product</a></li>
                 <li role="separator" class="line_divide"></li>
-                <li><a href="/products/edit"><i class="fa  fa-edit"></i> Edit Example Products</a></li>
+                <li @if(Request::is('products/edit')) class="active" @endif><a href="/products/edit"><i class="fa  fa-edit"></i> Edit Example Products</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
