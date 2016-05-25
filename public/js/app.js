@@ -12039,7 +12039,11 @@ var vue = new Vue({
 
     data: function data() {
 
-        return {};
+        return {
+
+            dateType: 'single'
+
+        };
     },
 
     methods: {

@@ -31,20 +31,16 @@
             <label for="edit_state">State</label>
             <input type="text" class="form-control" id="edit_state" name="state" value="{{$event->state}}">
           </div>
-          <fieldset>
 
-            <input type="radio" v-model="dateType" value="single" name="dateType">
-            One Day Event
-            <input type="radio" v-model="dateType" value="multi" name="dateType">
-            Multiple Day Event
-          </fieldset>
+          @include('partials.event-dates')
+
           <div class="form-group">
             <label for="edit_vname">Venue Name</label>
             <input type="text" class="form-control" id="edit_vname" name="venue_name" value="{{$event->venue_name}}">
           </div>
           <div class="form-group">
-            <label for="edit_vdetails">Hours</label>
-            <textarea class="form-control" id="edit_vdetails" name="venue_details" rows="3">{{$event->venue_details}}</textarea>
+            <label for="edit_vhours">Hours</label>
+            <textarea class="form-control" id="edit_vhours" name="event_hours" rows="3">{{$event->event_hours}}</textarea>
           </div>
           <div class="form-group">
             <label for="edit_details">Additional Information</label>

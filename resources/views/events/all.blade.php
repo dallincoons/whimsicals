@@ -25,7 +25,7 @@
                         <div class="event_info">
                             <h3>{{$event->venue_name}}</h3>
                             <h4>{{$event->street_address}} {{$event->city}}, {{$event->state}}</h4>
-                            <h4>{{$event->venue_details}}</h4>
+                            <h4>{{$event->event_hours}}</h4>
                         </div>
                         <div class="event_description">
                             <p>{{$event->details}}</p>

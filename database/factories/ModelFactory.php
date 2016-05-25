@@ -39,7 +39,7 @@ $factory->define(App\Event::class, function (Faker\Generator $faker) {
         'street_address' => $faker->streetAddress,
         'city' => $faker->city,
         'state' => $faker->state,
-        'venue_details' => $faker->sentence,
+        'event_hours' => $faker->sentence,
         'venue_name' => $faker->word,
         'details' => $faker->paragraph
     ];

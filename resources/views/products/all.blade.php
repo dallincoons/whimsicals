@@ -25,13 +25,13 @@
         <div class="container">
             <div class="row products_grid">
 
-
                 @foreach($products as $product)
 
                     <div class="col-sm-3">
+
                         <div class="thumbnail">
                             <a href="/products/{{$product->id}}">
-                                <img src="/img/whim_roses_1.png" alt="...">
+                                <img src="{{$product->images[0]->url}}" alt="...">
                             </a>
                             <div class="caption">
                                 <a href="/products/{{$product->id}}"><h3>{{ $product->title }}</h3></a>

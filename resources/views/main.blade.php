@@ -90,17 +90,11 @@
 
 </div>
 <script src="http://sdks.shopifycdn.com/js-buy-sdk/latest/shopify-buy.polyfilled.globals.js"></script>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/0.7.0/vue-resource.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/dropzone.js"></script>
-
 <script src="/js/bs_js/bootstrap.min.js" type="text/javascript"></script>
 <script src="/js/app.js"></script>
-
-
-
 
 @yield('scripts.footer')
 
@@ -118,26 +112,18 @@
             // First change the button to actually tell Dropzone to process the queue.
             this.element.querySelector("button[type=submit]").addEventListener("click", function(e) {
 
-                console.log(myDropzone);
                 // Make sure that the form isn't actually being sent.
                 e.preventDefault();
                 e.stopPropagation();
                 myDropzone.processQueue();
             });
 
-            // Listen to the sendingmultiple event. In this case, it's the sendingmultiple event instead
-            // of the sending event because uploadMultiple is set to true.
-            this.on("sendingmultiple", function() {
-                // Gets triggered when the form is actually being sent.
-                // Hide the success button or the complete form.
-            });
-            this.on("successmultiple", function(files, response) {
+            this.on("success", function(files, response) {
+
+                window.location = "/products/" + response;
+
                 // Gets triggered when the files have successfully been sent.
                 // Redirect user or notify of success.
-            });
-            this.on("errormultiple", function(files, response) {
-                // Gets triggered when there was an error sending the files.
-                // Maybe show form again, and notify user of error
             });
         }
     };

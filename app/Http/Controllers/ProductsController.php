@@ -21,7 +21,7 @@ class ProductsController extends Controller
     public function index()
     {
 
-        $products = Product::all();
+        $products = Product::orderBy('created_at','desc')->with('images')->get();
 
         return View::make('products.all', compact('products', 'user'));
 
@@ -76,7 +76,7 @@ class ProductsController extends Controller
 
         }
 
-        return redirect('/products/' . $product->id);
+        return $product->id;
 
     }
 
@@ -108,7 +108,8 @@ class ProductsController extends Controller
      */
     public function showPanel()
     {
-        $products = Product::all();
+
+        $products = Product::orderBy('created_at','desc')->get();
 
         return view('products.panel', compact('products'));
     }

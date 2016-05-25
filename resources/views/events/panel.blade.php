@@ -25,7 +25,7 @@
               <th>Start Date</th>
               <th>End Date</th>
               <th>Venue Name</th>
-              <th>Venue Details</th>
+              <th>Event Hours</th>
               <th>Additional Info</th>
               <th>Delete</th>
             </tr>
@@ -80,7 +80,7 @@
               <td>{{$event->start_date->format('m/d/Y')}}</td>
               <td>{{$event->end_date->format('m/d/Y')}}</td>
               <td>{{$event->venue_name}}</td>
-              <td>{{$event->venue_details}}</td>
+              <td>{{$event->event_hours}}</td>
               <td>{{$event->details}}</td>
               <td>
                 <div class="checkbox">

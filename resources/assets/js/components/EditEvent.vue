@@ -14,6 +14,7 @@
 
             return {
 
+                dateType : 'single'
 
             }
 

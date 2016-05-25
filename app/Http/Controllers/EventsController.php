@@ -44,7 +44,9 @@ class EventsController extends Controller
     {
         $event = Event::find($id);
 
-        return view('events.edit', compact('event'));
+        $now = Carbon::now();
+
+        return view('events.edit', compact('event', 'now'));
     }
 
     public function showPanel()

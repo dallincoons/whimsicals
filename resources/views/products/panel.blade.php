@@ -21,19 +21,6 @@
                             <th>Delete</th>
                         </tr>
 
-                        <tr>
-                            <td><a>Edit</a></td>
-                            <td>Fall Show</td>
-                            <td>123 Main St</td>
-                            <td>
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox">
-                                    </label>
-                                </div>
-                            </td>
-                        </tr>
-
                         @foreach($products as $product)
                             <tr>
                                 <td><a href="/products/{{$product->id}}/edit">Edit</a></td>

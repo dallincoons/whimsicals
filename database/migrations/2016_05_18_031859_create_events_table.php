@@ -26,7 +26,7 @@ class CreateEventsTable extends Migration
             $table->string('street_address');
             $table->string('city');
             $table->string('state');
-            $table->string('venue_details')->nullable();
+            $table->string('event_hours')->nullable();
             $table->string('venue_name')->nullable();
             $table->string('details')->nullable();
             $table->timestamps();
