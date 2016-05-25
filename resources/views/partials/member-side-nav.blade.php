@@ -15,9 +15,9 @@
                 <li role="separator" class="line_divide"></li>
                 <li @if(Request::is('events/edit')) class="active" @endif><a href="/events/edit"><i class="fa fa-calendar-check-o"></i> Edit Events</a></li>
                 <li role="separator" class="line_divide"></li>
-                <li @if(Request::is('products/create')) class="active" @endif><a href="/products/create"><i class="fa fa-plus-circle"></i> Add New Example Product</a></li>
+                <li @if(Request::is('products/create')) class="active" @endif><a href="/products/create"><i class="fa fa-plus-circle"></i> Add New Product</a></li>
                 <li role="separator" class="line_divide"></li>
-                <li @if(Request::is('products/edit')) class="active" @endif><a href="/products/edit"><i class="fa  fa-edit"></i> Edit Example Products</a></li>
+                <li @if(Request::is('products/edit')) class="active" @endif><a href="/products/edit"><i class="fa  fa-edit"></i> Edit Products</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>

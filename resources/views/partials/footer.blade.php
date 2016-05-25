@@ -1,7 +1,7 @@
 <footer>
 
     @if(Auth::guest())
-    <div class="admin_login pull-left">
+    <div class="admin_login pull-right btn btn-default">
         <a href="/login">Log In</a>
     </div>
     @endif

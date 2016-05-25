@@ -60,7 +60,7 @@ class ProductsController extends Controller
     public function store(AddProductRequest $request)
     {
 
-        $file = $request->file('product_image');
+        $file = $request->file('file');
 
         $product = Product::create($request->all());
 

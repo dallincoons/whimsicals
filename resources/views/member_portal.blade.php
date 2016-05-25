@@ -11,13 +11,13 @@
             <a href="/events/create"><h2>Add New Event <i class="fa fa-calendar-plus-o"></i></h2></a>
         </div>
         <div class="col-md-2 col-md-offset-1 member_choices">
-            <a><h2>Edit Events <i class="fa fa-calendar-check-o"></i></h2></a>
+            <a href="/events/edit"><h2>Edit Events <i class="fa fa-calendar-check-o"></i></h2></a>
         </div>
         <div class="col-md-2 col-md-offset-1 member_choices">
-            <a><h2>Add New Product <i class="fa fa-plus-circle"></i></h2></a>
+            <a href="/products/create"><h2>Add New Product <i class="fa fa-plus-circle"></i></h2></a>
         </div>
         <div class="col-md-2 col-md-offset-1 member_choices">
-            <a><h2>Edit Products <i class="fa  fa-edit"></i></h2></a>
+            <a href="/products/edit"><h2>Edit Products <i class="fa  fa-edit"></i></h2></a>
         </div>
     </div>
   </div>

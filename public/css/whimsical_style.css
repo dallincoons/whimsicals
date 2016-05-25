@@ -71,6 +71,10 @@ body {
 }
 
 
+.sidebar-nav ul  {
+    margin-top: 0;
+}
+
 /*Home Page*/
 .home_option {
     height: 300px;
@@ -657,7 +661,7 @@ padding: 10px 10px 0 10px;
 .admin_login {
     position: absolute;
     bottom: 10px;
-    left: 10px;
+    right: 10px;
 }
 
 .admin_login a {

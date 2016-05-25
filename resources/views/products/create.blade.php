@@ -4,31 +4,24 @@
 
 <div class="container add_pro" id="add_product" inline-template>
     <div class="row">
-        <div class="col-sm-10">
+        <div class="col-sm-10 col-sm-offset-1">
             <h1>Add a New Product</h1>
         </div>
     </div>
 
     <div class="row">
+        <div class="col-sm-3">
 
-        <form method="POST" action="/products" enctype="multipart/form-data" class="dropzone" id="upload_images">
-
-        <div class="col-sm-4 col-sm-offset-1">
-
-                <input type="file" class="btn btn-default" value="Upload Photos" name="product_image">
-                <h4>Or Drag & Drop Pictures Below</h4>
-                {{--<form action="/products/image" method="POST" >--}}
-                    {{--{{ csrf_field() }}--}}
-                {{--</form>--}}
-                <div class="dropzone-previews upload-drop-zone"></div>
-
-                {{--<div class="dropzone-previews" id="previewsContainer"></div>--}}
+            @include('partials.member-side-nav')
 
         </div>
 
+        <form method="POST" action="/products" enctype="multipart/form-data" class="dropzone" id="upload_images">
+
+
+
+
         <div class="col-sm-4 col-sm-offset-1">
-
-
 
                 <fieldset class="form-group">
                     <label for="Title">Title</label>
@@ -36,8 +29,16 @@
                 </fieldset>
                 <fieldset class="form-group">
                     <label for="description">Description</label>
-                    <textarea class="form-control" id="description" rows="3" name="description"></textarea>
+                    <textarea class="form-control" id="description" rows="3" name="description" placeholder="How this product is made, typical variations, price range, colors, etc."></textarea>
                 </fieldset>
+            <input type="file" class="btn btn-default" value="Upload Photos" name="product_image">
+            <h4>Or Drag & Drop Picture Below</h4>
+
+            <div class="table table-striped files upload-drop-zone" id="previews">
+
+                <div class="dz-message" data-dz-message><span>Drop Your Image Here</span></div>
+
+            </div>
 
                 <button type="submit" class="btn btn-default pro_sub" id="addProduct">Add Product</button>
 

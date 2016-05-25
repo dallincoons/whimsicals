@@ -32,17 +32,18 @@
             <input type="text" class="form-control" id="edit_state" name="state" value="{{$event->state}}">
           </div>
           <fieldset>
-            single
+
             <input type="radio" v-model="dateType" value="single" name="dateType">
-            multi
+            One Day Event
             <input type="radio" v-model="dateType" value="multi" name="dateType">
+            Multiple Day Event
           </fieldset>
           <div class="form-group">
             <label for="edit_vname">Venue Name</label>
             <input type="text" class="form-control" id="edit_vname" name="venue_name" value="{{$event->venue_name}}">
           </div>
           <div class="form-group">
-            <label for="edit_vdetails">Venue Details</label>
+            <label for="edit_vdetails">Hours</label>
             <textarea class="form-control" id="edit_vdetails" name="venue_details" rows="3">{{$event->venue_details}}</textarea>
           </div>
           <div class="form-group">

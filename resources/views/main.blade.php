@@ -45,14 +45,11 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="/" class="active">Home</a></li>
                     <li><a href="/events">Events</a></li>
-                    <li><a href="/products/all">Our Work</a></li>
+                    <li><a href="/products">Our Work</a></li>
                     <li><a href="/contact">Contact</a></li>
                     <li><a href="/contact">About</a></li>
-                    {{--<li><a href="/cart"><i class="fa  fa-shopping-cart "></i> My Cart</a></li>--}}
-                    @if(Auth::guest())
-                        {{--<li><a href="/login">Login</a></li>--}}
-                    @else
-                        {{--<li><a>{{ Auth::user()->name }}</a></li>--}}
+
+                    @if(!Auth::guest())
                         <li class="dropdown">
                             <a href="/member_portal" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Add & Update <span class="caret"></span></a>
                             <ul class="dropdown-menu">
@@ -108,13 +105,44 @@
 @yield('scripts.footer')
 
 <script>
+
     Dropzone.options.uploadImages = {
         autoProcessQueue   : false,
-//        uploadMultiple     : true,
-        parallelUploads    : 4,
-//        dictDefaultMessage : 'Just drag and drop photos here',
-//        previewsContainer : '#previewsContainer'
+        parallelUploads    : 1,
+        maxFiles: 1,
+        previewsContainer: "#previews", // Define the container to display the previews
+
+        init: function() {
+            var myDropzone = this;
+
+            // First change the button to actually tell Dropzone to process the queue.
+            this.element.querySelector("button[type=submit]").addEventListener("click", function(e) {
+
+                console.log(myDropzone);
+                // Make sure that the form isn't actually being sent.
+                e.preventDefault();
+                e.stopPropagation();
+                myDropzone.processQueue();
+            });
+
+            // Listen to the sendingmultiple event. In this case, it's the sendingmultiple event instead
+            // of the sending event because uploadMultiple is set to true.
+            this.on("sendingmultiple", function() {
+                // Gets triggered when the form is actually being sent.
+                // Hide the success button or the complete form.
+            });
+            this.on("successmultiple", function(files, response) {
+                // Gets triggered when the files have successfully been sent.
+                // Redirect user or notify of success.
+            });
+            this.on("errormultiple", function(files, response) {
+                // Gets triggered when there was an error sending the files.
+                // Maybe show form again, and notify user of error
+            });
+        }
     };
+
+
 
 </script>
 
