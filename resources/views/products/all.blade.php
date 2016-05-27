@@ -22,27 +22,48 @@
 
 
     <div class="whim_products">
-        <div class="container">
-            <div class="row products_grid">
+
+        <div class="products_grid_flex">
 
                 @foreach($products as $product)
 
-                    <div class="col-sm-3">
+                <div class="each_product">
 
-                        <div class="thumbnail">
                             <a href="/products/{{$product->id}}">
                                 <img src="{{$product->images[0]->url}}" alt="...">
                             </a>
-                            <div class="caption">
-                                <a href="/products/{{$product->id}}"><h3>{{ $product->title }}</h3></a>
-                            </div>
-                        </div>
 
-                    </div>
-
+                                <a href="/products/{{$product->id}}" class="pro_title"><h3>{{ $product->title }}</h3></a>
+                </div>
                 @endforeach
 
-            </div>
+        </div>
+
+
+
+
+        {{--<div class="container">--}}
+
+                {{--<div class="products_grid row">--}}
+                {{--@foreach($products as $product)--}}
+
+                    {{--<div class="col-sm-4">--}}
+
+                        {{--<div class="thumbnail">--}}
+                            {{--<a href="/products/{{$product->id}}">--}}
+                                {{--<img src="{{$product->images[0]->url}}" alt="...">--}}
+                            {{--</a>--}}
+                            {{--<div class="caption">--}}
+                                {{--<a href="/products/{{$product->id}}"><h3>{{ $product->title }}</h3></a>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+
+                    {{--</div>--}}
+
+
+                {{--@endforeach--}}
+                {{--</div>--}}
+
 
             {{--Add Pagination if needed--}}
 
@@ -68,7 +89,7 @@
                 {{--</nav>--}}
             {{--</div>--}}
 
-        </div>
+        {{--</div>--}}
     </div>
 
 @stop

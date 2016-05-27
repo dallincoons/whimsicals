@@ -14,11 +14,11 @@
                 <form method="POST" action="/products/{{$product->id}}">
                     {{ method_field('PATCH') }}
                     <div class="form-group">
-                        <label for="edit_title">Event Title</label>
+                        <label for="edit_title">Product</label>
                         <input type="text" class="form-control" id="edit_title" name="title" value="{{$product->title}}">
                     </div>
                     <div class="form-group">
-                        <label for="edit_street">Street Address</label>
+                        <label for="edit_street">Description</label>
                         <textarea type="text" class="form-control" id="edit_description" name="description">{{$product->description}}</textarea>
                     </div>
                     <button type="submit" class="btn btn-default">Update</button>

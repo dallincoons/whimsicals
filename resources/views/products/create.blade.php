@@ -18,9 +18,6 @@
 
         <form method="POST" action="/products" enctype="multipart/form-data" class="dropzone" id="upload_images">
 
-
-
-
         <div class="col-sm-4 col-sm-offset-1">
 
                 <fieldset class="form-group">
@@ -44,7 +41,6 @@
 
                 {{ csrf_field() }}
 
-
         @if(count($errors) > 0)
             <div class="alert alert-danger">
                 <ul>
@@ -65,6 +61,40 @@
 
 @stop
 
-
 @section('scripts.footer')
+
+    <script>
+
+        Dropzone.options.uploadImages = {
+            paramName : 'product_image',
+            autoProcessQueue   : false,
+            parallelUploads    : 1,
+            maxFiles: 2,
+            acceptedFiles : '.jpg, .jpeg, .png, .bmp',
+            previewsContainer: "#previews", // Define the container to display the previews
+
+            init: function() {
+                var myDropzone = this;
+
+                // First change the button to actually tell Dropzone to process the queue.
+                this.element.querySelector("button[type=submit]").addEventListener("click", function(e) {
+
+                    // Make sure that the form isn't actually being sent.
+                    e.preventDefault();
+                    e.stopPropagation();
+                    myDropzone.processQueue();
+                });
+
+                this.on("success", function(files, response) {
+
+                    window.location = "/products/" + response;
+
+                    // Gets triggered when the files have successfully been sent.
+                    // Redirect user or notify of success.
+                });
+            }
+        };
+
+    </script>
+
 @stop

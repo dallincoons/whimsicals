@@ -15,7 +15,8 @@
       </div>
       <div class="col-sm-10">
         <h2>Edit/Delete Events</h2>
-          <table class="table table-striped table-hover table-bordered table-responsive">
+        <div class="table-responsive">
+          <table class="table table-striped table-hover table-bordered">
             <tr>
               <th>Edit</th>
               <th>Event Title</th>
@@ -93,6 +94,7 @@
           @endforeach
 
           </table>
+        </div>
       </div>
     </div>
 

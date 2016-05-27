@@ -23,14 +23,15 @@
                             <h3>{{$event->start_date->year}}</h3>
                         </div>
                         <div class="event_info">
-                            <h3>{{$event->venue_name}}</h3>
+
+                            <h3>{{$event->venue_name}} @if(!Auth::guest())<a href="/events/{{$event->id}}/edit" >Edit</a>@endif</h3>
                             <h4>{{$event->street_address}} {{$event->city}}, {{$event->state}}</h4>
                             <h4>{{$event->event_hours}}</h4>
                         </div>
                         <div class="event_description">
                             <p>{{$event->details}}</p>
                         </div>
-                        @if(!Auth::guest())<a href="/events/{{$event->id}}/edit" >edit</a>@endif
+
                     </div>
                     <div class="line_divide"></div>
                 </div>

@@ -18,7 +18,7 @@
         </div>
         <div class="col-sm-4 contact">
             <h2>Contact</h2>
-            <form>
+            <form action="/contact" method="POST">
                 <div class="form-group">
                     <label for="contact_name">Your Name</label>
                     <input type="text" class="form-control" id="contact_name" placeholder="Your Name">
@@ -35,6 +35,8 @@
                     <label for="contact_message">Your Message</label>
                     <textarea class="form-control" rows="3" id="contact_message" placeholder="What's on your mind?"></textarea>
                 </div>
+
+                {{ csrf_field() }}
 
                 <button type="submit" class="btn btn-default">Submit</button>
             </form>

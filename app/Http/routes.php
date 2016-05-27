@@ -31,11 +31,9 @@ Route::group(['middleware' => ['web']], function(){
     Route::get('products/{product}', 'ProductsController@show');
     Route::get('products/image/{id}', 'ProductsController@addImage');
 
-    Route::get('contact', function(){
 
-        return view('contact');
-
-    });
+    Route::get('contact', 'ContactController@index');
+    Route::post('contact', 'ContactController@sendMessage');
 
     Route::get('portal', function(){
 

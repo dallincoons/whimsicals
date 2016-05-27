@@ -60,7 +60,11 @@ class ProductsController extends Controller
     public function store(AddProductRequest $request)
     {
 
-        $file = $request->file('file');
+//        $this->validate($request, [
+//            'product_image' => 'mimes:jpg,jpeg,png,bmp'
+//        ]);
+
+        $file = $request->file('product_image');
 
         $product = Product::create($request->all());
 

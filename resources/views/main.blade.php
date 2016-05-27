@@ -50,8 +50,10 @@
                     <li><a href="/contact">About</a></li>
 
                     @if(!Auth::guest())
-                        <li class="dropdown">
-                            <a href="/member_portal" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Add & Update <span class="caret"></span></a>
+
+                        <li class="admin_nav admin_link"><a href="/portal">Admin Home</a></li>
+                        <li class="dropdown admin_link">
+                            <a href="/portal" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Add & Update <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="/events/create">Add Event</a></li>
                                 <li role="separator" class="divider"></li>
@@ -62,7 +64,8 @@
                                 <li><a href="/products/edit">Edit Products</a></li>
                             </ul>
                         </li>
-                        <li><a href="/logout">Logout</a></li>
+                        <li class="admin_link"><a href="/logout">Logout</a></li>
+
                     @endif
                 </ul>
             </div><!-- /.navbar-collapse -->
@@ -98,39 +101,6 @@
 
 @yield('scripts.footer')
 
-<script>
-
-    Dropzone.options.uploadImages = {
-        autoProcessQueue   : false,
-        parallelUploads    : 1,
-        maxFiles: 1,
-        previewsContainer: "#previews", // Define the container to display the previews
-
-        init: function() {
-            var myDropzone = this;
-
-            // First change the button to actually tell Dropzone to process the queue.
-            this.element.querySelector("button[type=submit]").addEventListener("click", function(e) {
-
-                // Make sure that the form isn't actually being sent.
-                e.preventDefault();
-                e.stopPropagation();
-                myDropzone.processQueue();
-            });
-
-            this.on("success", function(files, response) {
-
-                window.location = "/products/" + response;
-
-                // Gets triggered when the files have successfully been sent.
-                // Redirect user or notify of success.
-            });
-        }
-    };
-
-
-
-</script>
 
 <script>
 //    var shopClient = ShopifyBuy.buildClient({
