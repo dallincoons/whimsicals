@@ -61,6 +61,7 @@
 
 @stop
 
+
 @section('scripts.footer')
 
     <script>
@@ -94,6 +95,7 @@
                 });
             }
         };
+
 
     </script>
 

@@ -11879,7 +11879,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var Vue = require('vue');
 
-new Vue({
+var app = new Vue({
 
 	el: '#app',
 

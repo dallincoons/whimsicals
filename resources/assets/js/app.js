@@ -7,7 +7,7 @@ import EditProduct from './components/EditProduct.vue';
 import EditEvent from './components/EditEvent.vue';
 import CreateProduct from './components/CreateProduct.vue';
 
-new Vue({
+var app = new Vue({
 
 	el : '#app',
 

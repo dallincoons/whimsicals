@@ -14,8 +14,10 @@ class ContactController extends Controller
         return view('contact');
     }
 
-    public function sendMessage(ContactUsMailer $mailer)
+    public function sendMessage(ContactUsMailer $mailer, Request $request)
     {
-        return $mailer->sendContactEmail();
+        $mailer->sendContactEmail($request->all());
+
+        return view('contact');
     }
 }

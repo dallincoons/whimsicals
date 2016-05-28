@@ -11,6 +11,8 @@ html {
 
 body {
     margin-bottom: 75px;
+    /*background: #EFEFEE;*/
+    background: url("../img/swirl.png");
 }
 
 .row{
@@ -219,7 +221,8 @@ body {
     -webkit-box-flex: 0;
     -ms-flex: 0 1 calc(33.33% - 20px);
     flex: 0 1 calc(33.33% - 20px);
-    /*background: rgba(105,103,100,0.1);*/
+    max-width: 30%;
+    background: #FFFFFF;
     margin: 10px;
     padding: 15px;
     display: -webkit-box;
@@ -230,13 +233,17 @@ body {
     align-items: center;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    border-bottom: rgba(0,0,0,.3) 1px solid;
     justify-content: center;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.15);
 }
-
+.each_product a{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
 .each_product img {
-    width: 350px;
-    height: auto;
+    height: 250px;
+    max-width: 100%;
     border: #f8f8f8 5px solid;
 }
 

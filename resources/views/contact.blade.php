@@ -21,19 +21,19 @@
             <form action="/contact" method="POST">
                 <div class="form-group">
                     <label for="contact_name">Your Name</label>
-                    <input type="text" class="form-control" id="contact_name" placeholder="Your Name">
+                    <input type="text" class="form-control" id="contact_name" placeholder="Your Name" name="name">
                 </div>
                 <div class="form-group">
                     <label for="contact_email">Email address</label>
-                    <input type="email" class="form-control" id="contact_email" placeholder="Email">
+                    <input type="email" class="form-control" id="contact_email" placeholder="Email" name="email">
                 </div>
                 <div class="form-group">
                     <label for="contact_subject">Subject</label>
-                    <input type="text" class="form-control" id="contact_subject" placeholder="Subject">
+                    <input type="text" class="form-control" id="contact_subject" placeholder="Subject" name="subject">
                 </div>
                 <div class="form-group">
                     <label for="contact_message">Your Message</label>
-                    <textarea class="form-control" rows="3" id="contact_message" placeholder="What's on your mind?"></textarea>
+                    <textarea class="form-control" rows="3" id="contact_message" placeholder="What's on your mind?" name="contact_message"></textarea>
                 </div>
 
                 {{ csrf_field() }}
