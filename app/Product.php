@@ -29,4 +29,9 @@ class Product extends Model
 
         parent::destroy($productIds);
     }
+
+    public function getDescriptionAttribute($description)
+    {
+        return nl2br($description);
+    }
 }
