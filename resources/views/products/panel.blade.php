@@ -17,6 +17,7 @@
                         <table class="table table-striped table-hover table-bordered table-responsive">
                             <tr>
                                 <th>Edit</th>
+                                <th>Image</th>
                                 <th>Title</th>
                                 <th>Description</th>
                                 <th>Delete</th>
@@ -25,6 +26,7 @@
                             @foreach($products as $product)
                                 <tr>
                                     <td><a href="/products/{{$product->id}}/edit">Edit</a></td>
+                                    <td><img src="{{$product->images[0]->url}}" height="40"></td>
                                     <td>{{$product->title}}</td>
                                     <td>{{$product->description}}</td>
                                     <td>

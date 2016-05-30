@@ -34,6 +34,7 @@ class ImagesTablesSeeder extends Seeder
             Image::create([
                 'product_id' => $product_id,
                 'url' => $images[$random_num],
+                'thumbnail_url' => $images[$random_num],
             ]);
 
 //            foreach(range(1, $random_num) as $index){

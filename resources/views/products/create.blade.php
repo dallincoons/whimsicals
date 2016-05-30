@@ -29,17 +29,17 @@
                     <textarea class="form-control" id="description" rows="3" name="description" placeholder="How this product is made, typical variations, price range, colors, etc."></textarea>
                 </fieldset>
             <input type="file" class="btn btn-default" value="Upload Photos" name="product_image">
-            <h4>Or Drag & Drop Picture Below</h4>
+            {{--<h4>Or Drag & Drop Picture Below</h4>--}}
 
-            <div class="table table-striped files upload-drop-zone" id="previews">
+            {{--<div class="table table-striped files upload-drop-zone" id="previews">--}}
 
-                <div class="dz-message" data-dz-message><span>Drop Your Image Here</span></div>
+                {{--<div class="dz-message" data-dz-message><span>Drop Your Image Here</span></div>--}}
 
-            </div>
+            {{--</div>--}}
 
-                <button type="submit" class="btn btn-default pro_sub" id="addProduct">Add Product</button>
+            <button type="submit" class="btn btn-default pro_sub" id="addProduct">Add Product</button>
 
-                {{ csrf_field() }}
+            {{ csrf_field() }}
 
         @if(count($errors) > 0)
             <div class="alert alert-danger">
@@ -66,35 +66,35 @@
 
     <script>
 
-        Dropzone.options.uploadImages = {
-            paramName : 'product_image',
-            autoProcessQueue   : false,
-            parallelUploads    : 1,
-            maxFiles: 2,
-            acceptedFiles : '.jpg, .jpeg, .png, .bmp',
-            previewsContainer: "#previews", // Define the container to display the previews
-
-            init: function() {
-                var myDropzone = this;
-
-                // First change the button to actually tell Dropzone to process the queue.
-                this.element.querySelector("button[type=submit]").addEventListener("click", function(e) {
-
-                    // Make sure that the form isn't actually being sent.
-                    e.preventDefault();
-                    e.stopPropagation();
-                    myDropzone.processQueue();
-                });
-
-                this.on("success", function(files, response) {
-
-                    window.location = "/products/" + response;
-
-                    // Gets triggered when the files have successfully been sent.
-                    // Redirect user or notify of success.
-                });
-            }
-        };
+//        Dropzone.options.uploadImages = {
+//            paramName : 'product_image',
+//            autoProcessQueue   : false,
+//            parallelUploads    : 1,
+//            maxFiles: 2,
+//            acceptedFiles : '.jpg, .jpeg, .png, .bmp',
+//            previewsContainer: "#previews", // Define the container to display the previews
+//
+//            init: function() {
+//                var myDropzone = this;
+//
+//                // First change the button to actually tell Dropzone to process the queue.
+//                this.element.querySelector("button[type=submit]").addEventListener("click", function(e) {
+//
+//                    // Make sure that the form isn't actually being sent.
+//                    e.preventDefault();
+//                    e.stopPropagation();
+//                    myDropzone.processQueue();
+//                });
+//
+//                this.on("success", function(files, response) {
+//
+//                    window.location = "/products/" + response;
+//
+//                    // Gets triggered when the files have successfully been sent.
+//                    // Redirect user or notify of success.
+//                });
+//            }
+//        };
 
 
     </script>

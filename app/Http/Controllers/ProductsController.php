@@ -6,7 +6,9 @@ use Illuminate\Http\Request;
 use DB;
 use View;
 use App\Product;
-use App\Image;
+use App\Image as Photo;
+use Intervention\Image\Facades\Image;
+use Illuminate\Support\Facades\Input;
 use Carbon\Carbon;
 use App\Http\Requests\AddProductRequest;
 
@@ -64,23 +66,34 @@ class ProductsController extends Controller
 //            'product_image' => 'mimes:jpg,jpeg,png,bmp'
 //        ]);
 
-        $file = $request->file('product_image');
+        $photo = $request->file('product_image');
 
         $product = Product::create($request->all());
 
-        if(!empty($file)) {
+        if(!empty($photo)) {
 
-            $name = time() . $file->getClientOriginalName();
-
-            $url = 'asset_product_images/' . $product->id;
-
-            $file->move($url, $name);
-
-            Image::create(['product_id' => $product->id, 'url' => '/' . $url . '/' . $name]);
+            $this->makePhoto($photo, $product);
 
         }
 
-        return $product->id;
+        return redirect('/products/' . $product->id);
+
+    }
+
+    protected function makePhoto($file, $product)
+    {
+
+        $name = time() . $file->getClientOriginalName();
+        $thumb_name = 'thumb_' . $name;
+
+        $url = 'asset_product_images/' . $product->id . '/';
+
+        $file->move($url, $name);
+
+        Image::make($url . $name)->orientate()->save($url . $name);
+        Image::make($url . $name)->fit(150)->save($url . $thumb_name);
+
+        Photo::create(['product_id' => $product->id, 'url' => '/' . $url . '/' . $name]);
 
     }
 
@@ -113,7 +126,7 @@ class ProductsController extends Controller
     public function showPanel()
     {
 
-        $products = Product::orderBy('created_at','desc')->get();
+        $products = Product::orderBy('created_at','desc')->with('images')->get();
 
         return view('products.panel', compact('products'));
     }
@@ -135,6 +148,12 @@ class ProductsController extends Controller
      */
     public function update(Request $request, $id)
     {
+        if(Input::get('delete')){
+
+            return $this->destroy($id);
+
+        }
+
         $product = Product::find($id);
 
         $product->update($request->all());
@@ -162,7 +181,7 @@ class ProductsController extends Controller
 
         $product->delete();
 
-        return 'success';
+        return redirect('/products/edit');
     }
 
 }
