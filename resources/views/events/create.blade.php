@@ -39,7 +39,7 @@
                         <input  type="text" class="form-control" id="venue_name" name="venue_name" />
                     </fieldset>
                     <fieldset class="form-group">
-                        <label for="venue_details">Open & Close Time</label>
+                        <label for="venue_details">Hours</label>
                         <textarea class="form-control" id="venue_details" rows="3" name="event_hours"></textarea>
                     </fieldset>
                     <fieldset class="form-group">

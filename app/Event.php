@@ -20,7 +20,7 @@ class Event extends Model
         'street_address',
         'city',
         'state',
-        'venue_details',
+        'event_hours',
         'venue_name',
         'details'
     ];

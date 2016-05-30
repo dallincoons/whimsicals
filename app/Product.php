@@ -11,7 +11,7 @@ class Product extends Model
 
     public function images()
     {
-        return $this->hasMany(Image::class);
+        return $this->hasOne(Image::class);
     }
 
     public static function fromForm($file)
@@ -28,10 +28,5 @@ class Product extends Model
 
 
         parent::destroy($productIds);
-    }
-
-    public function getDescriptionAttribute($description)
-    {
-        return nl2br($description);
     }
 }
