@@ -8,12 +8,12 @@
 
             <div class="row">
                 <div class="col-sm-4 pro_img">
-                    <img src="@if(isset($product->images[0])) {{$product->images[0]->url}} @endif" id="main_photo">
+                    <img src="@if(isset($product->images)) {{$product->images->url}} @endif" id="main_photo">
                 </div>
 
                 <div class="col-sm-3 col-sm-offset-1">
                     <h1>{{ $product->title  }}</h1>
-                   <h4> {{ $product->description  }} </h4>
+                   <h4> {!! nl2br(htmlentities($product->description)) !!}</h4>
                     @if(!Auth::guest())<a href="/products/{{$product->id}}/edit" >Edit</a>@endif
                 </div>
 

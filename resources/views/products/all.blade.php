@@ -30,7 +30,7 @@
                 <div class="each_product">
 
                             <a href="/products/{{$product->id}}">
-                                <img src="{{$product->images[0]->url}}" alt="...">
+                                <img src="{{$product->images->url}}" alt="...">
                             </a>
 
                                 <a href="/products/{{$product->id}}" class="pro_title"><h3>{{ $product->title }}</h3></a>
@@ -51,7 +51,7 @@
 
                         {{--<div class="thumbnail">--}}
                             {{--<a href="/products/{{$product->id}}">--}}
-                                {{--<img src="{{$product->images[0]->url}}" alt="...">--}}
+                                {{--<img src="{{$product->images->url}}" alt="...">--}}
                             {{--</a>--}}
                             {{--<div class="caption">--}}
                                 {{--<a href="/products/{{$product->id}}"><h3>{{ $product->title }}</h3></a>--}}

@@ -87,13 +87,14 @@ class ProductsController extends Controller
         $thumb_name = 'thumb_' . $name;
 
         $url = 'asset_product_images/' . $product->id . '/';
+        $thumb_url = $url . $thumb_name;
 
         $file->move($url, $name);
 
         Image::make($url . $name)->orientate()->save($url . $name);
-        Image::make($url . $name)->fit(150)->save($url . $thumb_name);
+        Image::make($url . $name)->fit(150)->save($thumb_url);
 
-        Photo::create(['product_id' => $product->id, 'url' => '/' . $url . '/' . $name]);
+        Photo::create(['product_id' => $product->id, 'url' => '/' . $url . '/' . $name, 'thumbnail_url' => $thumb_url]);
 
     }
 
