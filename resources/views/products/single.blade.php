@@ -10,7 +10,6 @@
                 <div class="col-sm-4 pro_img">
                     <img src="@if(isset($product->images)) {{$product->images->url}} @endif" id="main_photo">
                 </div>
-
                 <div class="col-sm-3 col-sm-offset-1">
                     <h1>{{ $product->title  }}</h1>
                    <h4> {!! nl2br(htmlentities($product->description)) !!}</h4>

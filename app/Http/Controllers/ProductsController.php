@@ -11,8 +11,7 @@ use Intervention\Image\Facades\Image;
 use Illuminate\Support\Facades\Input;
 use Carbon\Carbon;
 use App\Http\Requests\AddProductRequest;
-
-
+use Illuminate\Support\Facades\File;
 use App\Http\Requests;
 
 class ProductsController extends Controller
@@ -94,7 +93,9 @@ class ProductsController extends Controller
         Image::make($url . $name)->orientate()->save($url . $name);
         Image::make($url . $name)->fit(150)->save($thumb_url);
 
-        Photo::create(['product_id' => $product->id, 'url' => '/' . $url . '/' . $name, 'thumbnail_url' => $thumb_url]);
+        Photo::create(['product_id' => $product->id, 'url' => '/' . $url . '/' . $name, 'thumbnail_url' => '/' . $thumb_url]);
+
+        return array('url' => $url . $name, 'thumb_url' => $thumb_url);
 
     }
 
@@ -149,9 +150,26 @@ class ProductsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        if(Input::get('delete')){
+        if(Input::get('delete'))
+        {
 
             return $this->destroy($id);
+
+        }
+
+        $product = Product::find($id);
+
+        if(Input::file('product_image2'))
+        {
+            $photo = Input::file('product_image2');
+
+            File::deleteDirectory(public_path() . DIRECTORY_SEPARATOR . 'asset_product_images/' . $id) ? 'true' : 'false';
+
+            $urls = $this->makePhoto($photo, $product);
+
+            $product->images()->delete();
+
+            Photo::create(['product_id' => $product->id,'url' => '/' . $urls['url'], 'thumbnail_url' => '/' . $urls['thumb_url']]);
 
         }
 

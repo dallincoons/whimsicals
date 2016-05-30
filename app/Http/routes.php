@@ -24,6 +24,11 @@ Route::group(['middleware' => ['web']], function(){
     Route::get('/events/edit', 'EventsController@showPanel');
     Route::resource('events', 'EventsController');
 
+    /**
+     * patch requests don't accept files?
+     */
+     Route::post('/products/{id}/update', 'ProductsController@update');
+
     Route::delete('/products', 'ProductsController@delete');
     Route::get('products/edit', 'ProductsController@showPanel');
     Route::post('products/image', 'AddProductController@addImage');
