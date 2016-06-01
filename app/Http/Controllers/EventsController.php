@@ -13,7 +13,7 @@ class EventsController extends Controller
 {
     public function index()
     {
-        $events = $this->latestEvents();
+        $events = Event::latest()->future()->get();
 
         return view('events.all', compact('events'));
     }
@@ -28,11 +28,11 @@ class EventsController extends Controller
     public function store(AddEventRequest $request, Event $event)
     {
 
-        $request->merge(['start_date' => Carbon::createFromDate($request->start_year, $request->start_month, $request->start_day)->toDateTimeString()]);
+        $request['start_date'] = Carbon::createFromDate($request->start_year, $request->start_month, $request->start_day)->toDateTimeString();
 
         if($request->dateType === 'multi')
         {
-            $request->merge(['end_date' => Carbon::createFromDate($request->end_year, $request->end_month, $request->end_day)->toDateTimeString()]);
+            $request['end_date'] = Carbon::createFromDate($request->end_year, $request->end_month, $request->end_day)->toDateTimeString();
         }
 
         $event->create($request->all());
@@ -40,10 +40,8 @@ class EventsController extends Controller
         return redirect('/events');
     }
 
-    public function edit($id)
+    public function edit(Event $event)
     {
-        $event = Event::find($id);
-
         $now = Carbon::now();
 
         return view('events.edit', compact('event', 'now'));
@@ -62,10 +60,8 @@ class EventsController extends Controller
 
     }
 
-    public function update(Request $request, $id)
+    public function update(Request $request, Event $event)
     {
-
-        $event = Event::find($id);
 
         $event->update($request->all());
 
@@ -78,20 +74,13 @@ class EventsController extends Controller
      */
     public function delete(Request $request)
     {
-        $selectedEvents = $request->selected_events;
-
-        foreach($selectedEvents as $id)
-        {
-            Event::find($id)->delete();
-        }
+        Event::destroy($request->selected_events);
 
         return back();
     }
 
-    public function destroy($id)
+    public function destroy(Event $event)
     {
-        $event = Event::find($id);
-
         $event->delete();
 
         return 'success';

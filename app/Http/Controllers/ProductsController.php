@@ -32,11 +32,8 @@ class ProductsController extends Controller
      * @param $id
      * @return View
      */
-    public function show($id)
+    public function show(Product $product)
     {
-
-        $product = Product::find($id);
-
         //check if quantity exceeds max allowed quantity
         $quantity = ($product->quantity > 20) ? 20 : $product->quantity;
 
@@ -114,21 +111,12 @@ class ProductsController extends Controller
     }
 
     /**
-     * @param $id
-     * @return View
-     */
-    public function addImage($id)
-    {
-        return view('products.add_image', compact('id'));
-    }
-
-    /**
      * @return View
      */
     public function showPanel()
     {
 
-        $products = Product::orderBy('created_at','desc')->with('images')->get();
+        $products = Product::latest('created_at')->with('images')->get();
 
         return view('products.panel', compact('products'));
     }
@@ -138,26 +126,24 @@ class ProductsController extends Controller
      * @param $id
      * @return View
      */
-    public function edit(Request $request, $id)
+    public function edit(Product $product)
     {
-        $product = Product::find($id);
-
         return view('products.edit', compact('product'));
     }
 
     /**
      *
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Product $product)
     {
         if(Input::get('delete'))
         {
 
-            return $this->destroy($id);
+            $product->delete();
+
+            return redirect('/products/edit');
 
         }
-
-        $product = Product::find($id);
 
         if(Input::file('product_image2'))
         {
@@ -172,8 +158,6 @@ class ProductsController extends Controller
             Photo::create(['product_id' => $product->id,'url' => '/' . $urls['url'], 'thumbnail_url' => '/' . $urls['thumb_url']]);
 
         }
-
-        $product = Product::find($id);
 
         $product->update($request->all());
 
@@ -196,7 +180,7 @@ class ProductsController extends Controller
 
     public function destroy($id)
     {
-        $product = Product::find($id);
+        $product = Product::findOrFail($id);
 
         $product->delete();
 

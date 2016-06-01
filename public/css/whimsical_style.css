@@ -790,6 +790,28 @@ padding: 10px 10px 0 10px;
 
 /*Media Queries*/
 
+@media (max-width: 1200px) {
+
+    .each_product {
+        flex: 1 0 auto;
+        margin: 20px;
+        /*min-width: 65%;*/
+    }
+
+}
+
+@media (max-width: 950px) {
+    .products_grid_flex {
+        margin-bottom: 150px;
+        align-items: center;
+        justify-content: center;
+    }
+    .each_product {
+        min-width: 85%;
+    }
+
+}
+
 @media (max-width: 783px) {
     .navbar-brand {
         height: 80px;
@@ -821,6 +843,11 @@ padding: 10px 10px 0 10px;
 
     footer {
         height: 150px;
+    }
+
+    .home_option {
+        width: 50%;
+        margin: 125px auto;
     }
 }
 
