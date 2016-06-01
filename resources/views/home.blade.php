@@ -15,9 +15,6 @@
             <div class="col-sm-3 col-sm-offset-1 home_option up_events">
                 <a href="/events"><h2 class="animated slideInUp">Upcoming Events</h2></a>
             </div>
-
-
-
         </div>
 
     </div>

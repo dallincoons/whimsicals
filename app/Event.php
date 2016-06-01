@@ -34,7 +34,7 @@ class Event extends Model
 
     public function scopeFuture($query)
     {
-        $query->where('start_date', '>=', Carbon::now());
+        $query->latest()->where('start_date', '>=', Carbon::now());
     }
 
     public function getStartDateAttribute($time)

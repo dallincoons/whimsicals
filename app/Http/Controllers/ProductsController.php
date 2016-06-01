@@ -145,9 +145,9 @@ class ProductsController extends Controller
 
         }
 
-        if(Input::file('product_image2'))
+        if(Input::file('product_image'))
         {
-            $photo = Input::file('product_image2');
+            $photo = Input::file('product_image');
 
             File::deleteDirectory(public_path() . DIRECTORY_SEPARATOR . 'asset_product_images/' . $id) ? 'true' : 'false';
 

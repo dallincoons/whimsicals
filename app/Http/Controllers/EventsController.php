@@ -13,7 +13,7 @@ class EventsController extends Controller
 {
     public function index()
     {
-        $events = Event::latest()->future()->get();
+        $events = Event::future()->get();
 
         return view('events.all', compact('events'));
     }

@@ -28,7 +28,7 @@ Route::group(['middleware' => ['web']], function(){
     /**
      * patch requests don't accept files?
      */
-     Route::post('/products/{product}/update', 'ProductsController@update');
+//     Route::post('/products/{product}/update', 'ProductsController@update');
 
     Route::delete('/products', 'ProductsController@delete');
     Route::get('products/edit', 'ProductsController@showPanel');

@@ -16,44 +16,29 @@
 
         </div>
 
-        <form method="POST" action="/products" enctype="multipart/form-data" class="dropzone" id="upload_images">
+        {!! Form::open(array('action'=> 'ProductsController@store', 'method' => 'POST', 'files' => true, 'id' => 'upload_images')) !!}
 
-        <div class="col-sm-4 col-sm-offset-1">
+            <div class="col-sm-4 col-sm-offset-1">
 
-                <fieldset class="form-group">
-                    <label for="Title">Title</label>
-                    <input type="text" class="form-control" id="Title" name="title" placeholder="Adorable Apron">
-                </fieldset>
-                <fieldset class="form-group">
-                    <label for="description">Description</label>
-                    <textarea class="form-control" id="description" rows="3" name="description" placeholder="How this product is made, typical variations, price range, colors, etc."></textarea>
-                </fieldset>
-            <input type="file" class="btn btn-default" value="Upload Photos" name="product_image">
-            {{--<h4>Or Drag & Drop Picture Below</h4>--}}
+                @include('partials.forms.product')
 
-            {{--<div class="table table-striped files upload-drop-zone" id="previews">--}}
+                <button type="submit" class="btn btn-default pro_sub" id="addProduct">Add Product</button>
 
-                {{--<div class="dz-message" data-dz-message><span>Drop Your Image Here</span></div>--}}
+                {{ csrf_field() }}
 
-            {{--</div>--}}
+                @if(count($errors) > 0)
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error  }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
 
-            <button type="submit" class="btn btn-default pro_sub" id="addProduct">Add Product</button>
-
-            {{ csrf_field() }}
-
-        @if(count($errors) > 0)
-            <div class="alert alert-danger">
-                <ul>
-                    @foreach ($errors->all() as $error)
-                        <li>{{ $error  }}</li>
-                    @endforeach
-                </ul>
             </div>
-        @endif
 
-        </div>
-
-        </form>
+        {!! Form::close() !!}
 
     </div>
 
