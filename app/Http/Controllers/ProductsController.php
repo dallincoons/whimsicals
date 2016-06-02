@@ -10,7 +10,7 @@ use App\Image as Photo;
 use Intervention\Image\Facades\Image;
 use Illuminate\Support\Facades\Input;
 use Carbon\Carbon;
-use App\Http\Requests\AddProductRequest;
+use App\Http\Requests\ProductRequest;
 use Illuminate\Support\Facades\File;
 use App\Http\Requests;
 
@@ -52,15 +52,11 @@ class ProductsController extends Controller
     }
 
     /**
-     * @param AddProductRequest $request
+     * @param ProductRequest $request
      * @return mixed
      */
-    public function store(AddProductRequest $request)
+    public function store(ProductRequest $request)
     {
-
-//        $this->validate($request, [
-//            'product_image' => 'mimes:jpg,jpeg,png,bmp'
-//        ]);
 
         $photo = $request->file('product_image');
 

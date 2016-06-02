@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use App\Http\Requests\Request;
 
-class AddProductRequest extends Request
+class ProductRequest extends Request
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -25,7 +25,15 @@ class AddProductRequest extends Request
     {
         return [
             'title' => 'required',
-            'description' => 'required'
+            'description' => 'required',
+            'product_image' => 'required'
+        ];
+    }
+
+    public function messages()
+    {
+        return [
+            'product_image.required' => 'Heyo you dummy!'
         ];
     }
 }

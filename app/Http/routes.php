@@ -32,7 +32,6 @@ Route::group(['middleware' => ['web']], function(){
 
     Route::delete('/products', 'ProductsController@delete');
     Route::get('products/edit', 'ProductsController@showPanel');
-    Route::post('products/image', 'AddProductController@addImage');
     Route::resource('products', 'ProductsController');
     Route::get('products/{product}', 'ProductsController@show');
 
