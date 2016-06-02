@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Event;
-use App\Http\Requests\AddEventRequest;
+use App\Http\Requests\EventRequest;
 use Carbon\Carbon;
 
 class EventsController extends Controller
@@ -25,7 +25,7 @@ class EventsController extends Controller
         return view('events.create', compact('now'));
     }
 
-    public function store(AddEventRequest $request, Event $event)
+    public function store(EventRequest $request, Event $event)
     {
 
         $request['start_date'] = Carbon::createFromDate($request->start_year, $request->start_month, $request->start_day)->toDateTimeString();
