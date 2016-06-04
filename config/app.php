@@ -150,6 +150,7 @@ return [
         'Gloudemans\Shoppingcart\ShoppingcartServiceProvider',
         Intervention\Image\ImageServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
+        Laracasts\Flash\FlashServiceProvider::class,
 
 
         /*
@@ -209,7 +210,8 @@ return [
         'Cart' => 'Gloudemans\Shoppingcart\Facades\Cart',
         'Image' => Intervention\Image\Facades\Image::class,
         'Form' => Collective\Html\FormFacade::class,
-      'Html' => Collective\Html\HtmlFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
+        'Flash' => 'Laracasts\Flash\Flash'
 //        'Image' => Intervention\Image\Facades\Image::class
 
     ],

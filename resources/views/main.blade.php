@@ -72,10 +72,11 @@
         </div><!-- /.container-fluid -->
     </nav>
 
-
 @endif
 
 <div class="whimsical_wrapper">
+
+    @include('flash::message')
 
     @yield('content')
 
@@ -85,7 +86,7 @@
 
     @else
 
-       @include('partials.footer')
+        @include('partials.footer')
 
     @endif
 
@@ -144,7 +145,10 @@
 
 <script>
 
+    //bootstrap slide up
+    $('div.alert').not('.alert-important').delay(4000).slideUp(500);
 
+    //Product image switching
     $(".thumbnail_img").click(function () {
 
         var thumbnail_src = $(this).attr('src');

@@ -28,6 +28,8 @@ class EventsController extends Controller
     {
         $now = Carbon::now();
 
+        flash()->success('Event has been created');
+
         return view('events.create', compact('now'));
     }
 
@@ -49,6 +51,8 @@ class EventsController extends Controller
     public function edit(Event $event)
     {
         $now = Carbon::now();
+
+        flash()->success('Event has been edit');
 
         return view('events.edit', compact('event', 'now'));
     }
@@ -76,12 +80,16 @@ class EventsController extends Controller
     {
         Event::destroy($request->selected_events);
 
+        flash()->success('Events have been edited');
+
         return back();
     }
 
     public function destroy(Event $event)
     {
         $event->delete();
+
+        flash()->success('Event has been edited');
 
         return 'success';
     }

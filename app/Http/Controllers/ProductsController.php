@@ -74,6 +74,8 @@ class ProductsController extends Controller
 
         }
 
+        flash()->success('Product has been created');
+
         return redirect('/products/' . $product->id);
 
     }
@@ -130,6 +132,8 @@ class ProductsController extends Controller
      */
     public function edit(Product $product)
     {
+        flash()->success('Product has been updated');
+
         return view('products.edit', compact('product'));
     }
 
@@ -143,6 +147,8 @@ class ProductsController extends Controller
 
             $product->delete();
 
+            flash()->success('Product has been deleted');
+
             return redirect('/products/edit');
 
         }
@@ -151,15 +157,18 @@ class ProductsController extends Controller
         {
             $photo = Input::file('product_image');
 
-            File::deleteDirectory(public_path() . DIRECTORY_SEPARATOR . 'asset_product_images/' . $id) ? 'true' : 'false';
+            File::deleteDirectory(public_path() . DIRECTORY_SEPARATOR . 'asset_product_images/' . $product->id) ? 'true' : 'false';
 
             $urls = $this->makePhoto($photo, $product);
 
             $product->images()->delete();
 
+
             Photo::create(['product_id' => $product->id,'url' => '/' . $urls['url'], 'thumbnail_url' => '/' . $urls['thumb_url']]);
 
         }
+
+        flash()->success('Product has been updated');
 
         $product->update($request->all());
 
@@ -177,6 +186,8 @@ class ProductsController extends Controller
 
         Product::destroy($selectedProducts);
 
+        flash()->success('Products have been deleted');
+
         return back();
     }
 
@@ -185,6 +196,8 @@ class ProductsController extends Controller
         $product = Product::findOrFail($id);
 
         $product->delete();
+
+        flash()->success('Product ha been deleted');
 
         return redirect('/products/edit');
     }
