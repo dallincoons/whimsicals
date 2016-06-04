@@ -25,10 +25,6 @@ Route::group(['middleware' => ['web']], function(){
     Route::get('/events/edit', 'EventsController@showPanel');
     Route::resource('events', 'EventsController');
 
-    /**
-     * patch requests don't accept files?
-     */
-//     Route::post('/products/{product}/update', 'ProductsController@update');
 
     Route::delete('/products', 'ProductsController@delete');
     Route::get('products/edit', 'ProductsController@showPanel');
@@ -44,14 +40,6 @@ Route::group(['middleware' => ['web']], function(){
         return view('member_portal');
 
     });
-
-    /**
-     * turn into a resource
-     */
-    Route::get('cart', 'CartController@showCart');
-    Route::post('/cart/add', 'CartController@add');
-    Route::post('/cart/remove', 'CartController@remove');
-    Route::post('/cart/update', 'CartController@update');
 
     Route::auth();
 

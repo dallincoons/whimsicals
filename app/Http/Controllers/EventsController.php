@@ -11,6 +11,12 @@ use Carbon\Carbon;
 
 class EventsController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth', ['except' => ['index']]);
+    }
+
     public function index()
     {
         $events = Event::future()->get();
@@ -52,12 +58,6 @@ class EventsController extends Controller
         $events = Event::latest('start_date')->future()->get();
 
         return view('events.panel', compact('events'));
-    }
-
-    private function latestEvents()
-    {
-        return $events = Event::latest('start_date')->future()->get();
-
     }
 
     public function update(Request $request, Event $event)

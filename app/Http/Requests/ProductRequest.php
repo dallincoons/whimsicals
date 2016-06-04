@@ -24,8 +24,8 @@ class ProductRequest extends Request
     public function rules()
     {
         return [
-            'title' => 'required',
-            'description' => 'required',
+            'title' => 'required|max:24',
+            'description' => 'required|max:500',
             'product_image' => 'required'
         ];
     }
@@ -33,7 +33,7 @@ class ProductRequest extends Request
     public function messages()
     {
         return [
-            'product_image.required' => 'Heyo you dummy!'
+            'product_image.required' => 'Image is required'
         ];
     }
 }
