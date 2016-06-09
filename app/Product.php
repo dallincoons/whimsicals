@@ -19,6 +19,11 @@ class Product extends Model
         $photo = new static;
     }
 
+    public function scopeWithImages()
+    {
+
+    }
+
     public static function destroy($productIds)
     {
         foreach($productIds as $productId)

@@ -28,9 +28,9 @@ class ProductsController extends Controller
     public function index()
     {
 
-        $products = Product::orderBy('created_at','desc')->with('images')->get();
+        $products = Product::latest()->with('images')->get();
 
-        return View::make('products.all', compact('products', 'user'));
+        return View::make('products.all', compact('products'));
 
     }
 
@@ -41,10 +41,16 @@ class ProductsController extends Controller
     public function show(Product $product)
     {
         //check if quantity exceeds max allowed quantity
-        $quantity = ($product->quantity > 20) ? 20 : $product->quantity;
+        $quantity = $this->getQuantity($product);
 
         return view('products.single', compact('product', 'quantity'));
 
+    }
+
+
+    private function getQuantity(Product $product)
+    {
+        return ($product->quantity > 20) ? 20 : $product->quantity;
     }
 
     /**
