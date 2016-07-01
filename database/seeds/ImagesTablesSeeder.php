@@ -20,7 +20,6 @@ class ImagesTablesSeeder extends Seeder
         $images = [
             'http://cdn.abclocal.go.com/content/kgo/images/cms/544966_1280x720.jpg',
             'http://cdn1.theodysseyonline.com/files/2016/01/10/635880403615266094-892416457_pup.jpeg',
-            'http://www.iflscience.com/sites/www.iflscience.com/files/styles/ifls_large/public/blog/%5Bnid%5D/shutterstock_334735247.jpg?itok=xlMGldKa',
             'http://www.shangralafamilyfun.com/2010/puppy0.jpg',
             'http://pimm.barkpost.com/wp-content/uploads/2014/09/apparentlykidcommercial.jpg?q=70&fit=crop&crop=entropy&w=808&h=500f',
             'http://www.awesomeinventions.com/wp-content/uploads/2015/05/Puppy.jpg',
