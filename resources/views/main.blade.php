@@ -44,11 +44,10 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="whimNav">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="/" class="active">Home</a></li>
-                    <li><a href="/events">Events</a></li>
-                    <li><a href="/products">Our Work</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                    <li><a href="/contact">About</a></li>
+                    <li><a href="/" class="{{ Request::path() == '/' ? 'active' : '' }}">Home</a></li>
+                    <li><a href="/events" class="{{ Request::path() == 'events' ? 'active' : '' }}">Events</a></li>
+                    <li><a href="/products" class="{{ Request::path() == 'products' ? 'active' : '' }}">Our Work</a></li>
+                    <li><a href="/contact" class="{{ Request::path() == 'contact' ? 'active' : '' }}">Contact</a></li>
 
                     @if(!Auth::guest())
 
