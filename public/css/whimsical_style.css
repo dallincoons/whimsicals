@@ -15,6 +15,10 @@ body {
     background: url("../img/swirl.png");
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 .row{
     min-width: 100%;
 }
@@ -50,11 +54,9 @@ body {
     color: #B26885;
 }
 
-
-/*.navbar-brand {*/
-    /*margin-top: 20px;*/
-    /*margin-bottom: -16px;*/
-/*}*/
+.navbar-brand {
+    height: 75px;
+}
 
 .navbar-brand .whim_brand{
     font-family: 'Sacramento', cursive;
@@ -110,20 +112,19 @@ body {
     color: #000000;
 }
 
-.home_option:hover {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d6cbcd+0,b26885+99&0.77+34,0.91+89 */
-    background: -moz-linear-gradient(top,  rgba(214,203,205,0.77) 0%, rgba(202,169,180,0.77) 34%, rgba(182,114,140,0.91) 89%, rgba(178,104,133,0.91) 99%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  rgba(214,203,205,0.77) 0%,rgba(202,169,180,0.77) 34%,rgba(182,114,140,0.91) 89%,rgba(178,104,133,0.91) 99%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgba(214,203,205,0.77) 0%,rgba(202,169,180,0.77) 34%,rgba(182,114,140,0.91) 89%,rgba(178,104,133,0.91) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c4d6cbcd', endColorstr='#e8b26885',GradientType=0 ); /* IE6-9 */
-}
+/*.home_option:hover {*/
+    /*!* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d6cbcd+0,b26885+99&0.77+34,0.91+89 *!*/
+    /*background: -moz-linear-gradient(top,  rgba(214,203,205,0.77) 0%, rgba(202,169,180,0.77) 34%, rgba(182,114,140,0.91) 89%, rgba(178,104,133,0.91) 99%); !* FF3.6-15 *!*/
+    /*background: -webkit-linear-gradient(top,  rgba(214,203,205,0.77) 0%,rgba(202,169,180,0.77) 34%,rgba(182,114,140,0.91) 89%,rgba(178,104,133,0.91) 99%); !* Chrome10-25,Safari5.1-6 *!*/
+    /*background: linear-gradient(to bottom,  rgba(214,203,205,0.77) 0%,rgba(202,169,180,0.77) 34%,rgba(182,114,140,0.91) 89%,rgba(178,104,133,0.91) 99%); !* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ *!*/
+    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c4d6cbcd', endColorstr='#e8b26885',GradientType=0 ); !* IE6-9 *!*/
+/*}*/
 
 .home_option a:hover {
     text-decoration: none;
 }
 
 .home_option a h2:hover {
-    font-size: 2em;
     color: white;
 }
 
@@ -134,24 +135,11 @@ body {
     animation-fill-mode: both;
 }
 
-@-webkit-keyframes slideInUp {
-    from {
-        -webkit-transform: translate3d(0, 100%, 0);
-        transform: translate3d(0, 100%, 0);
-        visibility: visible;
-    }
-
-    to {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }
-}
-
 @keyframes slideInUp {
     from {
         -webkit-transform: translate3d(0, 100%, 0);
         transform: translate3d(0, 100%, 0);
-        visibility: visible;
+        visibility: hidden;
     }
 
     to {
@@ -163,12 +151,13 @@ body {
 .slideInUp {
     -webkit-animation-name: slideInUp;
     animation-name: slideInUp;
+    height:100%;
 }
 
 .our_work:after {
     content: "";
-    background-image: url(../img/apron_placeholder.jpg);
-    opacity: 0.5;
+    background-image: url(../img/our_work.jpeg);
+    opacity: 0.3;
     top: 0;
     left: 0;
     bottom: 0;
@@ -180,8 +169,8 @@ body {
 
 .our_story:after {
     content: "";
-    background-image: url(../img/story_placeholder_2.jpg);
-    opacity: 0.5;
+    background-image: url(../img/our_story.jpg);
+    opacity: 0.3;
     top: 0;
     left: 0;
     bottom: 0;
@@ -193,8 +182,8 @@ body {
 
 .up_events:after {
     content: "";
-    background-image: url(../img/fair_placeholder.jpg);
-    opacity: 0.5;
+    background-image: url(../img/upcoming_events.jpg);
+    opacity: 0.3;
     top: 0;
     left: 0;
     bottom: 0;
@@ -242,7 +231,6 @@ body {
     align-items:center;
 }
 .each_product img {
-    height: 250px;
     max-width: 100%;
     border: #f8f8f8 5px solid;
 }
@@ -264,14 +252,6 @@ body {
     /*box-shadow:         0px 5px 10px 0px rgba(50, 50, 50, 0.1);*/
 }
 
-.pro_title:hover {
-    background: rgba(178,104,133,.7);
-    text-decoration: none;
-    -webkit-box-shadow: inset 0px 5px 10px 0px rgba(50, 50, 50, 0.2);
-    -moz-box-shadow:    inset 0px 5px 10px 0px rgba(50, 50, 50, 0.2);
-    box-shadow:         inset 0px 5px 10px 0px rgba(50, 50, 50, 0.2);
-    color: #f8f8f8;
-}
 
 .whim_products h3 a {
     color: #B26885;
@@ -800,7 +780,7 @@ padding: 10px 10px 0 10px;
 
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1200px) {
     .products_grid_flex {
         margin-bottom: 150px;
         align-items: center;

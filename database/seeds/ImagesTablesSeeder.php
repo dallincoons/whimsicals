@@ -18,23 +18,29 @@ class ImagesTablesSeeder extends Seeder
         $products = Product::lists('id');
 
         $images = [
-            'http://cdn.abclocal.go.com/content/kgo/images/cms/544966_1280x720.jpg',
-            'http://cdn1.theodysseyonline.com/files/2016/01/10/635880403615266094-892416457_pup.jpeg',
-            'http://www.shangralafamilyfun.com/2010/puppy0.jpg',
-            'http://pimm.barkpost.com/wp-content/uploads/2014/09/apparentlykidcommercial.jpg?q=70&fit=crop&crop=entropy&w=808&h=500f',
-            'http://www.awesomeinventions.com/wp-content/uploads/2015/05/Puppy.jpg',
-            'https://s-media-cache-ak0.pinimg.com/736x/ca/b3/76/cab37626bfb76e482a04fe1521d98504.jpg'
+            '/img/bow_tie.jpg',
+           '/img/coffee_table.jpg',
+           '/img/gloves.jpeg',
+           '/img/hat.jpg',
+           '/img/knick_knacks.jpg',
+           '/img/scotti_tie.jpg',
+           '/img/shoes.jpg',
+           '/img/sweater.jpeg',
+           '/img/tie.jpeg',
+           '/img/tie_cufflinks.jpg',
         ];
+
+        $imageindex = 0;
 
         foreach($products as $product_id){
 
-            $random_num = $faker->numberBetween(1, 5);
-
             Image::create([
                 'product_id' => $product_id,
-                'url' => $images[$random_num],
-                'thumbnail_url' => $images[$random_num],
+                'url' => $images[$imageindex],
+                'thumbnail_url' => $images[$imageindex],
             ]);
+
+            $imageindex++;
 
 //            foreach(range(1, $random_num) as $index){
 //

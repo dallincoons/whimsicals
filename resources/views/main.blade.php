@@ -6,7 +6,8 @@
 
     <title>Whimsicals by MarDee</title>
 
-    <link href="/css/bs_css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bs_css/bootstrap.css" rel="stylesheet">
+    <link href="/css/hover/hover.css" rel="stylesheet">
     <link href="/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/whimsical_style.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet' type='text/css'>
